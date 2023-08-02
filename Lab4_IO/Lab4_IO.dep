@@ -1,0 +1,6 @@
+Dependencies for Project 'Lab4', Target 'IO': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\main.c)(0x56994EA4)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -fsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I .. -I ../../..-IE:/Programas/Keil_v5/ARM/RV31/INC-IE:/Programas/Keil_v5/ARM/CMSIS/Include-IE:/Programas/Keil_v5/ARM/INC/Luminary-D__UVISION_VERSION="538" -Drvmdk -DPART_LM4F120H5QR-o ./main.o -MD)
+I (TExaS.h)(0x56994EF4)
+F (.\startup.s)(0x57018D78)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-IE:/Programas/Keil_v5/ARM/RV31/INC-IE:/Programas/Keil_v5/ARM/CMSIS/Include-IE:/Programas/Keil_v5/ARM/INC/Luminary-Wa,armasm,--pd,"__UVISION_VERSION SETA 538"-o ./startup.o)
+F (.\texas.o)(0x56994D98)()
