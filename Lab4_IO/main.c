@@ -57,15 +57,19 @@ int main(void){
     SW1 = GPIO_PORTF_DATA_R&0x10;     // read PF4 into SW1
     SW2 = GPIO_PORTF_DATA_R&0x01;     // read PF0 into SW2
     if(SW1&&SW2){                     // both pressed
-      GPIO_PORTF_DATA_R = 0x04;       // LED is blue
+      // GPIO_PORTF_DATA_R = 0x04;       // LED is blue
+			GPIO_PORTF_DATA_R = 0x00;   // LED is off
     } else{                           
       if(SW1&&(!SW2)){                // just SW1 pressed
-        GPIO_PORTF_DATA_R = 0x02;     // LED is red
+        GPIO_PORTF_DATA_R = 0x08;   // LED is green 
+				// GPIO_PORTF_DATA_R = 0x02;     // LED is red
       } else{                        
         if((!SW1)&&SW2){              // just SW2 pressed
-          GPIO_PORTF_DATA_R = 0x08;   // LED is green
+          // GPIO_PORTF_DATA_R = 0x08;   // LED is green
+					GPIO_PORTF_DATA_R = 0x02;     // LED is red
         }else{                        // neither switch
-          GPIO_PORTF_DATA_R = 0x00;   // LED is off
+          // GPIO_PORTF_DATA_R = 0x00;   // LED is off
+				  GPIO_PORTF_DATA_R = 0x04;       // LED is blue					
         }
       }
     }
