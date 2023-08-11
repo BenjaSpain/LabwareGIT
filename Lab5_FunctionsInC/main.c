@@ -26,11 +26,23 @@ int main (void) {
   UART_Init();    // initialize UART for printing
   printf("\nThis program calculates areas of rectangular rooms.\n");
   EnableInterrupts();  // the grader needs interrupts
+
   while(1) {
-    printf("\nGive length: "); scanf("%ld", &length);  // Get input
-    printf("\nGive width: ");  scanf("%ld", &width);   // Get input
+		
+    do{ // Get Length
+			printf("\nGive length: "); scanf("%ld", &length);  // Get input
+			if (length <= 0)
+				printf("\nERROR. Length Have To be an unsigned Integer number..."); // Error Message		
+		} while(length < 0);
+		
+		do{  // Get Width
+			printf("\nGive width: "); scanf("%ld", &width);  // Get input
+			if (width <= 0)
+				printf("\nERROR. Width Have To be an unsigned Integer number... "); // Error Message		
+		} while(width < 0);
+
     area = Calc_Area(length, width);
-    printf("\nArea of the room = %ld\n",  area);
+    printf("\nArea of the room = %ld sqr meters \n", area);
   }
 }
 
@@ -45,7 +57,9 @@ int main (void) {
 unsigned long Calc_Area(unsigned long l, unsigned long w) {
   unsigned long result;
 
-// Put your Lab 5 code here
-  
-  return(result);
+	if ((l >= 3) && (l <= 20) && (w >= 3) && (w <= 20) ) {
+		result = l*w;
+	} else
+		result = 0;
+	return result;
 }
