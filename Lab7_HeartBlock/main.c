@@ -2,7 +2,7 @@
 // Lab7_HeartBlock, main.c
 
 // Runs on LM4F120 or TM4C123 LaunchPad
-// Input from PF4(SW1) is AS (atrial sensor), 
+// Input from PF4(SW1- Negative Logic) is AS (atrial sensor), 
 // Output to PF3, Green LED, is Ready,
 // Output to PF1, Red LED, is VT (ventricular trigger) 
 // Make PF4 input, PF3,PF1 output
@@ -19,6 +19,10 @@
 // 9) set Ready high
 
 // Date: January 15, 2016
+
+// RESULT OF LAB 7 (Note of Benjamin 2023-09-18):
+//		Lab Grade result is 67 in spite of 100 -> It is because the 'Delay' does not work
+//		'Delay' is not working in any example for me... For now I leave the Lab working all the functions but the 'Delay'
 
 // 1. Pre-processor Directives Section
 #include "TExaS.h"
@@ -37,6 +41,9 @@
 #define SYSCTL_RCGC2_R          (*((volatile unsigned long *)0x400FE108))
 // 2. Declarations Section
 //   Global Variables
+unsigned long AS_SW1; // input from PF4
+unsigned long READY_LED_GREEN; // Output PF3
+unsigned long VT_LED_REED; // Output PF1
 
 //   Function Prototypes
 void PortF_Init(void);
@@ -57,14 +64,23 @@ int main(void){
   EnableInterrupts();                      // enable interrupts for the grader  
   while(1){          // Follows the nine steps list above
     // a) Ready signal goes high
+		SetReady();
     // b) wait for switch to be pressed
+		WaitForASLow(); //OK
     // c) Ready signal goes low
+		ClearReady();		//OK
     // d) wait 10ms
-    // e) wait for switch to be released
+//		Delay1ms(10);
+		Delay1ms(10); // ESTA FUNCION NO TIENE EFECTO. Me pasa en todos los ejemplos. LOS TEMPORIZADORES NO FUNCIONAN (TArdan microsegundos en vez de segundos)
+		// e) wait for switch to be released
+		WaitForASHigh();
     // f) wait 250ms
+		Delay1ms(250); // ESTA FUNCION NO TIENE EFECTO. Me pasa en todos los ejemplos. LOS TEMPORIZADORES NO FUNCIONAN (TArdan microsegundos en vez de segundos)
     // g) VT signal goes high
+		SetVT();
     // h) wait 250ms
     // i) VT signal goes low
+		ClearVT();
   }
 }
 // Subroutine to initialize port F pins for input and output
@@ -98,8 +114,10 @@ void PortF_Init(void){ volatile unsigned long delay;
 // If AS is currently high, it will wait until it to go low
 // Inputs:  None
 // Outputs: None
-void WaitForASLow(void){
-// write this function
+void WaitForASLow(void){ //OK
+	do{
+		AS_SW1 = GPIO_PORTF_DATA_R&0x10; // PF4 into SW1
+	}while(AS_SW1 == 0x10);
 }
 
 // Subroutine reads AS input and waits for signal to be high
@@ -107,8 +125,10 @@ void WaitForASLow(void){
 // If AS is currently low, it will wait until it to go high
 // Inputs:  None
 // Outputs: None
-void WaitForASHigh(void){
-// write this function
+void WaitForASHigh(void){ //ESCRIBIENDO ESTA FUNCION
+	do{
+		AS_SW1 = GPIO_PORTF_DATA_R&0x10; // PF4 into SW1
+	}while(AS_SW1 == 0x00);
 }
 
 // Subroutine sets VT high
@@ -116,7 +136,7 @@ void WaitForASHigh(void){
 // Outputs: None
 // Notes:   friendly means it does not affect other bits in the port
 void SetVT(void){
-// write this function
+	GPIO_PORTF_DATA_R |= 0x02;
 }
 
 // Subroutine clears VT low
@@ -124,15 +144,15 @@ void SetVT(void){
 // Outputs: None
 // Notes:   friendly means it does not affect other bits in the port
 void ClearVT(void){
-// write this function
+	GPIO_PORTF_DATA_R &= ~0x02;
 }
 
 // Subroutine sets Ready high
 // Inputs:  None
 // Outputs: None
 // Notes:   friendly means it does not affect other bits in the port
-void SetReady(void){
-// write this function
+void SetReady(void){ //OK
+	GPIO_PORTF_DATA_R |= 0x08;
 }
 
 
@@ -140,16 +160,24 @@ void SetReady(void){
 // Inputs:  None
 // Outputs: None
 // Notes:   friendly means it does not affect other bits in the port
-void ClearReady(void){
-// write this function
+void ClearReady(void){  //OK
+	GPIO_PORTF_DATA_R &= ~0x08;
 }
 
 // Subroutine to delay in units of milliseconds
 // Inputs:  Number of milliseconds to delay
 // Outputs: None
 // Notes:   assumes 80 MHz clock
-void Delay1ms(unsigned long msec){
-// write this function
-
+void Delay1ms(unsigned long msecs){
+	unsigned long i;
+	
+  while(msecs > 0 ) { // repeat while there are still halfsecs to delay
+		//Valor de i lo ajustamos a la Dev Kit según indicaciones del vídeo del Lab 7 en real board (Lab 7 , Part f)
+    i = (16000*25/30); // 400000*0.5/0.13 that it takes 0.13 sec to count down to zero
+    while (i > 0) { 
+      i = i - 1;
+    } // This while loop takes approximately 3 cycles
+    msecs = msecs - 1;
+  }
 }
 
