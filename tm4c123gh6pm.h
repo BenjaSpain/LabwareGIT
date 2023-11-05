@@ -1,4 +1,4 @@
-//******************************************************* **********************
+/******************************************************* **********************
 //
 // tm4c123gh6pm.h - TM4C123GH6PM Register Definitions
 //
@@ -35,16 +35,16 @@
 // 
 // This is part of revision 1.0 of the Tiva Firmware Development Package.
 //
-//*****************************************************************************
+*****************************************************************************/
 
 #ifndef __TM4C123GH6PM_H__
 #define __TM4C123GH6PM_H__
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Interrupt assignments
 //
-//*****************************************************************************
+*****************************************************************************/
 #define INT_GPIOA               16          // GPIO Port A
 #define INT_GPIOB               17          // GPIO Port B
 #define INT_GPIOC               18          // GPIO Port C
@@ -125,11 +125,11 @@
 #define INT_PWM1_3              153         // PWM1 Generator 3
 #define INT_PWM1_FAULT          154         // PWM1 Fault
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Watchdog Timer registers (WATCHDOG0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WATCHDOG0_LOAD_R        (*((volatile unsigned long *)0x40000000))
 #define WATCHDOG0_VALUE_R       (*((volatile unsigned long *)0x40000004))
 #define WATCHDOG0_CTL_R         (*((volatile unsigned long *)0x40000008))
@@ -139,11 +139,11 @@
 #define WATCHDOG0_TEST_R        (*((volatile unsigned long *)0x40000418))
 #define WATCHDOG0_LOCK_R        (*((volatile unsigned long *)0x40000C00))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Watchdog Timer registers (WATCHDOG1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WATCHDOG1_LOAD_R        (*((volatile unsigned long *)0x40001000))
 #define WATCHDOG1_VALUE_R       (*((volatile unsigned long *)0x40001004))
 #define WATCHDOG1_CTL_R         (*((volatile unsigned long *)0x40001008))
@@ -153,11 +153,11 @@
 #define WATCHDOG1_TEST_R        (*((volatile unsigned long *)0x40001418))
 #define WATCHDOG1_LOCK_R        (*((volatile unsigned long *)0x40001C00))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTA)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTA_DATA_BITS_R  ((volatile unsigned long *)0x40004000)
 #define GPIO_PORTA_DATA_R       (*((volatile unsigned long *)0x400043FC))
 #define GPIO_PORTA_DIR_R        (*((volatile unsigned long *)0x40004400))
@@ -184,11 +184,11 @@
 #define GPIO_PORTA_ADCCTL_R     (*((volatile unsigned long *)0x40004530))
 #define GPIO_PORTA_DMACTL_R     (*((volatile unsigned long *)0x40004534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTB_DATA_BITS_R  ((volatile unsigned long *)0x40005000)
 #define GPIO_PORTB_DATA_R       (*((volatile unsigned long *)0x400053FC))
 #define GPIO_PORTB_DIR_R        (*((volatile unsigned long *)0x40005400))
@@ -215,11 +215,11 @@
 #define GPIO_PORTB_ADCCTL_R     (*((volatile unsigned long *)0x40005530))
 #define GPIO_PORTB_DMACTL_R     (*((volatile unsigned long *)0x40005534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTC)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTC_DATA_BITS_R  ((volatile unsigned long *)0x40006000)
 #define GPIO_PORTC_DATA_R       (*((volatile unsigned long *)0x400063FC))
 #define GPIO_PORTC_DIR_R        (*((volatile unsigned long *)0x40006400))
@@ -246,11 +246,11 @@
 #define GPIO_PORTC_ADCCTL_R     (*((volatile unsigned long *)0x40006530))
 #define GPIO_PORTC_DMACTL_R     (*((volatile unsigned long *)0x40006534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTD)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTD_DATA_BITS_R  ((volatile unsigned long *)0x40007000)
 #define GPIO_PORTD_DATA_R       (*((volatile unsigned long *)0x400073FC))
 #define GPIO_PORTD_DIR_R        (*((volatile unsigned long *)0x40007400))
@@ -277,11 +277,11 @@
 #define GPIO_PORTD_ADCCTL_R     (*((volatile unsigned long *)0x40007530))
 #define GPIO_PORTD_DMACTL_R     (*((volatile unsigned long *)0x40007534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // SSI registers (SSI0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI0_CR0_R              (*((volatile unsigned long *)0x40008000))
 #define SSI0_CR1_R              (*((volatile unsigned long *)0x40008004))
 #define SSI0_DR_R               (*((volatile unsigned long *)0x40008008))
@@ -294,11 +294,11 @@
 #define SSI0_DMACTL_R           (*((volatile unsigned long *)0x40008024))
 #define SSI0_CC_R               (*((volatile unsigned long *)0x40008FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // SSI registers (SSI1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI1_CR0_R              (*((volatile unsigned long *)0x40009000))
 #define SSI1_CR1_R              (*((volatile unsigned long *)0x40009004))
 #define SSI1_DR_R               (*((volatile unsigned long *)0x40009008))
@@ -311,11 +311,11 @@
 #define SSI1_DMACTL_R           (*((volatile unsigned long *)0x40009024))
 #define SSI1_CC_R               (*((volatile unsigned long *)0x40009FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // SSI registers (SSI2)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI2_CR0_R              (*((volatile unsigned long *)0x4000A000))
 #define SSI2_CR1_R              (*((volatile unsigned long *)0x4000A004))
 #define SSI2_DR_R               (*((volatile unsigned long *)0x4000A008))
@@ -328,11 +328,11 @@
 #define SSI2_DMACTL_R           (*((volatile unsigned long *)0x4000A024))
 #define SSI2_CC_R               (*((volatile unsigned long *)0x4000AFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // SSI registers (SSI3)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI3_CR0_R              (*((volatile unsigned long *)0x4000B000))
 #define SSI3_CR1_R              (*((volatile unsigned long *)0x4000B004))
 #define SSI3_DR_R               (*((volatile unsigned long *)0x4000B008))
@@ -345,11 +345,11 @@
 #define SSI3_DMACTL_R           (*((volatile unsigned long *)0x4000B024))
 #define SSI3_CC_R               (*((volatile unsigned long *)0x4000BFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART0_DR_R              (*((volatile unsigned long *)0x4000C000))
 #define UART0_RSR_R             (*((volatile unsigned long *)0x4000C004))
 #define UART0_ECR_R             (*((volatile unsigned long *)0x4000C004))
@@ -370,11 +370,11 @@
 #define UART0_PP_R              (*((volatile unsigned long *)0x4000CFC0))
 #define UART0_CC_R              (*((volatile unsigned long *)0x4000CFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART1_DR_R              (*((volatile unsigned long *)0x4000D000))
 #define UART1_RSR_R             (*((volatile unsigned long *)0x4000D004))
 #define UART1_ECR_R             (*((volatile unsigned long *)0x4000D004))
@@ -395,11 +395,11 @@
 #define UART1_PP_R              (*((volatile unsigned long *)0x4000DFC0))
 #define UART1_CC_R              (*((volatile unsigned long *)0x4000DFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART2)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART2_DR_R              (*((volatile unsigned long *)0x4000E000))
 #define UART2_RSR_R             (*((volatile unsigned long *)0x4000E004))
 #define UART2_ECR_R             (*((volatile unsigned long *)0x4000E004))
@@ -420,11 +420,11 @@
 #define UART2_PP_R              (*((volatile unsigned long *)0x4000EFC0))
 #define UART2_CC_R              (*((volatile unsigned long *)0x4000EFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART3)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART3_DR_R              (*((volatile unsigned long *)0x4000F000))
 #define UART3_RSR_R             (*((volatile unsigned long *)0x4000F004))
 #define UART3_ECR_R             (*((volatile unsigned long *)0x4000F004))
@@ -445,11 +445,11 @@
 #define UART3_PP_R              (*((volatile unsigned long *)0x4000FFC0))
 #define UART3_CC_R              (*((volatile unsigned long *)0x4000FFC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART4)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART4_DR_R              (*((volatile unsigned long *)0x40010000))
 #define UART4_RSR_R             (*((volatile unsigned long *)0x40010004))
 #define UART4_ECR_R             (*((volatile unsigned long *)0x40010004))
@@ -470,11 +470,11 @@
 #define UART4_PP_R              (*((volatile unsigned long *)0x40010FC0))
 #define UART4_CC_R              (*((volatile unsigned long *)0x40010FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART5)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART5_DR_R              (*((volatile unsigned long *)0x40011000))
 #define UART5_RSR_R             (*((volatile unsigned long *)0x40011004))
 #define UART5_ECR_R             (*((volatile unsigned long *)0x40011004))
@@ -495,11 +495,11 @@
 #define UART5_PP_R              (*((volatile unsigned long *)0x40011FC0))
 #define UART5_CC_R              (*((volatile unsigned long *)0x40011FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART6)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART6_DR_R              (*((volatile unsigned long *)0x40012000))
 #define UART6_RSR_R             (*((volatile unsigned long *)0x40012004))
 #define UART6_ECR_R             (*((volatile unsigned long *)0x40012004))
@@ -520,11 +520,11 @@
 #define UART6_PP_R              (*((volatile unsigned long *)0x40012FC0))
 #define UART6_CC_R              (*((volatile unsigned long *)0x40012FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // UART registers (UART7)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART7_DR_R              (*((volatile unsigned long *)0x40013000))
 #define UART7_RSR_R             (*((volatile unsigned long *)0x40013004))
 #define UART7_ECR_R             (*((volatile unsigned long *)0x40013004))
@@ -545,11 +545,11 @@
 #define UART7_PP_R              (*((volatile unsigned long *)0x40013FC0))
 #define UART7_CC_R              (*((volatile unsigned long *)0x40013FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // I2C registers (I2C0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C0_MSA_R              (*((volatile unsigned long *)0x40020000))
 #define I2C0_MCS_R              (*((volatile unsigned long *)0x40020004))
 #define I2C0_MDR_R              (*((volatile unsigned long *)0x40020008))
@@ -574,11 +574,11 @@
 #define I2C0_PP_R               (*((volatile unsigned long *)0x40020FC0))
 #define I2C0_PC_R               (*((volatile unsigned long *)0x40020FC4))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // I2C registers (I2C1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C1_MSA_R              (*((volatile unsigned long *)0x40021000))
 #define I2C1_MCS_R              (*((volatile unsigned long *)0x40021004))
 #define I2C1_MDR_R              (*((volatile unsigned long *)0x40021008))
@@ -603,11 +603,11 @@
 #define I2C1_PP_R               (*((volatile unsigned long *)0x40021FC0))
 #define I2C1_PC_R               (*((volatile unsigned long *)0x40021FC4))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // I2C registers (I2C2)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C2_MSA_R              (*((volatile unsigned long *)0x40022000))
 #define I2C2_MCS_R              (*((volatile unsigned long *)0x40022004))
 #define I2C2_MDR_R              (*((volatile unsigned long *)0x40022008))
@@ -632,11 +632,11 @@
 #define I2C2_PP_R               (*((volatile unsigned long *)0x40022FC0))
 #define I2C2_PC_R               (*((volatile unsigned long *)0x40022FC4))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // I2C registers (I2C3)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C3_MSA_R              (*((volatile unsigned long *)0x40023000))
 #define I2C3_MCS_R              (*((volatile unsigned long *)0x40023004))
 #define I2C3_MDR_R              (*((volatile unsigned long *)0x40023008))
@@ -661,11 +661,11 @@
 #define I2C3_PP_R               (*((volatile unsigned long *)0x40023FC0))
 #define I2C3_PC_R               (*((volatile unsigned long *)0x40023FC4))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTE)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTE_DATA_BITS_R  ((volatile unsigned long *)0x40024000)
 #define GPIO_PORTE_DATA_R       (*((volatile unsigned long *)0x400243FC))
 #define GPIO_PORTE_DIR_R        (*((volatile unsigned long *)0x40024400))
@@ -692,11 +692,11 @@
 #define GPIO_PORTE_ADCCTL_R     (*((volatile unsigned long *)0x40024530))
 #define GPIO_PORTE_DMACTL_R     (*((volatile unsigned long *)0x40024534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTF)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTF_DATA_BITS_R  ((volatile unsigned long *)0x40025000)
 #define GPIO_PORTF_DATA_R       (*((volatile unsigned long *)0x400253FC))
 #define GPIO_PORTF_DIR_R        (*((volatile unsigned long *)0x40025400))
@@ -723,11 +723,11 @@
 #define GPIO_PORTF_ADCCTL_R     (*((volatile unsigned long *)0x40025530))
 #define GPIO_PORTF_DMACTL_R     (*((volatile unsigned long *)0x40025534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // PWM registers (PWM0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM0_CTL_R              (*((volatile unsigned long *)0x40028000))
 #define PWM0_SYNC_R             (*((volatile unsigned long *)0x40028004))
 #define PWM0_ENABLE_R           (*((volatile unsigned long *)0x40028008))
@@ -815,11 +815,11 @@
 #define PWM0_3_FLTSTAT1_R       (*((volatile unsigned long *)0x40028988))
 #define PWM0_PP_R               (*((volatile unsigned long *)0x40028FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // PWM registers (PWM1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM1_CTL_R              (*((volatile unsigned long *)0x40029000))
 #define PWM1_SYNC_R             (*((volatile unsigned long *)0x40029004))
 #define PWM1_ENABLE_R           (*((volatile unsigned long *)0x40029008))
@@ -907,11 +907,11 @@
 #define PWM1_3_FLTSTAT1_R       (*((volatile unsigned long *)0x40029988))
 #define PWM1_PP_R               (*((volatile unsigned long *)0x40029FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // QEI registers (QEI0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI0_CTL_R              (*((volatile unsigned long *)0x4002C000))
 #define QEI0_STAT_R             (*((volatile unsigned long *)0x4002C004))
 #define QEI0_POS_R              (*((volatile unsigned long *)0x4002C008))
@@ -924,11 +924,11 @@
 #define QEI0_RIS_R              (*((volatile unsigned long *)0x4002C024))
 #define QEI0_ISC_R              (*((volatile unsigned long *)0x4002C028))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // QEI registers (QEI1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI1_CTL_R              (*((volatile unsigned long *)0x4002D000))
 #define QEI1_STAT_R             (*((volatile unsigned long *)0x4002D004))
 #define QEI1_POS_R              (*((volatile unsigned long *)0x4002D008))
@@ -941,11 +941,11 @@
 #define QEI1_RIS_R              (*((volatile unsigned long *)0x4002D024))
 #define QEI1_ISC_R              (*((volatile unsigned long *)0x4002D028))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER0_CFG_R            (*((volatile unsigned long *)0x40030000))
 #define TIMER0_TAMR_R           (*((volatile unsigned long *)0x40030004))
 #define TIMER0_TBMR_R           (*((volatile unsigned long *)0x40030008))
@@ -974,11 +974,11 @@
 #define TIMER0_TBPV_R           (*((volatile unsigned long *)0x40030068))
 #define TIMER0_PP_R             (*((volatile unsigned long *)0x40030FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER1_CFG_R            (*((volatile unsigned long *)0x40031000))
 #define TIMER1_TAMR_R           (*((volatile unsigned long *)0x40031004))
 #define TIMER1_TBMR_R           (*((volatile unsigned long *)0x40031008))
@@ -1007,11 +1007,11 @@
 #define TIMER1_TBPV_R           (*((volatile unsigned long *)0x40031068))
 #define TIMER1_PP_R             (*((volatile unsigned long *)0x40031FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER2)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER2_CFG_R            (*((volatile unsigned long *)0x40032000))
 #define TIMER2_TAMR_R           (*((volatile unsigned long *)0x40032004))
 #define TIMER2_TBMR_R           (*((volatile unsigned long *)0x40032008))
@@ -1040,11 +1040,11 @@
 #define TIMER2_TBPV_R           (*((volatile unsigned long *)0x40032068))
 #define TIMER2_PP_R             (*((volatile unsigned long *)0x40032FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER3)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER3_CFG_R            (*((volatile unsigned long *)0x40033000))
 #define TIMER3_TAMR_R           (*((volatile unsigned long *)0x40033004))
 #define TIMER3_TBMR_R           (*((volatile unsigned long *)0x40033008))
@@ -1073,11 +1073,11 @@
 #define TIMER3_TBPV_R           (*((volatile unsigned long *)0x40033068))
 #define TIMER3_PP_R             (*((volatile unsigned long *)0x40033FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER4)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER4_CFG_R            (*((volatile unsigned long *)0x40034000))
 #define TIMER4_TAMR_R           (*((volatile unsigned long *)0x40034004))
 #define TIMER4_TBMR_R           (*((volatile unsigned long *)0x40034008))
@@ -1106,11 +1106,11 @@
 #define TIMER4_TBPV_R           (*((volatile unsigned long *)0x40034068))
 #define TIMER4_PP_R             (*((volatile unsigned long *)0x40034FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (TIMER5)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER5_CFG_R            (*((volatile unsigned long *)0x40035000))
 #define TIMER5_TAMR_R           (*((volatile unsigned long *)0x40035004))
 #define TIMER5_TBMR_R           (*((volatile unsigned long *)0x40035008))
@@ -1139,11 +1139,11 @@
 #define TIMER5_TBPV_R           (*((volatile unsigned long *)0x40035068))
 #define TIMER5_PP_R             (*((volatile unsigned long *)0x40035FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER0_CFG_R           (*((volatile unsigned long *)0x40036000))
 #define WTIMER0_TAMR_R          (*((volatile unsigned long *)0x40036004))
 #define WTIMER0_TBMR_R          (*((volatile unsigned long *)0x40036008))
@@ -1172,11 +1172,11 @@
 #define WTIMER0_TBPV_R          (*((volatile unsigned long *)0x40036068))
 #define WTIMER0_PP_R            (*((volatile unsigned long *)0x40036FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER1_CFG_R           (*((volatile unsigned long *)0x40037000))
 #define WTIMER1_TAMR_R          (*((volatile unsigned long *)0x40037004))
 #define WTIMER1_TBMR_R          (*((volatile unsigned long *)0x40037008))
@@ -1205,11 +1205,11 @@
 #define WTIMER1_TBPV_R          (*((volatile unsigned long *)0x40037068))
 #define WTIMER1_PP_R            (*((volatile unsigned long *)0x40037FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // ADC registers (ADC0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC0_ACTSS_R            (*((volatile unsigned long *)0x40038000))
 #define ADC0_RIS_R              (*((volatile unsigned long *)0x40038004))
 #define ADC0_IM_R               (*((volatile unsigned long *)0x40038008))
@@ -1269,11 +1269,11 @@
 #define ADC0_PC_R               (*((volatile unsigned long *)0x40038FC4))
 #define ADC0_CC_R               (*((volatile unsigned long *)0x40038FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // ADC registers (ADC1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC1_ACTSS_R            (*((volatile unsigned long *)0x40039000))
 #define ADC1_RIS_R              (*((volatile unsigned long *)0x40039004))
 #define ADC1_IM_R               (*((volatile unsigned long *)0x40039008))
@@ -1333,11 +1333,11 @@
 #define ADC1_PC_R               (*((volatile unsigned long *)0x40039FC4))
 #define ADC1_CC_R               (*((volatile unsigned long *)0x40039FC8))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Comparator registers (COMP)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACMIS_R            (*((volatile unsigned long *)0x4003C000))
 #define COMP_ACRIS_R            (*((volatile unsigned long *)0x4003C004))
 #define COMP_ACINTEN_R          (*((volatile unsigned long *)0x4003C008))
@@ -1348,11 +1348,11 @@
 #define COMP_ACCTL1_R           (*((volatile unsigned long *)0x4003C044))
 #define COMP_PP_R               (*((volatile unsigned long *)0x4003CFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // CAN registers (CAN0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN0_CTL_R              (*((volatile unsigned long *)0x40040000))
 #define CAN0_STS_R              (*((volatile unsigned long *)0x40040004))
 #define CAN0_ERR_R              (*((volatile unsigned long *)0x40040008))
@@ -1391,11 +1391,11 @@
 #define CAN0_MSG1VAL_R          (*((volatile unsigned long *)0x40040160))
 #define CAN0_MSG2VAL_R          (*((volatile unsigned long *)0x40040164))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // CAN registers (CAN1)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN1_CTL_R              (*((volatile unsigned long *)0x40041000))
 #define CAN1_STS_R              (*((volatile unsigned long *)0x40041004))
 #define CAN1_ERR_R              (*((volatile unsigned long *)0x40041008))
@@ -1434,11 +1434,11 @@
 #define CAN1_MSG1VAL_R          (*((volatile unsigned long *)0x40041160))
 #define CAN1_MSG2VAL_R          (*((volatile unsigned long *)0x40041164))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER2)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER2_CFG_R           (*((volatile unsigned long *)0x4004C000))
 #define WTIMER2_TAMR_R          (*((volatile unsigned long *)0x4004C004))
 #define WTIMER2_TBMR_R          (*((volatile unsigned long *)0x4004C008))
@@ -1467,11 +1467,11 @@
 #define WTIMER2_TBPV_R          (*((volatile unsigned long *)0x4004C068))
 #define WTIMER2_PP_R            (*((volatile unsigned long *)0x4004CFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER3)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER3_CFG_R           (*((volatile unsigned long *)0x4004D000))
 #define WTIMER3_TAMR_R          (*((volatile unsigned long *)0x4004D004))
 #define WTIMER3_TBMR_R          (*((volatile unsigned long *)0x4004D008))
@@ -1500,11 +1500,11 @@
 #define WTIMER3_TBPV_R          (*((volatile unsigned long *)0x4004D068))
 #define WTIMER3_PP_R            (*((volatile unsigned long *)0x4004DFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER4)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER4_CFG_R           (*((volatile unsigned long *)0x4004E000))
 #define WTIMER4_TAMR_R          (*((volatile unsigned long *)0x4004E004))
 #define WTIMER4_TBMR_R          (*((volatile unsigned long *)0x4004E008))
@@ -1533,11 +1533,11 @@
 #define WTIMER4_TBPV_R          (*((volatile unsigned long *)0x4004E068))
 #define WTIMER4_PP_R            (*((volatile unsigned long *)0x4004EFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Timer registers (WTIMER5)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WTIMER5_CFG_R           (*((volatile unsigned long *)0x4004F000))
 #define WTIMER5_TAMR_R          (*((volatile unsigned long *)0x4004F004))
 #define WTIMER5_TBMR_R          (*((volatile unsigned long *)0x4004F008))
@@ -1566,11 +1566,11 @@
 #define WTIMER5_TBPV_R          (*((volatile unsigned long *)0x4004F068))
 #define WTIMER5_PP_R            (*((volatile unsigned long *)0x4004FFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Univeral Serial Bus registers (USB0)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB0_FADDR_R            (*((volatile unsigned char *)0x40050000))
 #define USB0_POWER_R            (*((volatile unsigned char *)0x40050001))
 #define USB0_TXIS_R             (*((volatile unsigned short *)0x40050002))
@@ -1753,11 +1753,11 @@
 #define USB0_DMASEL_R           (*((volatile unsigned long *)0x40050450))
 #define USB0_PP_R               (*((volatile unsigned long *)0x40050FC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTA AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTA_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x40058000)
 #define GPIO_PORTA_AHB_DATA_R   (*((volatile unsigned long *)0x400583FC))
@@ -1785,11 +1785,11 @@
 #define GPIO_PORTA_AHB_ADCCTL_R (*((volatile unsigned long *)0x40058530))
 #define GPIO_PORTA_AHB_DMACTL_R (*((volatile unsigned long *)0x40058534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTB AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTB_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x40059000)
 #define GPIO_PORTB_AHB_DATA_R   (*((volatile unsigned long *)0x400593FC))
@@ -1817,11 +1817,11 @@
 #define GPIO_PORTB_AHB_ADCCTL_R (*((volatile unsigned long *)0x40059530))
 #define GPIO_PORTB_AHB_DMACTL_R (*((volatile unsigned long *)0x40059534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTC AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTC_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x4005A000)
 #define GPIO_PORTC_AHB_DATA_R   (*((volatile unsigned long *)0x4005A3FC))
@@ -1849,11 +1849,11 @@
 #define GPIO_PORTC_AHB_ADCCTL_R (*((volatile unsigned long *)0x4005A530))
 #define GPIO_PORTC_AHB_DMACTL_R (*((volatile unsigned long *)0x4005A534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTD AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTD_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x4005B000)
 #define GPIO_PORTD_AHB_DATA_R   (*((volatile unsigned long *)0x4005B3FC))
@@ -1881,11 +1881,11 @@
 #define GPIO_PORTD_AHB_ADCCTL_R (*((volatile unsigned long *)0x4005B530))
 #define GPIO_PORTD_AHB_DMACTL_R (*((volatile unsigned long *)0x4005B534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTE AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTE_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x4005C000)
 #define GPIO_PORTE_AHB_DATA_R   (*((volatile unsigned long *)0x4005C3FC))
@@ -1913,11 +1913,11 @@
 #define GPIO_PORTE_AHB_ADCCTL_R (*((volatile unsigned long *)0x4005C530))
 #define GPIO_PORTE_AHB_DMACTL_R (*((volatile unsigned long *)0x4005C534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // GPIO registers (PORTF AHB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PORTF_AHB_DATA_BITS_R                                            \
                                 ((volatile unsigned long *)0x4005D000)
 #define GPIO_PORTF_AHB_DATA_R   (*((volatile unsigned long *)0x4005D3FC))
@@ -1945,11 +1945,11 @@
 #define GPIO_PORTF_AHB_ADCCTL_R (*((volatile unsigned long *)0x4005D530))
 #define GPIO_PORTF_AHB_DMACTL_R (*((volatile unsigned long *)0x4005D534))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // EEPROM registers (EEPROM)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EESIZE_R         (*((volatile unsigned long *)0x400AF000))
 #define EEPROM_EEBLOCK_R        (*((volatile unsigned long *)0x400AF004))
 #define EEPROM_EEOFFSET_R       (*((volatile unsigned long *)0x400AF008))
@@ -1967,21 +1967,21 @@
 #define EEPROM_EEDBGME_R        (*((volatile unsigned long *)0x400AF080))
 #define EEPROM_PP_R             (*((volatile unsigned long *)0x400AFFC0))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // System Exception Module registers (SYSEXC)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSEXC_RIS_R            (*((volatile unsigned long *)0x400F9000))
 #define SYSEXC_IM_R             (*((volatile unsigned long *)0x400F9004))
 #define SYSEXC_MIS_R            (*((volatile unsigned long *)0x400F9008))
 #define SYSEXC_IC_R             (*((volatile unsigned long *)0x400F900C))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Hibernation module registers (HIB)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCC_R              (*((volatile unsigned long *)0x400FC000))
 #define HIB_RTCM0_R             (*((volatile unsigned long *)0x400FC004))
 #define HIB_RTCLD_R             (*((volatile unsigned long *)0x400FC00C))
@@ -1994,11 +1994,11 @@
 #define HIB_RTCSS_R             (*((volatile unsigned long *)0x400FC028))
 #define HIB_DATA_R              (*((volatile unsigned long *)0x400FC030))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // FLASH registers (FLASH CTRL)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FMA_R             (*((volatile unsigned long *)0x400FD000))
 #define FLASH_FMD_R             (*((volatile unsigned long *)0x400FD004))
 #define FLASH_FMC_R             (*((volatile unsigned long *)0x400FD008))
@@ -2026,11 +2026,11 @@
 #define FLASH_FMPPE2_R          (*((volatile unsigned long *)0x400FE408))
 #define FLASH_FMPPE3_R          (*((volatile unsigned long *)0x400FE40C))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // System Control registers (SYSCTL)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DID0_R           (*((volatile unsigned long *)0x400FE000))
 #define SYSCTL_DID1_R           (*((volatile unsigned long *)0x400FE004))
 #define SYSCTL_DC0_R            (*((volatile unsigned long *)0x400FE008))
@@ -2169,11 +2169,11 @@
 #define SYSCTL_PREEPROM_R       (*((volatile unsigned long *)0x400FEA58))
 #define SYSCTL_PRWTIMER_R       (*((volatile unsigned long *)0x400FEA5C))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Micro Direct Memory Access registers (UDMA)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_STAT_R             (*((volatile unsigned long *)0x400FF000))
 #define UDMA_CFG_R              (*((volatile unsigned long *)0x400FF004))
 #define UDMA_CTLBASE_R          (*((volatile unsigned long *)0x400FF008))
@@ -2198,22 +2198,22 @@
 #define UDMA_CHMAP2_R           (*((volatile unsigned long *)0x400FF518))
 #define UDMA_CHMAP3_R           (*((volatile unsigned long *)0x400FF51C))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // Micro Direct Memory Access (uDMA) offsets (UDMA)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_SRCENDP            0x00000000  // DMA Channel Source Address End
                                             // Pointer
 #define UDMA_DSTENDP            0x00000004  // DMA Channel Destination Address
                                             // End Pointer
 #define UDMA_CHCTL              0x00000008  // DMA Channel Control Word
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // NVIC registers (NVIC)
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTLR_R            (*((volatile unsigned long *)0xE000E008))
 #define NVIC_ST_CTRL_R          (*((volatile unsigned long *)0xE000E010))
 #define NVIC_ST_RELOAD_R        (*((volatile unsigned long *)0xE000E014))
@@ -2314,108 +2314,108 @@
 #define NVIC_FPCA_R             (*((volatile unsigned long *)0xE000EF38))
 #define NVIC_FPDSC_R            (*((volatile unsigned long *)0xE000EF3C))
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_LOAD_M              0xFFFFFFFF  // Watchdog Load Value
 #define WDT_LOAD_S              0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_VALUE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_VALUE_M             0xFFFFFFFF  // Watchdog Value
 #define WDT_VALUE_S             0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_CTL_WRC             0x80000000  // Write Complete
 #define WDT_CTL_INTTYPE         0x00000004  // Watchdog Interrupt Type
 #define WDT_CTL_RESEN           0x00000002  // Watchdog Reset Enable
 #define WDT_CTL_INTEN           0x00000001  // Watchdog Interrupt Enable
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_ICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_ICR_M               0xFFFFFFFF  // Watchdog Interrupt Clear
 #define WDT_ICR_S               0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_RIS_WDTRIS          0x00000001  // Watchdog Raw Interrupt Status
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_MIS_WDTMIS          0x00000001  // Watchdog Masked Interrupt Status
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_TEST register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_TEST_STALL          0x00000100  // Watchdog Stall Enable
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the WDT_O_LOCK register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define WDT_LOCK_M              0xFFFFFFFF  // Watchdog Lock
 #define WDT_LOCK_UNLOCKED       0x00000000  // Unlocked
 #define WDT_LOCK_LOCKED         0x00000001  // Locked
 #define WDT_LOCK_UNLOCK         0x1ACCE551  // Unlocks the watchdog timer
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_O_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_IM_GPIO_M          0x000000FF  // GPIO Interrupt Mask Enable
 #define GPIO_IM_GPIO_S          0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_RIS_GPIO_M         0x000000FF  // GPIO Interrupt Raw Status
 #define GPIO_RIS_GPIO_S         0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_O_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_MIS_GPIO_M         0x000000FF  // GPIO Masked Interrupt Status
 #define GPIO_MIS_GPIO_S         0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_O_ICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_ICR_GPIO_M         0x000000FF  // GPIO Interrupt Clear
 #define GPIO_ICR_GPIO_S         0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_O_LOCK register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_LOCK_M             0xFFFFFFFF  // GPIO Lock
 #define GPIO_LOCK_UNLOCKED      0x00000000  // The GPIOCR register is unlocked
                                             // and may be modified
@@ -2423,12 +2423,12 @@
                                             // and may not be modified
 #define GPIO_LOCK_KEY           0x4C4F434B  // Unlocks the GPIO_CR register
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port A.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PA7_M         0xF0000000  // PA7 mask
 #define GPIO_PCTL_PA7_I2C1SDA   0x30000000  // I2C1SDA on PA7
 #define GPIO_PCTL_PA7_M1PWM3    0x50000000  // M1PWM3 on PA7
@@ -2450,12 +2450,12 @@
 #define GPIO_PCTL_PA0_U0RX      0x00000001  // U0RX on PA0
 #define GPIO_PCTL_PA0_CAN1RX    0x00000008  // CAN1RX on PA0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port B.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PB7_M         0xF0000000  // PB7 mask
 #define GPIO_PCTL_PB7_SSI2TX    0x20000000  // SSI2TX on PB7
 #define GPIO_PCTL_PB7_M0PWM1    0x40000000  // M0PWM1 on PB7
@@ -2489,12 +2489,12 @@
 #define GPIO_PCTL_PB0_U1RX      0x00000001  // U1RX on PB0
 #define GPIO_PCTL_PB0_T2CCP0    0x00000007  // T2CCP0 on PB0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port C.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PC7_M         0xF0000000  // PC7 mask
 #define GPIO_PCTL_PC7_U3TX      0x10000000  // U3TX on PC7
 #define GPIO_PCTL_PC7_WT1CCP1   0x70000000  // WT1CCP1 on PC7
@@ -2531,12 +2531,12 @@
 #define GPIO_PCTL_PC0_TCK       0x00000001  // TCK on PC0
 #define GPIO_PCTL_PC0_T4CCP0    0x00000007  // T4CCP0 on PC0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port D.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PD7_M         0xF0000000  // PD7 mask
 #define GPIO_PCTL_PD7_U2TX      0x10000000  // U2TX on PD7
 #define GPIO_PCTL_PD7_PHB0      0x60000000  // PHB0 on PD7
@@ -2586,12 +2586,12 @@
 #define GPIO_PCTL_PD0_M1PWM0    0x00000005  // M1PWM0 on PD0
 #define GPIO_PCTL_PD0_WT2CCP0   0x00000007  // WT2CCP0 on PD0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port E.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PE5_M         0x00F00000  // PE5 mask
 #define GPIO_PCTL_PE5_AIN8      0x00000000  // AIN8 on PE5
 #define GPIO_PCTL_PE5_U5TX      0x00100000  // U5TX on PE5
@@ -2617,12 +2617,12 @@
 #define GPIO_PCTL_PE0_AIN3      0x00000000  // AIN3 on PE0
 #define GPIO_PCTL_PE0_U7RX      0x00000001  // U7RX on PE0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the GPIO_PCTL register for
 // port F.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define GPIO_PCTL_PF4_M         0x000F0000  // PF4 mask
 #define GPIO_PCTL_PF4_M1FAULT0  0x00050000  // M1FAULT0 on PF4
 #define GPIO_PCTL_PF4_IDX0      0x00060000  // IDX0 on PF4
@@ -2658,11 +2658,11 @@
 #define GPIO_PCTL_PF0_NMI       0x00000008  // NMI on PF0
 #define GPIO_PCTL_PF0_C0O       0x00000009  // C0O on PF0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_CR0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_CR0_SCR_M           0x0000FF00  // SSI Serial Clock Rate
 #define SSI_CR0_SPH             0x00000080  // SSI Serial Clock Phase
 #define SSI_CR0_SPO             0x00000040  // SSI Serial Clock Polarity
@@ -2687,11 +2687,11 @@
 #define SSI_CR0_DSS_16          0x0000000F  // 16-bit data
 #define SSI_CR0_SCR_S           8
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_CR1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_CR1_EOT             0x00000010  // End of Transmission
 #define SSI_CR1_SOD             0x00000008  // SSI Slave Mode Output Disable
 #define SSI_CR1_MS              0x00000004  // SSI Master/Slave Select
@@ -2699,38 +2699,38 @@
                                             // Enable
 #define SSI_CR1_LBM             0x00000001  // SSI Loopback Mode
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_DR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_DR_DATA_M           0x0000FFFF  // SSI Receive/Transmit Data
 #define SSI_DR_DATA_S           0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_SR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_SR_BSY              0x00000010  // SSI Busy Bit
 #define SSI_SR_RFF              0x00000008  // SSI Receive FIFO Full
 #define SSI_SR_RNE              0x00000004  // SSI Receive FIFO Not Empty
 #define SSI_SR_TNF              0x00000002  // SSI Transmit FIFO Not Full
 #define SSI_SR_TFE              0x00000001  // SSI Transmit FIFO Empty
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_CPSR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_CPSR_CPSDVSR_M      0x000000FF  // SSI Clock Prescale Divisor
 #define SSI_CPSR_CPSDVSR_S      0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_IM_TXIM             0x00000008  // SSI Transmit FIFO Interrupt Mask
 #define SSI_IM_RXIM             0x00000004  // SSI Receive FIFO Interrupt Mask
 #define SSI_IM_RTIM             0x00000002  // SSI Receive Time-Out Interrupt
@@ -2738,11 +2738,11 @@
 #define SSI_IM_RORIM            0x00000001  // SSI Receive Overrun Interrupt
                                             // Mask
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_RIS_TXRIS           0x00000008  // SSI Transmit FIFO Raw Interrupt
                                             // Status
 #define SSI_RIS_RXRIS           0x00000004  // SSI Receive FIFO Raw Interrupt
@@ -2752,11 +2752,11 @@
 #define SSI_RIS_RORRIS          0x00000001  // SSI Receive Overrun Raw
                                             // Interrupt Status
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_MIS_TXMIS           0x00000008  // SSI Transmit FIFO Masked
                                             // Interrupt Status
 #define SSI_MIS_RXMIS           0x00000004  // SSI Receive FIFO Masked
@@ -2766,40 +2766,40 @@
 #define SSI_MIS_RORMIS          0x00000001  // SSI Receive Overrun Masked
                                             // Interrupt Status
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_ICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_ICR_RTIC            0x00000002  // SSI Receive Time-Out Interrupt
                                             // Clear
 #define SSI_ICR_RORIC           0x00000001  // SSI Receive Overrun Interrupt
                                             // Clear
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_DMACTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_DMACTL_TXDMAE       0x00000002  // Transmit DMA Enable
 #define SSI_DMACTL_RXDMAE       0x00000001  // Receive DMA Enable
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the SSI_O_CC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SSI_CC_CS_M             0x0000000F  // SSI Baud Clock Source
 #define SSI_CC_CS_SYSPLL        0x00000000  // Either the system clock (if the
                                             // PLL bypass is in effect) or the
                                             // PLL output (default)
 #define SSI_CC_CS_PIOSC         0x00000005  // PIOSC
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_DR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_DR_OE              0x00000800  // UART Overrun Error
 #define UART_DR_BE              0x00000400  // UART Break Error
 #define UART_DR_PE              0x00000200  // UART Parity Error
@@ -2807,29 +2807,29 @@
 #define UART_DR_DATA_M          0x000000FF  // Data Transmitted or Received
 #define UART_DR_DATA_S          0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_RSR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_RSR_OE             0x00000008  // UART Overrun Error
 #define UART_RSR_BE             0x00000004  // UART Break Error
 #define UART_RSR_PE             0x00000002  // UART Parity Error
 #define UART_RSR_FE             0x00000001  // UART Framing Error
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_ECR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_ECR_DATA_M         0x000000FF  // Error Clear
 #define UART_ECR_DATA_S         0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_FR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_FR_TXFE            0x00000080  // UART Transmit FIFO Empty
 #define UART_FR_RXFF            0x00000040  // UART Receive FIFO Full
 #define UART_FR_TXFF            0x00000020  // UART Transmit FIFO Full
@@ -2837,35 +2837,35 @@
 #define UART_FR_BUSY            0x00000008  // UART Busy
 #define UART_FR_CTS             0x00000001  // Clear To Send
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_ILPR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_ILPR_ILPDVSR_M     0x000000FF  // IrDA Low-Power Divisor
 #define UART_ILPR_ILPDVSR_S     0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_IBRD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_IBRD_DIVINT_M      0x0000FFFF  // Integer Baud-Rate Divisor
 #define UART_IBRD_DIVINT_S      0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_FBRD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_FBRD_DIVFRAC_M     0x0000003F  // Fractional Baud-Rate Divisor
 #define UART_FBRD_DIVFRAC_S     0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_LCRH register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_LCRH_SPS           0x00000080  // UART Stick Parity Select
 #define UART_LCRH_WLEN_M        0x00000060  // UART Word Length
 #define UART_LCRH_WLEN_5        0x00000000  // 5 bits (default)
@@ -2878,11 +2878,11 @@
 #define UART_LCRH_PEN           0x00000002  // UART Parity Enable
 #define UART_LCRH_BRK           0x00000001  // UART Send Break
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_CTL_CTSEN          0x00008000  // Enable Clear To Send
 #define UART_CTL_RTSEN          0x00004000  // Enable Request to Send
 #define UART_CTL_RTS            0x00000800  // Request to Send
@@ -2896,11 +2896,11 @@
 #define UART_CTL_SIREN          0x00000002  // UART SIR Enable
 #define UART_CTL_UARTEN         0x00000001  // UART Enable
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_IFLS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_IFLS_RX_M          0x00000038  // UART Receive Interrupt FIFO
                                             // Level Select
 #define UART_IFLS_RX1_8         0x00000000  // RX FIFO >= 1/8 full
@@ -2916,11 +2916,11 @@
 #define UART_IFLS_TX6_8         0x00000003  // TX FIFO <= 3/4 full
 #define UART_IFLS_TX7_8         0x00000004  // TX FIFO <= 7/8 full
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_IM_9BITIM          0x00001000  // 9-Bit Mode Interrupt Mask
 #define UART_IM_OEIM            0x00000400  // UART Overrun Error Interrupt
                                             // Mask
@@ -2935,11 +2935,11 @@
 #define UART_IM_CTSMIM          0x00000002  // UART Clear to Send Modem
                                             // Interrupt Mask
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_RIS_9BITRIS        0x00001000  // 9-Bit Mode Raw Interrupt Status
 #define UART_RIS_OERIS          0x00000400  // UART Overrun Error Raw Interrupt
                                             // Status
@@ -2958,11 +2958,11 @@
 #define UART_RIS_CTSRIS         0x00000002  // UART Clear to Send Modem Raw
                                             // Interrupt Status
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_MIS_9BITMIS        0x00001000  // 9-Bit Mode Masked Interrupt
                                             // Status
 #define UART_MIS_OEMIS          0x00000400  // UART Overrun Error Masked
@@ -2982,11 +2982,11 @@
 #define UART_MIS_CTSMIS         0x00000002  // UART Clear to Send Modem Masked
                                             // Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_ICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_ICR_9BITIC         0x00001000  // 9-Bit Mode Interrupt Clear
 #define UART_ICR_OEIC           0x00000400  // Overrun Error Interrupt Clear
 #define UART_ICR_BEIC           0x00000200  // Break Error Interrupt Clear
@@ -2998,65 +2998,65 @@
 #define UART_ICR_CTSMIC         0x00000002  // UART Clear to Send Modem
                                             // Interrupt Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_DMACTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_DMACTL_DMAERR      0x00000004  // DMA on Error
 #define UART_DMACTL_TXDMAE      0x00000002  // Transmit DMA Enable
 #define UART_DMACTL_RXDMAE      0x00000001  // Receive DMA Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_9BITADDR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_9BITADDR_9BITEN    0x00008000  // Enable 9-Bit Mode
 #define UART_9BITADDR_ADDR_M    0x000000FF  // Self Address for 9-Bit Mode
 #define UART_9BITADDR_ADDR_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_9BITAMASK
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_9BITAMASK_MASK_M   0x000000FF  // Self Address Mask for 9-Bit Mode
 #define UART_9BITAMASK_MASK_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_PP_NB              0x00000002  // 9-Bit Support
 #define UART_PP_SC              0x00000001  // Smart Card Support
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UART_O_CC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UART_CC_CS_M            0x0000000F  // UART Baud Clock Source
 #define UART_CC_CS_SYSCLK       0x00000000  // The system clock (default)
 #define UART_CC_CS_PIOSC        0x00000005  // PIOSC
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MSA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MSA_SA_M            0x000000FE  // I2C Slave Address
 #define I2C_MSA_RS              0x00000001  // Receive not send
 #define I2C_MSA_SA_S            1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MCS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MCS_CLKTO           0x00000080  // Clock Timeout Error
 #define I2C_MCS_BUSBSY          0x00000040  // Bus Busy
 #define I2C_MCS_IDLE            0x00000020  // I2C Idle
@@ -3071,88 +3071,88 @@
 #define I2C_MCS_RUN             0x00000001  // I2C Master Enable
 #define I2C_MCS_BUSY            0x00000001  // I2C Busy
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MDR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MDR_DATA_M          0x000000FF  // Data Transferred
 #define I2C_MDR_DATA_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MTPR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MTPR_HS             0x00000080  // High-Speed Enable
 #define I2C_MTPR_TPR_M          0x0000007F  // Timer Period
 #define I2C_MTPR_TPR_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MIMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MIMR_CLKIM          0x00000002  // Clock Timeout Interrupt Mask
 #define I2C_MIMR_IM             0x00000001  // Master Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MRIS_CLKRIS         0x00000002  // Clock Timeout Raw Interrupt
                                             // Status
 #define I2C_MRIS_RIS            0x00000001  // Master Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MMIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MMIS_CLKMIS         0x00000002  // Clock Timeout Masked Interrupt
                                             // Status
 #define I2C_MMIS_MIS            0x00000001  // Masked Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MICR_CLKIC          0x00000002  // Clock Timeout Interrupt Clear
 #define I2C_MICR_IC             0x00000001  // Master Interrupt Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MCR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MCR_GFE             0x00000040  // I2C Glitch Filter Enable
 #define I2C_MCR_SFE             0x00000020  // I2C Slave Function Enable
 #define I2C_MCR_MFE             0x00000010  // I2C Master Function Enable
 #define I2C_MCR_LPBK            0x00000001  // I2C Loopback
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MCLKOCNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MCLKOCNT_CNTL_M     0x000000FF  // I2C Master Count
 #define I2C_MCLKOCNT_CNTL_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MBMON register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MBMON_SDA           0x00000002  // I2C SDA Status
 #define I2C_MBMON_SCL           0x00000001  // I2C SCL Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_MCR2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_MCR2_GFPW_M         0x00000070  // I2C Glitch Filter Pulse Width
 #define I2C_MCR2_GFPW_BYPASS    0x00000000  // Bypass
 #define I2C_MCR2_GFPW_1         0x00000010  // 1 clock
@@ -3163,129 +3163,129 @@
 #define I2C_MCR2_GFPW_16        0x00000060  // 16 clocks
 #define I2C_MCR2_GFPW_32        0x00000070  // 32 clocks
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SOAR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SOAR_OAR_M          0x0000007F  // I2C Slave Own Address
 #define I2C_SOAR_OAR_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SCSR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SCSR_OAR2SEL        0x00000008  // OAR2 Address Matched
 #define I2C_SCSR_FBR            0x00000004  // First Byte Received
 #define I2C_SCSR_TREQ           0x00000002  // Transmit Request
 #define I2C_SCSR_DA             0x00000001  // Device Active
 #define I2C_SCSR_RREQ           0x00000001  // Receive Request
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SDR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SDR_DATA_M          0x000000FF  // Data for Transfer
 #define I2C_SDR_DATA_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SIMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SIMR_STOPIM         0x00000004  // Stop Condition Interrupt Mask
 #define I2C_SIMR_STARTIM        0x00000002  // Start Condition Interrupt Mask
 #define I2C_SIMR_DATAIM         0x00000001  // Data Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SRIS_STOPRIS        0x00000004  // Stop Condition Raw Interrupt
                                             // Status
 #define I2C_SRIS_STARTRIS       0x00000002  // Start Condition Raw Interrupt
                                             // Status
 #define I2C_SRIS_DATARIS        0x00000001  // Data Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SMIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SMIS_STOPMIS        0x00000004  // Stop Condition Masked Interrupt
                                             // Status
 #define I2C_SMIS_STARTMIS       0x00000002  // Start Condition Masked Interrupt
                                             // Status
 #define I2C_SMIS_DATAMIS        0x00000001  // Data Masked Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SICR_STOPIC         0x00000004  // Stop Condition Interrupt Clear
 #define I2C_SICR_STARTIC        0x00000002  // Start Condition Interrupt Clear
 #define I2C_SICR_DATAIC         0x00000001  // Data Interrupt Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SOAR2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SOAR2_OAR2EN        0x00000080  // I2C Slave Own Address 2 Enable
 #define I2C_SOAR2_OAR2_M        0x0000007F  // I2C Slave Own Address 2
 #define I2C_SOAR2_OAR2_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_SACKCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_SACKCTL_ACKOVAL     0x00000002  // I2C Slave ACK Override Value
 #define I2C_SACKCTL_ACKOEN      0x00000001  // I2C Slave ACK Override Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define I2C_PP_HS               0x00000001  // High-Speed Capable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the I2C_O_PC register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define I2C_PC_HS               0x00000001  // High-Speed Capable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_CTL register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define PWM_CTL_GLOBALSYNC3     0x00000008  // Update PWM Generator 3
 #define PWM_CTL_GLOBALSYNC2     0x00000004  // Update PWM Generator 2
 #define PWM_CTL_GLOBALSYNC1     0x00000002  // Update PWM Generator 1
 #define PWM_CTL_GLOBALSYNC0     0x00000001  // Update PWM Generator 0
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_SYNC register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define PWM_SYNC_SYNC3          0x00000008  // Reset Generator 3 Counter
 #define PWM_SYNC_SYNC2          0x00000004  // Reset Generator 2 Counter
 #define PWM_SYNC_SYNC1          0x00000002  // Reset Generator 1 Counter
 #define PWM_SYNC_SYNC0          0x00000001  // Reset Generator 0 Counter
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_ENABLE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_ENABLE_PWM7EN       0x00000080  // PWM7 Output Enable
 #define PWM_ENABLE_PWM6EN       0x00000040  // PWM6 Output Enable
 #define PWM_ENABLE_PWM5EN       0x00000020  // PWM5 Output Enable
@@ -3295,11 +3295,11 @@
 #define PWM_ENABLE_PWM1EN       0x00000002  // PWM1 Output Enable
 #define PWM_ENABLE_PWM0EN       0x00000001  // PWM0 Output Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_INVERT register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define PWM_INVERT_PWM7INV      0x00000080  // Invert PWM7 Signal
 #define PWM_INVERT_PWM6INV      0x00000040  // Invert PWM6 Signal
 #define PWM_INVERT_PWM5INV      0x00000020  // Invert PWM5 Signal
@@ -3309,11 +3309,11 @@
 #define PWM_INVERT_PWM1INV      0x00000002  // Invert PWM1 Signal
 #define PWM_INVERT_PWM0INV      0x00000001  // Invert PWM0 Signal
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_FAULT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_FAULT_FAULT7        0x00000080  // PWM7 Fault
 #define PWM_FAULT_FAULT6        0x00000040  // PWM6 Fault
 #define PWM_FAULT_FAULT5        0x00000020  // PWM5 Fault
@@ -3323,11 +3323,11 @@
 #define PWM_FAULT_FAULT1        0x00000002  // PWM1 Fault
 #define PWM_FAULT_FAULT0        0x00000001  // PWM0 Fault
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_INTEN_INTFAULT1     0x00020000  // Interrupt Fault 1
 #define PWM_INTEN_INTFAULT0     0x00010000  // Interrupt Fault 0
 #define PWM_INTEN_INTPWM3       0x00000008  // PWM3 Interrupt Enable
@@ -3335,11 +3335,11 @@
 #define PWM_INTEN_INTPWM1       0x00000002  // PWM1 Interrupt Enable
 #define PWM_INTEN_INTPWM0       0x00000001  // PWM0 Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_RIS_INTFAULT1       0x00020000  // Interrupt Fault PWM 1
 #define PWM_RIS_INTFAULT0       0x00010000  // Interrupt Fault PWM 0
 #define PWM_RIS_INTPWM3         0x00000008  // PWM3 Interrupt Asserted
@@ -3347,11 +3347,11 @@
 #define PWM_RIS_INTPWM1         0x00000002  // PWM1 Interrupt Asserted
 #define PWM_RIS_INTPWM0         0x00000001  // PWM0 Interrupt Asserted
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_ISC_INTFAULT1       0x00020000  // FAULT1 Interrupt Asserted
 #define PWM_ISC_INTFAULT0       0x00010000  // FAULT0 Interrupt Asserted
 #define PWM_ISC_INTPWM3         0x00000008  // PWM3 Interrupt Status
@@ -3359,19 +3359,19 @@
 #define PWM_ISC_INTPWM1         0x00000002  // PWM1 Interrupt Status
 #define PWM_ISC_INTPWM0         0x00000001  // PWM0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_STATUS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_STATUS_FAULT1       0x00000002  // Generator 1 Fault Status
 #define PWM_STATUS_FAULT0       0x00000001  // Generator 0 Fault Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_FAULTVAL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_FAULTVAL_PWM7       0x00000080  // PWM7 Fault Value
 #define PWM_FAULTVAL_PWM6       0x00000040  // PWM6 Fault Value
 #define PWM_FAULTVAL_PWM5       0x00000020  // PWM5 Fault Value
@@ -3381,11 +3381,11 @@
 #define PWM_FAULTVAL_PWM1       0x00000002  // PWM1 Fault Value
 #define PWM_FAULTVAL_PWM0       0x00000001  // PWM0 Fault Value
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_ENUPD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_ENUPD_ENUPD7_M      0x0000C000  // PWM7 Enable Update Mode
 #define PWM_ENUPD_ENUPD7_IMM    0x00000000  // Immediate
 #define PWM_ENUPD_ENUPD7_LSYNC  0x00008000  // Locally Synchronized
@@ -3419,11 +3419,11 @@
 #define PWM_ENUPD_ENUPD0_LSYNC  0x00000002  // Locally Synchronized
 #define PWM_ENUPD_ENUPD0_GSYNC  0x00000003  // Globally Synchronized
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_CTL_LATCH         0x00040000  // Latch Fault Input
 #define PWM_0_CTL_MINFLTPER     0x00020000  // Minimum Fault Period
 #define PWM_0_CTL_FLTSRC        0x00010000  // Fault Condition Source
@@ -3455,11 +3455,11 @@
 #define PWM_0_CTL_MODE          0x00000002  // Counter Mode
 #define PWM_0_CTL_ENABLE        0x00000001  // PWM Block Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_INTEN_TRCMPBD     0x00002000  // Trigger for Counter=Comparator B
                                             // Down
 #define PWM_0_INTEN_TRCMPBU     0x00001000  // Trigger for Counter=Comparator B
@@ -3481,11 +3481,11 @@
 #define PWM_0_INTEN_INTCNTLOAD  0x00000002  // Interrupt for Counter=Load
 #define PWM_0_INTEN_INTCNTZERO  0x00000001  // Interrupt for Counter=0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_RIS_INTCMPBD      0x00000020  // Comparator B Down Interrupt
                                             // Status
 #define PWM_0_RIS_INTCMPBU      0x00000010  // Comparator B Up Interrupt Status
@@ -3495,11 +3495,11 @@
 #define PWM_0_RIS_INTCNTLOAD    0x00000002  // Counter=Load Interrupt Status
 #define PWM_0_RIS_INTCNTZERO    0x00000001  // Counter=0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_ISC_INTCMPBD      0x00000020  // Comparator B Down Interrupt
 #define PWM_0_ISC_INTCMPBU      0x00000010  // Comparator B Up Interrupt
 #define PWM_0_ISC_INTCMPAD      0x00000008  // Comparator A Down Interrupt
@@ -3507,43 +3507,43 @@
 #define PWM_0_ISC_INTCNTLOAD    0x00000002  // Counter=Load Interrupt
 #define PWM_0_ISC_INTCNTZERO    0x00000001  // Counter=0 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_LOAD_M            0x0000FFFF  // Counter Load Value
 #define PWM_0_LOAD_S            0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_COUNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_COUNT_M           0x0000FFFF  // Counter Value
 #define PWM_0_COUNT_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_CMPA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_CMPA_M            0x0000FFFF  // Comparator A Value
 #define PWM_0_CMPA_S            0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_CMPB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_CMPB_M            0x0000FFFF  // Comparator B Value
 #define PWM_0_CMPB_S            0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_GENA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_GENA_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_0_GENA_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -3583,11 +3583,11 @@
 #define PWM_0_GENA_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_0_GENA_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_GENB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_GENB_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_0_GENB_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -3627,44 +3627,44 @@
 #define PWM_0_GENB_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_0_GENB_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_DBCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_DBCTL_ENABLE      0x00000001  // Dead-Band Generator Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_DBRISE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_DBRISE_DELAY_M    0x00000FFF  // Dead-Band Rise Delay
 #define PWM_0_DBRISE_DELAY_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_DBFALL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_DBFALL_DELAY_M    0x00000FFF  // Dead-Band Fall Delay
 #define PWM_0_DBFALL_DELAY_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_FLTSRC0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_FLTSRC0_FAULT1    0x00000002  // Fault1 Input
 #define PWM_0_FLTSRC0_FAULT0    0x00000001  // Fault0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_FLTSRC1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_FLTSRC1_DCMP7     0x00000080  // Digital Comparator 7
 #define PWM_0_FLTSRC1_DCMP6     0x00000040  // Digital Comparator 6
 #define PWM_0_FLTSRC1_DCMP5     0x00000020  // Digital Comparator 5
@@ -3674,20 +3674,20 @@
 #define PWM_0_FLTSRC1_DCMP1     0x00000002  // Digital Comparator 1
 #define PWM_0_FLTSRC1_DCMP0     0x00000001  // Digital Comparator 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_MINFLTPER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_MINFLTPER_M       0x0000FFFF  // Minimum Fault Period
 #define PWM_0_MINFLTPER_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_CTL_LATCH         0x00040000  // Latch Fault Input
 #define PWM_1_CTL_MINFLTPER     0x00020000  // Minimum Fault Period
 #define PWM_1_CTL_FLTSRC        0x00010000  // Fault Condition Source
@@ -3719,11 +3719,11 @@
 #define PWM_1_CTL_MODE          0x00000002  // Counter Mode
 #define PWM_1_CTL_ENABLE        0x00000001  // PWM Block Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_INTEN_TRCMPBD     0x00002000  // Trigger for Counter=Comparator B
                                             // Down
 #define PWM_1_INTEN_TRCMPBU     0x00001000  // Trigger for Counter=Comparator B
@@ -3745,11 +3745,11 @@
 #define PWM_1_INTEN_INTCNTLOAD  0x00000002  // Interrupt for Counter=Load
 #define PWM_1_INTEN_INTCNTZERO  0x00000001  // Interrupt for Counter=0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_RIS_INTCMPBD      0x00000020  // Comparator B Down Interrupt
                                             // Status
 #define PWM_1_RIS_INTCMPBU      0x00000010  // Comparator B Up Interrupt Status
@@ -3759,11 +3759,11 @@
 #define PWM_1_RIS_INTCNTLOAD    0x00000002  // Counter=Load Interrupt Status
 #define PWM_1_RIS_INTCNTZERO    0x00000001  // Counter=0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_ISC_INTCMPBD      0x00000020  // Comparator B Down Interrupt
 #define PWM_1_ISC_INTCMPBU      0x00000010  // Comparator B Up Interrupt
 #define PWM_1_ISC_INTCMPAD      0x00000008  // Comparator A Down Interrupt
@@ -3771,43 +3771,43 @@
 #define PWM_1_ISC_INTCNTLOAD    0x00000002  // Counter=Load Interrupt
 #define PWM_1_ISC_INTCNTZERO    0x00000001  // Counter=0 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_LOAD_LOAD_M       0x0000FFFF  // Counter Load Value
 #define PWM_1_LOAD_LOAD_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_COUNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_COUNT_COUNT_M     0x0000FFFF  // Counter Value
 #define PWM_1_COUNT_COUNT_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_CMPA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_CMPA_COMPA_M      0x0000FFFF  // Comparator A Value
 #define PWM_1_CMPA_COMPA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_CMPB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_CMPB_COMPB_M      0x0000FFFF  // Comparator B Value
 #define PWM_1_CMPB_COMPB_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_GENA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_GENA_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_1_GENA_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -3847,11 +3847,11 @@
 #define PWM_1_GENA_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_1_GENA_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_GENB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_GENB_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_1_GENB_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -3891,48 +3891,48 @@
 #define PWM_1_GENB_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_1_GENB_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_DBCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_DBCTL_ENABLE      0x00000001  // Dead-Band Generator Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_DBRISE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_DBRISE_RISEDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Rise Delay
 #define PWM_1_DBRISE_RISEDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_DBFALL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_DBFALL_FALLDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Fall Delay
 #define PWM_1_DBFALL_FALLDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_FLTSRC0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_FLTSRC0_FAULT1    0x00000002  // Fault1 Input
 #define PWM_1_FLTSRC0_FAULT0    0x00000001  // Fault0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_FLTSRC1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_FLTSRC1_DCMP7     0x00000080  // Digital Comparator 7
 #define PWM_1_FLTSRC1_DCMP6     0x00000040  // Digital Comparator 6
 #define PWM_1_FLTSRC1_DCMP5     0x00000020  // Digital Comparator 5
@@ -3942,20 +3942,20 @@
 #define PWM_1_FLTSRC1_DCMP1     0x00000002  // Digital Comparator 1
 #define PWM_1_FLTSRC1_DCMP0     0x00000001  // Digital Comparator 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_MINFLTPER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_MINFLTPER_MFP_M   0x0000FFFF  // Minimum Fault Period
 #define PWM_1_MINFLTPER_MFP_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_CTL_LATCH         0x00040000  // Latch Fault Input
 #define PWM_2_CTL_MINFLTPER     0x00020000  // Minimum Fault Period
 #define PWM_2_CTL_FLTSRC        0x00010000  // Fault Condition Source
@@ -3987,11 +3987,11 @@
 #define PWM_2_CTL_MODE          0x00000002  // Counter Mode
 #define PWM_2_CTL_ENABLE        0x00000001  // PWM Block Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_INTEN_TRCMPBD     0x00002000  // Trigger for Counter=Comparator B
                                             // Down
 #define PWM_2_INTEN_TRCMPBU     0x00001000  // Trigger for Counter=Comparator B
@@ -4013,11 +4013,11 @@
 #define PWM_2_INTEN_INTCNTLOAD  0x00000002  // Interrupt for Counter=Load
 #define PWM_2_INTEN_INTCNTZERO  0x00000001  // Interrupt for Counter=0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_RIS_INTCMPBD      0x00000020  // Comparator B Down Interrupt
                                             // Status
 #define PWM_2_RIS_INTCMPBU      0x00000010  // Comparator B Up Interrupt Status
@@ -4027,11 +4027,11 @@
 #define PWM_2_RIS_INTCNTLOAD    0x00000002  // Counter=Load Interrupt Status
 #define PWM_2_RIS_INTCNTZERO    0x00000001  // Counter=0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_ISC_INTCMPBD      0x00000020  // Comparator B Down Interrupt
 #define PWM_2_ISC_INTCMPBU      0x00000010  // Comparator B Up Interrupt
 #define PWM_2_ISC_INTCMPAD      0x00000008  // Comparator A Down Interrupt
@@ -4039,43 +4039,43 @@
 #define PWM_2_ISC_INTCNTLOAD    0x00000002  // Counter=Load Interrupt
 #define PWM_2_ISC_INTCNTZERO    0x00000001  // Counter=0 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_LOAD_LOAD_M       0x0000FFFF  // Counter Load Value
 #define PWM_2_LOAD_LOAD_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_COUNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_COUNT_COUNT_M     0x0000FFFF  // Counter Value
 #define PWM_2_COUNT_COUNT_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_CMPA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_CMPA_COMPA_M      0x0000FFFF  // Comparator A Value
 #define PWM_2_CMPA_COMPA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_CMPB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_CMPB_COMPB_M      0x0000FFFF  // Comparator B Value
 #define PWM_2_CMPB_COMPB_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_GENA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_GENA_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_2_GENA_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -4115,11 +4115,11 @@
 #define PWM_2_GENA_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_2_GENA_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_GENB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_GENB_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_2_GENB_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -4159,48 +4159,48 @@
 #define PWM_2_GENB_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_2_GENB_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_DBCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_DBCTL_ENABLE      0x00000001  // Dead-Band Generator Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_DBRISE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_DBRISE_RISEDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Rise Delay
 #define PWM_2_DBRISE_RISEDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_DBFALL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_DBFALL_FALLDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Fall Delay
 #define PWM_2_DBFALL_FALLDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_FLTSRC0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_FLTSRC0_FAULT1    0x00000002  // Fault1 Input
 #define PWM_2_FLTSRC0_FAULT0    0x00000001  // Fault0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_FLTSRC1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_FLTSRC1_DCMP7     0x00000080  // Digital Comparator 7
 #define PWM_2_FLTSRC1_DCMP6     0x00000040  // Digital Comparator 6
 #define PWM_2_FLTSRC1_DCMP5     0x00000020  // Digital Comparator 5
@@ -4210,20 +4210,20 @@
 #define PWM_2_FLTSRC1_DCMP1     0x00000002  // Digital Comparator 1
 #define PWM_2_FLTSRC1_DCMP0     0x00000001  // Digital Comparator 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_MINFLTPER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_MINFLTPER_MFP_M   0x0000FFFF  // Minimum Fault Period
 #define PWM_2_MINFLTPER_MFP_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_CTL_LATCH         0x00040000  // Latch Fault Input
 #define PWM_3_CTL_MINFLTPER     0x00020000  // Minimum Fault Period
 #define PWM_3_CTL_FLTSRC        0x00010000  // Fault Condition Source
@@ -4255,11 +4255,11 @@
 #define PWM_3_CTL_MODE          0x00000002  // Counter Mode
 #define PWM_3_CTL_ENABLE        0x00000001  // PWM Block Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_INTEN_TRCMPBD     0x00002000  // Trigger for Counter=Comparator B
                                             // Down
 #define PWM_3_INTEN_TRCMPBU     0x00001000  // Trigger for Counter=Comparator B
@@ -4281,11 +4281,11 @@
 #define PWM_3_INTEN_INTCNTLOAD  0x00000002  // Interrupt for Counter=Load
 #define PWM_3_INTEN_INTCNTZERO  0x00000001  // Interrupt for Counter=0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_RIS_INTCMPBD      0x00000020  // Comparator B Down Interrupt
                                             // Status
 #define PWM_3_RIS_INTCMPBU      0x00000010  // Comparator B Up Interrupt Status
@@ -4295,11 +4295,11 @@
 #define PWM_3_RIS_INTCNTLOAD    0x00000002  // Counter=Load Interrupt Status
 #define PWM_3_RIS_INTCNTZERO    0x00000001  // Counter=0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_ISC_INTCMPBD      0x00000020  // Comparator B Down Interrupt
 #define PWM_3_ISC_INTCMPBU      0x00000010  // Comparator B Up Interrupt
 #define PWM_3_ISC_INTCMPAD      0x00000008  // Comparator A Down Interrupt
@@ -4307,43 +4307,43 @@
 #define PWM_3_ISC_INTCNTLOAD    0x00000002  // Counter=Load Interrupt
 #define PWM_3_ISC_INTCNTZERO    0x00000001  // Counter=0 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_LOAD_LOAD_M       0x0000FFFF  // Counter Load Value
 #define PWM_3_LOAD_LOAD_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_COUNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_COUNT_COUNT_M     0x0000FFFF  // Counter Value
 #define PWM_3_COUNT_COUNT_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_CMPA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_CMPA_COMPA_M      0x0000FFFF  // Comparator A Value
 #define PWM_3_CMPA_COMPA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_CMPB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_CMPB_COMPB_M      0x0000FFFF  // Comparator B Value
 #define PWM_3_CMPB_COMPB_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_GENA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_GENA_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_3_GENA_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -4383,11 +4383,11 @@
 #define PWM_3_GENA_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_3_GENA_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_GENB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_GENB_ACTCMPBD_M   0x00000C00  // Action for Comparator B Down
 #define PWM_3_GENB_ACTCMPBD_NONE                                              \
                                 0x00000000  // Do nothing
@@ -4427,48 +4427,48 @@
 #define PWM_3_GENB_ACTZERO_ZERO 0x00000002  // Set the output signal to 0
 #define PWM_3_GENB_ACTZERO_ONE  0x00000003  // Set the output signal to 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_DBCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_DBCTL_ENABLE      0x00000001  // Dead-Band Generator Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_DBRISE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_DBRISE_RISEDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Rise Delay
 #define PWM_3_DBRISE_RISEDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_DBFALL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_DBFALL_FALLDELAY_M                                              \
                                 0x00000FFF  // Dead-Band Fall Delay
 #define PWM_3_DBFALL_FALLDELAY_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_FLTSRC0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_FLTSRC0_FAULT1    0x00000002  // Fault1
 #define PWM_3_FLTSRC0_FAULT0    0x00000001  // Fault0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_FLTSRC1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_FLTSRC1_DCMP7     0x00000080  // Digital Comparator 7
 #define PWM_3_FLTSRC1_DCMP6     0x00000040  // Digital Comparator 6
 #define PWM_3_FLTSRC1_DCMP5     0x00000020  // Digital Comparator 5
@@ -4478,38 +4478,38 @@
 #define PWM_3_FLTSRC1_DCMP1     0x00000002  // Digital Comparator 1
 #define PWM_3_FLTSRC1_DCMP0     0x00000001  // Digital Comparator 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_MINFLTPER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_MINFLTPER_MFP_M   0x0000FFFF  // Minimum Fault Period
 #define PWM_3_MINFLTPER_MFP_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_FLTSEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_FLTSEN_FAULT1     0x00000002  // Fault1 Sense
 #define PWM_0_FLTSEN_FAULT0     0x00000001  // Fault0 Sense
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_FLTSTAT0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_FLTSTAT0_FAULT1   0x00000002  // Fault Input 1
 #define PWM_0_FLTSTAT0_FAULT0   0x00000001  // Fault Input 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_0_FLTSTAT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_0_FLTSTAT1_DCMP7    0x00000080  // Digital Comparator 7 Trigger
 #define PWM_0_FLTSTAT1_DCMP6    0x00000040  // Digital Comparator 6 Trigger
 #define PWM_0_FLTSTAT1_DCMP5    0x00000020  // Digital Comparator 5 Trigger
@@ -4519,29 +4519,29 @@
 #define PWM_0_FLTSTAT1_DCMP1    0x00000002  // Digital Comparator 1 Trigger
 #define PWM_0_FLTSTAT1_DCMP0    0x00000001  // Digital Comparator 0 Trigger
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_FLTSEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_FLTSEN_FAULT1     0x00000002  // Fault1 Sense
 #define PWM_1_FLTSEN_FAULT0     0x00000001  // Fault0 Sense
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_FLTSTAT0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_FLTSTAT0_FAULT1   0x00000002  // Fault Input 1
 #define PWM_1_FLTSTAT0_FAULT0   0x00000001  // Fault Input 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_1_FLTSTAT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_1_FLTSTAT1_DCMP7    0x00000080  // Digital Comparator 7 Trigger
 #define PWM_1_FLTSTAT1_DCMP6    0x00000040  // Digital Comparator 6 Trigger
 #define PWM_1_FLTSTAT1_DCMP5    0x00000020  // Digital Comparator 5 Trigger
@@ -4551,21 +4551,21 @@
 #define PWM_1_FLTSTAT1_DCMP1    0x00000002  // Digital Comparator 1 Trigger
 #define PWM_1_FLTSTAT1_DCMP0    0x00000001  // Digital Comparator 0 Trigger
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_FLTSTAT0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_FLTSTAT0_FAULT1   0x00000002  // Fault Input 1
 #define PWM_2_FLTSTAT0_FAULT0   0x00000001  // Fault Input 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_2_FLTSTAT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_2_FLTSTAT1_DCMP7    0x00000080  // Digital Comparator 7 Trigger
 #define PWM_2_FLTSTAT1_DCMP6    0x00000040  // Digital Comparator 6 Trigger
 #define PWM_2_FLTSTAT1_DCMP5    0x00000020  // Digital Comparator 5 Trigger
@@ -4575,21 +4575,21 @@
 #define PWM_2_FLTSTAT1_DCMP1    0x00000002  // Digital Comparator 1 Trigger
 #define PWM_2_FLTSTAT1_DCMP0    0x00000001  // Digital Comparator 0 Trigger
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_FLTSTAT0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_FLTSTAT0_FAULT1   0x00000002  // Fault Input 1
 #define PWM_3_FLTSTAT0_FAULT0   0x00000001  // Fault Input 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_3_FLTSTAT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_3_FLTSTAT1_DCMP7    0x00000080  // Digital Comparator 7 Trigger
 #define PWM_3_FLTSTAT1_DCMP6    0x00000040  // Digital Comparator 6 Trigger
 #define PWM_3_FLTSTAT1_DCMP5    0x00000020  // Digital Comparator 5 Trigger
@@ -4599,11 +4599,11 @@
 #define PWM_3_FLTSTAT1_DCMP1    0x00000002  // Digital Comparator 1 Trigger
 #define PWM_3_FLTSTAT1_DCMP0    0x00000001  // Digital Comparator 0 Trigger
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the PWM_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define PWM_PP_ONE              0x00000400  // One-Shot Mode
 #define PWM_PP_EFAULT           0x00000200  // Extended Fault
 #define PWM_PP_ESYNC            0x00000100  // Extended Synchronization
@@ -4612,11 +4612,11 @@
 #define PWM_PP_FCNT_S           4
 #define PWM_PP_GCNT_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_CTL_FILTCNT_M       0x000F0000  // Input Filter Prescale Count
 #define QEI_CTL_FILTEN          0x00002000  // Enable Input Filter
 #define QEI_CTL_STALLEN         0x00001000  // Stall QEI
@@ -4640,69 +4640,69 @@
 #define QEI_CTL_ENABLE          0x00000001  // Enable QEI
 #define QEI_CTL_FILTCNT_S       16
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_STAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_STAT_DIRECTION      0x00000002  // Direction of Rotation
 #define QEI_STAT_ERROR          0x00000001  // Error Detected
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_POS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_POS_M               0xFFFFFFFF  // Current Position Integrator
                                             // Value
 #define QEI_POS_S               0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_MAXPOS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_MAXPOS_M            0xFFFFFFFF  // Maximum Position Integrator
                                             // Value
 #define QEI_MAXPOS_S            0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_LOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_LOAD_M              0xFFFFFFFF  // Velocity Timer Load Value
 #define QEI_LOAD_S              0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_TIME register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_TIME_M              0xFFFFFFFF  // Velocity Timer Current Value
 #define QEI_TIME_S              0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_COUNT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_COUNT_M             0xFFFFFFFF  // Velocity Pulse Count
 #define QEI_COUNT_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_SPEED register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_SPEED_M             0xFFFFFFFF  // Velocity
 #define QEI_SPEED_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_INTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_INTEN_ERROR         0x00000008  // Phase Error Interrupt Enable
 #define QEI_INTEN_DIR           0x00000004  // Direction Change Interrupt
                                             // Enable
@@ -4710,31 +4710,31 @@
 #define QEI_INTEN_INDEX         0x00000001  // Index Pulse Detected Interrupt
                                             // Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_RIS_ERROR           0x00000008  // Phase Error Detected
 #define QEI_RIS_DIR             0x00000004  // Direction Change Detected
 #define QEI_RIS_TIMER           0x00000002  // Velocity Timer Expired
 #define QEI_RIS_INDEX           0x00000001  // Index Pulse Asserted
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the QEI_O_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define QEI_ISC_ERROR           0x00000008  // Phase Error Interrupt
 #define QEI_ISC_DIR             0x00000004  // Direction Change Interrupt
 #define QEI_ISC_TIMER           0x00000002  // Velocity Timer Expired Interrupt
 #define QEI_ISC_INDEX           0x00000001  // Index Pulse Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_CFG register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_CFG_M             0x00000007  // GPTM Configuration
 #define TIMER_CFG_32_BIT_TIMER  0x00000000  // 32-bit timer configuration
 #define TIMER_CFG_32_BIT_RTC    0x00000001  // 32-bit real-time clock (RTC)
@@ -4743,11 +4743,11 @@
                                             // function is controlled by bits
                                             // 1:0 of GPTMTAMR and GPTMTBMR
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAMR_TAPLO        0x00000800  // GPTM Timer A PWM Legacy
                                             // Operation
 #define TIMER_TAMR_TAMRSU       0x00000400  // GPTM Timer A Match Register
@@ -4768,11 +4768,11 @@
 #define TIMER_TAMR_TAMR_PERIOD  0x00000002  // Periodic Timer mode
 #define TIMER_TAMR_TAMR_CAP     0x00000003  // Capture mode
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBMR_TBPLO        0x00000800  // GPTM Timer B PWM Legacy
                                             // Operation
 #define TIMER_TBMR_TBMRSU       0x00000400  // GPTM Timer B Match Register
@@ -4793,11 +4793,11 @@
 #define TIMER_TBMR_TBMR_PERIOD  0x00000002  // Periodic Timer mode
 #define TIMER_TBMR_TBMR_CAP     0x00000003  // Capture mode
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_CTL_TBPWML        0x00004000  // GPTM Timer B PWM Output Level
 #define TIMER_CTL_TBOTE         0x00002000  // GPTM Timer B Output Trigger
                                             // Enable
@@ -4818,11 +4818,11 @@
 #define TIMER_CTL_TASTALL       0x00000002  // GPTM Timer A Stall Enable
 #define TIMER_CTL_TAEN          0x00000001  // GPTM Timer A Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_SYNC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_SYNC_SYNCWT5_M    0x00C00000  // Synchronize GPTM 32/64-Bit Timer
                                             // 5
 #define TIMER_SYNC_SYNCWT5_NONE 0x00000000  // GPTM 32/64-Bit Timer 5 is not
@@ -4980,11 +4980,11 @@
                                             // and Timer B of GPTM 16/32-Bit
                                             // Timer 0 is triggered
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_IMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_IMR_WUEIM         0x00010000  // GPTM Write Update Error
                                             // Interrupt Mask
 #define TIMER_IMR_TBMIM         0x00000800  // GPTM Timer B Match Interrupt
@@ -5005,11 +5005,11 @@
 #define TIMER_IMR_TATOIM        0x00000001  // GPTM Timer A Time-Out Interrupt
                                             // Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_RIS_WUERIS        0x00010000  // GPTM Write Update Error Raw
                                             // Interrupt
 #define TIMER_RIS_TBMRIS        0x00000800  // GPTM Timer B Match Raw Interrupt
@@ -5028,11 +5028,11 @@
 #define TIMER_RIS_TATORIS       0x00000001  // GPTM Timer A Time-Out Raw
                                             // Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_MIS_WUEMIS        0x00010000  // GPTM Write Update Error Masked
                                             // Interrupt
 #define TIMER_MIS_TBMMIS        0x00000800  // GPTM Timer B Match Masked
@@ -5053,11 +5053,11 @@
 #define TIMER_MIS_TATOMIS       0x00000001  // GPTM Timer A Time-Out Masked
                                             // Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_ICR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_ICR_WUECINT       0x00010000  // 32/64-Bit GPTM Write Update
                                             // Error Interrupt Clear
 #define TIMER_ICR_TBMCINT       0x00000800  // GPTM Timer B Match Interrupt
@@ -5078,161 +5078,161 @@
 #define TIMER_ICR_TATOCINT      0x00000001  // GPTM Timer A Time-Out Raw
                                             // Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAILR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAILR_M           0xFFFFFFFF  // GPTM Timer A Interval Load
                                             // Register
 #define TIMER_TAILR_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBILR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBILR_M           0xFFFFFFFF  // GPTM Timer B Interval Load
                                             // Register
 #define TIMER_TBILR_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAMATCHR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAMATCHR_TAMR_M   0xFFFFFFFF  // GPTM Timer A Match Register
 #define TIMER_TAMATCHR_TAMR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBMATCHR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBMATCHR_TBMR_M   0xFFFFFFFF  // GPTM Timer B Match Register
 #define TIMER_TBMATCHR_TBMR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAPR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAPR_TAPSRH_M     0x0000FF00  // GPTM Timer A Prescale High Byte
 #define TIMER_TAPR_TAPSR_M      0x000000FF  // GPTM Timer A Prescale
 #define TIMER_TAPR_TAPSRH_S     8
 #define TIMER_TAPR_TAPSR_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBPR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBPR_TBPSRH_M     0x0000FF00  // GPTM Timer B Prescale High Byte
 #define TIMER_TBPR_TBPSR_M      0x000000FF  // GPTM Timer B Prescale
 #define TIMER_TBPR_TBPSRH_S     8
 #define TIMER_TBPR_TBPSR_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAPMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAPMR_TAPSMRH_M   0x0000FF00  // GPTM Timer A Prescale Match High
                                             // Byte
 #define TIMER_TAPMR_TAPSMR_M    0x000000FF  // GPTM TimerA Prescale Match
 #define TIMER_TAPMR_TAPSMRH_S   8
 #define TIMER_TAPMR_TAPSMR_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBPMR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBPMR_TBPSMRH_M   0x0000FF00  // GPTM Timer B Prescale Match High
                                             // Byte
 #define TIMER_TBPMR_TBPSMR_M    0x000000FF  // GPTM TimerB Prescale Match
 #define TIMER_TBPMR_TBPSMRH_S   8
 #define TIMER_TBPMR_TBPSMR_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAR_M             0xFFFFFFFF  // GPTM Timer A Register
 #define TIMER_TAR_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBR_M             0xFFFFFFFF  // GPTM Timer B Register
 #define TIMER_TBR_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAV register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAV_M             0xFFFFFFFF  // GPTM Timer A Value
 #define TIMER_TAV_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBV register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBV_M             0xFFFFFFFF  // GPTM Timer B Value
 #define TIMER_TBV_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_RTCPD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_RTCPD_RTCPD_M     0x0000FFFF  // RTC Predivide Counter Value
 #define TIMER_RTCPD_RTCPD_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAPS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAPS_PSS_M        0x0000FFFF  // GPTM Timer A Prescaler Snapshot
 #define TIMER_TAPS_PSS_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBPS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBPS_PSS_M        0x0000FFFF  // GPTM Timer A Prescaler Value
 #define TIMER_TBPS_PSS_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TAPV register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TAPV_PSV_M        0x0000FFFF  // GPTM Timer A Prescaler Value
 #define TIMER_TAPV_PSV_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_TBPV register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_TBPV_PSV_M        0x0000FFFF  // GPTM Timer B Prescaler Value
 #define TIMER_TBPV_PSV_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the TIMER_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define TIMER_PP_SIZE_M         0x0000000F  // Count Size
 #define TIMER_PP_SIZE_16        0x00000000  // Timer A and Timer B counters are
                                             // 16 bits each with an 8-bit
@@ -5241,22 +5241,22 @@
                                             // 32 bits each with a 16-bit
                                             // prescale counter
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_ACTSS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_ACTSS_BUSY          0x00010000  // ADC Busy
 #define ADC_ACTSS_ASEN3         0x00000008  // ADC SS3 Enable
 #define ADC_ACTSS_ASEN2         0x00000004  // ADC SS2 Enable
 #define ADC_ACTSS_ASEN1         0x00000002  // ADC SS1 Enable
 #define ADC_ACTSS_ASEN0         0x00000001  // ADC SS0 Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_RIS_INRDC           0x00010000  // Digital Comparator Raw Interrupt
                                             // Status
 #define ADC_RIS_INR3            0x00000008  // SS3 Raw Interrupt Status
@@ -5264,11 +5264,11 @@
 #define ADC_RIS_INR1            0x00000002  // SS1 Raw Interrupt Status
 #define ADC_RIS_INR0            0x00000001  // SS0 Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_IM_DCONSS3          0x00080000  // Digital Comparator Interrupt on
                                             // SS3
 #define ADC_IM_DCONSS2          0x00040000  // Digital Comparator Interrupt on
@@ -5282,11 +5282,11 @@
 #define ADC_IM_MASK1            0x00000002  // SS1 Interrupt Mask
 #define ADC_IM_MASK0            0x00000001  // SS0 Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_ISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_ISC_DCINSS3         0x00080000  // Digital Comparator Interrupt
                                             // Status on SS3
 #define ADC_ISC_DCINSS2         0x00040000  // Digital Comparator Interrupt
@@ -5300,21 +5300,21 @@
 #define ADC_ISC_IN1             0x00000002  // SS1 Interrupt Status and Clear
 #define ADC_ISC_IN0             0x00000001  // SS0 Interrupt Status and Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_OSTAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_OSTAT_OV3           0x00000008  // SS3 FIFO Overflow
 #define ADC_OSTAT_OV2           0x00000004  // SS2 FIFO Overflow
 #define ADC_OSTAT_OV1           0x00000002  // SS1 FIFO Overflow
 #define ADC_OSTAT_OV0           0x00000001  // SS0 FIFO Overflow
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_EMUX register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_EMUX_EM3_M          0x0000F000  // SS3 Trigger Select
 #define ADC_EMUX_EM3_PROCESSOR  0x00000000  // Processor (default)
 #define ADC_EMUX_EM3_COMP0      0x00001000  // Analog Comparator 0
@@ -5360,21 +5360,21 @@
 #define ADC_EMUX_EM0_PWM3       0x00000009  // PWM3
 #define ADC_EMUX_EM0_ALWAYS     0x0000000F  // Always (continuously sample)
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_USTAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_USTAT_UV3           0x00000008  // SS3 FIFO Underflow
 #define ADC_USTAT_UV2           0x00000004  // SS2 FIFO Underflow
 #define ADC_USTAT_UV1           0x00000002  // SS1 FIFO Underflow
 #define ADC_USTAT_UV0           0x00000001  // SS0 FIFO Underflow
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_TSSEL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_TSSEL_PS3_M         0x30000000  // PWM Unit Select
 #define ADC_TSSEL_PS3_0         0x00000000  // PWM Unit 0
 #define ADC_TSSEL_PS3_1         0x10000000  // PWM Unit 1
@@ -5388,21 +5388,21 @@
 #define ADC_TSSEL_PS0_0         0x00000000  // PWM Unit 0
 #define ADC_TSSEL_PS0_1         0x00000010  // PWM Unit 1
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSPRI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSPRI_SS3_M         0x00003000  // SS3 Priority
 #define ADC_SSPRI_SS2_M         0x00000300  // SS2 Priority
 #define ADC_SSPRI_SS1_M         0x00000030  // SS1 Priority
 #define ADC_SSPRI_SS0_M         0x00000003  // SS0 Priority
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SPC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SPC_PHASE_M         0x0000000F  // Phase Difference
 #define ADC_SPC_PHASE_0         0x00000000  // ADC sample lags by 0.0
 #define ADC_SPC_PHASE_22_5      0x00000001  // ADC sample lags by 22.5
@@ -5421,11 +5421,11 @@
 #define ADC_SPC_PHASE_315       0x0000000E  // ADC sample lags by 315.0
 #define ADC_SPC_PHASE_337_5     0x0000000F  // ADC sample lags by 337.5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_PSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_PSSI_GSYNC          0x80000000  // Global Synchronize
 #define ADC_PSSI_SYNCWAIT       0x08000000  // Synchronize Wait
 #define ADC_PSSI_SS3            0x00000008  // SS3 Initiate
@@ -5433,11 +5433,11 @@
 #define ADC_PSSI_SS1            0x00000002  // SS1 Initiate
 #define ADC_PSSI_SS0            0x00000001  // SS0 Initiate
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SAC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SAC_AVG_M           0x00000007  // Hardware Averaging Control
 #define ADC_SAC_AVG_OFF         0x00000000  // No hardware oversampling
 #define ADC_SAC_AVG_2X          0x00000001  // 2x hardware oversampling
@@ -5447,11 +5447,11 @@
 #define ADC_SAC_AVG_32X         0x00000005  // 32x hardware oversampling
 #define ADC_SAC_AVG_64X         0x00000006  // 64x hardware oversampling
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCISC_DCINT7        0x00000080  // Digital Comparator 7 Interrupt
                                             // Status and Clear
 #define ADC_DCISC_DCINT6        0x00000040  // Digital Comparator 6 Interrupt
@@ -5469,21 +5469,21 @@
 #define ADC_DCISC_DCINT0        0x00000001  // Digital Comparator 0 Interrupt
                                             // Status and Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_CTL_DITHER          0x00000040  // Dither Mode Enable
 #define ADC_CTL_VREF_M          0x00000003  // Voltage Reference Select
 #define ADC_CTL_VREF_INTERNAL   0x00000000  // The internal reference as the
                                             // voltage reference
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSMUX0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSMUX0_MUX7_M       0xF0000000  // 8th Sample Input Select
 #define ADC_SSMUX0_MUX6_M       0x0F000000  // 7th Sample Input Select
 #define ADC_SSMUX0_MUX5_M       0x00F00000  // 6th Sample Input Select
@@ -5501,11 +5501,11 @@
 #define ADC_SSMUX0_MUX1_S       4
 #define ADC_SSMUX0_MUX0_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSCTL0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSCTL0_TS7          0x80000000  // 8th Sample Temp Sensor Select
 #define ADC_SSCTL0_IE7          0x40000000  // 8th Sample Interrupt Enable
 #define ADC_SSCTL0_END7         0x20000000  // 8th Sample is End of Sequence
@@ -5539,19 +5539,19 @@
 #define ADC_SSCTL0_END0         0x00000002  // 1st Sample is End of Sequence
 #define ADC_SSCTL0_D0           0x00000001  // 1st Sample Diff Input Select
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFIFO0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFIFO0_DATA_M      0x00000FFF  // Conversion Result Data
 #define ADC_SSFIFO0_DATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFSTAT0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFSTAT0_FULL       0x00001000  // FIFO Full
 #define ADC_SSFSTAT0_EMPTY      0x00000100  // FIFO Empty
 #define ADC_SSFSTAT0_HPTR_M     0x000000F0  // FIFO Head Pointer
@@ -5559,11 +5559,11 @@
 #define ADC_SSFSTAT0_HPTR_S     4
 #define ADC_SSFSTAT0_TPTR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSOP0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSOP0_S7DCOP        0x10000000  // Sample 7 Digital Comparator
                                             // Operation
 #define ADC_SSOP0_S6DCOP        0x01000000  // Sample 6 Digital Comparator
@@ -5581,11 +5581,11 @@
 #define ADC_SSOP0_S0DCOP        0x00000001  // Sample 0 Digital Comparator
                                             // Operation
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSDC0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSDC0_S7DCSEL_M     0xF0000000  // Sample 7 Digital Comparator
                                             // Select
 #define ADC_SSDC0_S6DCSEL_M     0x0F000000  // Sample 6 Digital Comparator
@@ -5610,11 +5610,11 @@
 #define ADC_SSDC0_S1DCSEL_S     4
 #define ADC_SSDC0_S0DCSEL_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSMUX1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSMUX1_MUX3_M       0x0000F000  // 4th Sample Input Select
 #define ADC_SSMUX1_MUX2_M       0x00000F00  // 3rd Sample Input Select
 #define ADC_SSMUX1_MUX1_M       0x000000F0  // 2nd Sample Input Select
@@ -5624,11 +5624,11 @@
 #define ADC_SSMUX1_MUX1_S       4
 #define ADC_SSMUX1_MUX0_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSCTL1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSCTL1_TS3          0x00008000  // 4th Sample Temp Sensor Select
 #define ADC_SSCTL1_IE3          0x00004000  // 4th Sample Interrupt Enable
 #define ADC_SSCTL1_END3         0x00002000  // 4th Sample is End of Sequence
@@ -5646,19 +5646,19 @@
 #define ADC_SSCTL1_END0         0x00000002  // 1st Sample is End of Sequence
 #define ADC_SSCTL1_D0           0x00000001  // 1st Sample Diff Input Select
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFIFO1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFIFO1_DATA_M      0x00000FFF  // Conversion Result Data
 #define ADC_SSFIFO1_DATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFSTAT1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFSTAT1_FULL       0x00001000  // FIFO Full
 #define ADC_SSFSTAT1_EMPTY      0x00000100  // FIFO Empty
 #define ADC_SSFSTAT1_HPTR_M     0x000000F0  // FIFO Head Pointer
@@ -5666,11 +5666,11 @@
 #define ADC_SSFSTAT1_HPTR_S     4
 #define ADC_SSFSTAT1_TPTR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSOP1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSOP1_S3DCOP        0x00001000  // Sample 3 Digital Comparator
                                             // Operation
 #define ADC_SSOP1_S2DCOP        0x00000100  // Sample 2 Digital Comparator
@@ -5680,11 +5680,11 @@
 #define ADC_SSOP1_S0DCOP        0x00000001  // Sample 0 Digital Comparator
                                             // Operation
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSDC1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSDC1_S3DCSEL_M     0x0000F000  // Sample 3 Digital Comparator
                                             // Select
 #define ADC_SSDC1_S2DCSEL_M     0x00000F00  // Sample 2 Digital Comparator
@@ -5697,11 +5697,11 @@
 #define ADC_SSDC1_S1DCSEL_S     4
 #define ADC_SSDC1_S0DCSEL_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSMUX2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSMUX2_MUX3_M       0x0000F000  // 4th Sample Input Select
 #define ADC_SSMUX2_MUX2_M       0x00000F00  // 3rd Sample Input Select
 #define ADC_SSMUX2_MUX1_M       0x000000F0  // 2nd Sample Input Select
@@ -5711,11 +5711,11 @@
 #define ADC_SSMUX2_MUX1_S       4
 #define ADC_SSMUX2_MUX0_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSCTL2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSCTL2_TS3          0x00008000  // 4th Sample Temp Sensor Select
 #define ADC_SSCTL2_IE3          0x00004000  // 4th Sample Interrupt Enable
 #define ADC_SSCTL2_END3         0x00002000  // 4th Sample is End of Sequence
@@ -5733,19 +5733,19 @@
 #define ADC_SSCTL2_END0         0x00000002  // 1st Sample is End of Sequence
 #define ADC_SSCTL2_D0           0x00000001  // 1st Sample Diff Input Select
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFIFO2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFIFO2_DATA_M      0x00000FFF  // Conversion Result Data
 #define ADC_SSFIFO2_DATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFSTAT2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFSTAT2_FULL       0x00001000  // FIFO Full
 #define ADC_SSFSTAT2_EMPTY      0x00000100  // FIFO Empty
 #define ADC_SSFSTAT2_HPTR_M     0x000000F0  // FIFO Head Pointer
@@ -5753,11 +5753,11 @@
 #define ADC_SSFSTAT2_HPTR_S     4
 #define ADC_SSFSTAT2_TPTR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSOP2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSOP2_S3DCOP        0x00001000  // Sample 3 Digital Comparator
                                             // Operation
 #define ADC_SSOP2_S2DCOP        0x00000100  // Sample 2 Digital Comparator
@@ -5767,11 +5767,11 @@
 #define ADC_SSOP2_S0DCOP        0x00000001  // Sample 0 Digital Comparator
                                             // Operation
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSDC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSDC2_S3DCSEL_M     0x0000F000  // Sample 3 Digital Comparator
                                             // Select
 #define ADC_SSDC2_S2DCSEL_M     0x00000F00  // Sample 2 Digital Comparator
@@ -5784,37 +5784,37 @@
 #define ADC_SSDC2_S1DCSEL_S     4
 #define ADC_SSDC2_S0DCSEL_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSMUX3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSMUX3_MUX0_M       0x0000000F  // 1st Sample Input Select
 #define ADC_SSMUX3_MUX0_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSCTL3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSCTL3_TS0          0x00000008  // 1st Sample Temp Sensor Select
 #define ADC_SSCTL3_IE0          0x00000004  // 1st Sample Interrupt Enable
 #define ADC_SSCTL3_END0         0x00000002  // 1st Sample is End of Sequence
 #define ADC_SSCTL3_D0           0x00000001  // 1st Sample Diff Input Select
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFIFO3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFIFO3_DATA_M      0x00000FFF  // Conversion Result Data
 #define ADC_SSFIFO3_DATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSFSTAT3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSFSTAT3_FULL       0x00001000  // FIFO Full
 #define ADC_SSFSTAT3_EMPTY      0x00000100  // FIFO Empty
 #define ADC_SSFSTAT3_HPTR_M     0x000000F0  // FIFO Head Pointer
@@ -5822,27 +5822,27 @@
 #define ADC_SSFSTAT3_HPTR_S     4
 #define ADC_SSFSTAT3_TPTR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSOP3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSOP3_S0DCOP        0x00000001  // Sample 0 Digital Comparator
                                             // Operation
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_SSDC3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_SSDC3_S0DCSEL_M     0x0000000F  // Sample 0 Digital Comparator
                                             // Select
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCRIC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCRIC_DCTRIG7       0x00800000  // Digital Comparator Trigger 7
 #define ADC_DCRIC_DCTRIG6       0x00400000  // Digital Comparator Trigger 6
 #define ADC_DCRIC_DCTRIG5       0x00200000  // Digital Comparator Trigger 5
@@ -5860,11 +5860,11 @@
 #define ADC_DCRIC_DCINT1        0x00000002  // Digital Comparator Interrupt 1
 #define ADC_DCRIC_DCINT0        0x00000001  // Digital Comparator Interrupt 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL0_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL0_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL0_CTC_LOW      0x00000000  // Low Band
@@ -5886,11 +5886,11 @@
 #define ADC_DCCTL0_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL0_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL1_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL1_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL1_CTC_LOW      0x00000000  // Low Band
@@ -5912,11 +5912,11 @@
 #define ADC_DCCTL1_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL1_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL2_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL2_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL2_CTC_LOW      0x00000000  // Low Band
@@ -5938,11 +5938,11 @@
 #define ADC_DCCTL2_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL2_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL3_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL3_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL3_CTC_LOW      0x00000000  // Low Band
@@ -5964,11 +5964,11 @@
 #define ADC_DCCTL3_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL3_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL4_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL4_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL4_CTC_LOW      0x00000000  // Low Band
@@ -5990,11 +5990,11 @@
 #define ADC_DCCTL4_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL4_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL5_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL5_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL5_CTC_LOW      0x00000000  // Low Band
@@ -6016,11 +6016,11 @@
 #define ADC_DCCTL5_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL5_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL6_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL6_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL6_CTC_LOW      0x00000000  // Low Band
@@ -6042,11 +6042,11 @@
 #define ADC_DCCTL6_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL6_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCTL7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCTL7_CTE          0x00001000  // Comparison Trigger Enable
 #define ADC_DCCTL7_CTC_M        0x00000C00  // Comparison Trigger Condition
 #define ADC_DCCTL7_CTC_LOW      0x00000000  // Low Band
@@ -6068,91 +6068,91 @@
 #define ADC_DCCTL7_CIM_HALWAYS  0x00000002  // Hysteresis Always
 #define ADC_DCCTL7_CIM_HONCE    0x00000003  // Hysteresis Once
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP0_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP0_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP0_COMP1_S      16
 #define ADC_DCCMP0_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP1_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP1_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP1_COMP1_S      16
 #define ADC_DCCMP1_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP2_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP2_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP2_COMP1_S      16
 #define ADC_DCCMP2_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP3_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP3_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP3_COMP1_S      16
 #define ADC_DCCMP3_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP4_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP4_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP4_COMP1_S      16
 #define ADC_DCCMP4_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP5_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP5_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP5_COMP1_S      16
 #define ADC_DCCMP5_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP6_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP6_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP6_COMP1_S      16
 #define ADC_DCCMP6_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_DCCMP7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_DCCMP7_COMP1_M      0x0FFF0000  // Compare 1
 #define ADC_DCCMP7_COMP0_M      0x00000FFF  // Compare 0
 #define ADC_DCCMP7_COMP1_S      16
 #define ADC_DCCMP7_COMP0_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_PP_TS               0x00800000  // Temperature Sensor
 #define ADC_PP_RSL_M            0x007C0000  // Resolution
 #define ADC_PP_TYPE_M           0x00030000  // ADC Architecture
@@ -6168,22 +6168,22 @@
 #define ADC_PP_DC_S             10
 #define ADC_PP_CH_S             4
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_PC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_PC_SR_M             0x0000000F  // ADC Sample Rate
 #define ADC_PC_SR_125K          0x00000001  // 125 ksps
 #define ADC_PC_SR_250K          0x00000003  // 250 ksps
 #define ADC_PC_SR_500K          0x00000005  // 500 ksps
 #define ADC_PC_SR_1M            0x00000007  // 1 Msps
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the ADC_O_CC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define ADC_CC_CS_M             0x0000000F  // ADC Clock Source
 #define ADC_CC_CS_SYSPLL        0x00000000  // Either the system clock (if the
                                             // PLL bypass is in effect) or the
@@ -6191,55 +6191,55 @@
                                             // 25 (default)
 #define ADC_CC_CS_PIOSC         0x00000001  // PIOSC
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACMIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACMIS_IN1          0x00000002  // Comparator 1 Masked Interrupt
                                             // Status
 #define COMP_ACMIS_IN0          0x00000001  // Comparator 0 Masked Interrupt
                                             // Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACRIS_IN1          0x00000002  // Comparator 1 Interrupt Status
 #define COMP_ACRIS_IN0          0x00000001  // Comparator 0 Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACINTEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACINTEN_IN1        0x00000002  // Comparator 1 Interrupt Enable
 #define COMP_ACINTEN_IN0        0x00000001  // Comparator 0 Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACREFCTL
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACREFCTL_EN        0x00000200  // Resistor Ladder Enable
 #define COMP_ACREFCTL_RNG       0x00000100  // Resistor Ladder Range
 #define COMP_ACREFCTL_VREF_M    0x0000000F  // Resistor Ladder Voltage Ref
 #define COMP_ACREFCTL_VREF_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACSTAT0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACSTAT0_OVAL       0x00000002  // Comparator Output Value
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACCTL0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACCTL0_TOEN        0x00000800  // Trigger Output Enable
 #define COMP_ACCTL0_ASRCP_M     0x00000600  // Analog Source Positive
 #define COMP_ACCTL0_ASRCP_PIN   0x00000000  // Pin value of Cn+
@@ -6259,18 +6259,18 @@
 #define COMP_ACCTL0_ISEN_BOTH   0x0000000C  // Either edge
 #define COMP_ACCTL0_CINV        0x00000002  // Comparator Output Invert
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACSTAT1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACSTAT1_OVAL       0x00000002  // Comparator Output Value
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_ACCTL1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_ACCTL1_TOEN        0x00000800  // Trigger Output Enable
 #define COMP_ACCTL1_ASRCP_M     0x00000600  // Analog Source Positive
 #define COMP_ACCTL1_ASRCP_PIN   0x00000000  // Pin value of Cn+
@@ -6291,21 +6291,21 @@
 #define COMP_ACCTL1_ISEN_BOTH   0x0000000C  // Either edge
 #define COMP_ACCTL1_CINV        0x00000002  // Comparator Output Invert
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the COMP_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define COMP_PP_C1O             0x00020000  // Comparator Output 1 Present
 #define COMP_PP_C0O             0x00010000  // Comparator Output 0 Present
 #define COMP_PP_CMP1            0x00000002  // Comparator 1 Present
 #define COMP_PP_CMP0            0x00000001  // Comparator 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_CTL_TEST            0x00000080  // Test Mode Enable
 #define CAN_CTL_CCE             0x00000040  // Configuration Change Enable
 #define CAN_CTL_DAR             0x00000020  // Disable Automatic-Retransmission
@@ -6314,11 +6314,11 @@
 #define CAN_CTL_IE              0x00000002  // CAN Interrupt Enable
 #define CAN_CTL_INIT            0x00000001  // Initialization
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_STS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_STS_BOFF            0x00000080  // Bus-Off Status
 #define CAN_STS_EWARN           0x00000040  // Warning Status
 #define CAN_STS_EPASS           0x00000020  // Error Passive
@@ -6335,22 +6335,22 @@
 #define CAN_STS_LEC_CRC         0x00000006  // CRC Error
 #define CAN_STS_LEC_NOEVENT     0x00000007  // No Event
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_ERR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_ERR_RP              0x00008000  // Received Error Passive
 #define CAN_ERR_REC_M           0x00007F00  // Receive Error Counter
 #define CAN_ERR_TEC_M           0x000000FF  // Transmit Error Counter
 #define CAN_ERR_REC_S           8
 #define CAN_ERR_TEC_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_BIT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_BIT_TSEG2_M         0x00007000  // Time Segment after Sample Point
 #define CAN_BIT_TSEG1_M         0x00000F00  // Time Segment Before Sample Point
 #define CAN_BIT_SJW_M           0x000000C0  // (Re)Synchronization Jump Width
@@ -6360,20 +6360,20 @@
 #define CAN_BIT_SJW_S           6
 #define CAN_BIT_BRP_S           0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_INT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_INT_INTID_M         0x0000FFFF  // Interrupt Identifier
 #define CAN_INT_INTID_NONE      0x00000000  // No interrupt pending
 #define CAN_INT_INTID_STATUS    0x00008000  // Status Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_TST register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_TST_RX              0x00000080  // Receive Observation
 #define CAN_TST_TX_M            0x00000060  // Transmit Control
 #define CAN_TST_TX_CANCTL       0x00000000  // CAN Module Control
@@ -6384,28 +6384,28 @@
 #define CAN_TST_SILENT          0x00000008  // Silent Mode
 #define CAN_TST_BASIC           0x00000004  // Basic Mode
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_BRPE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_BRPE_BRPE_M         0x0000000F  // Baud Rate Prescaler Extension
 #define CAN_BRPE_BRPE_S         0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1CRQ register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1CRQ_BUSY         0x00008000  // Busy Flag
 #define CAN_IF1CRQ_MNUM_M       0x0000003F  // Message Number
 #define CAN_IF1CRQ_MNUM_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1CMSK register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1CMSK_WRNRD       0x00000080  // Write, Not Read
 #define CAN_IF1CMSK_MASK        0x00000040  // Access Mask Bits
 #define CAN_IF1CMSK_ARB         0x00000020  // Access Arbitration Bits
@@ -6416,48 +6416,48 @@
 #define CAN_IF1CMSK_DATAA       0x00000002  // Access Data Byte 0 to 3
 #define CAN_IF1CMSK_DATAB       0x00000001  // Access Data Byte 4 to 7
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1MSK1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1MSK1_IDMSK_M     0x0000FFFF  // Identifier Mask
 #define CAN_IF1MSK1_IDMSK_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1MSK2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1MSK2_MXTD        0x00008000  // Mask Extended Identifier
 #define CAN_IF1MSK2_MDIR        0x00004000  // Mask Message Direction
 #define CAN_IF1MSK2_IDMSK_M     0x00001FFF  // Identifier Mask
 #define CAN_IF1MSK2_IDMSK_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1ARB1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1ARB1_ID_M        0x0000FFFF  // Message Identifier
 #define CAN_IF1ARB1_ID_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1ARB2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1ARB2_MSGVAL      0x00008000  // Message Valid
 #define CAN_IF1ARB2_XTD         0x00004000  // Extended Identifier
 #define CAN_IF1ARB2_DIR         0x00002000  // Message Direction
 #define CAN_IF1ARB2_ID_M        0x00001FFF  // Message Identifier
 #define CAN_IF1ARB2_ID_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1MCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1MCTL_NEWDAT      0x00008000  // New Data
 #define CAN_IF1MCTL_MSGLST      0x00004000  // Message Lost
 #define CAN_IF1MCTL_INTPND      0x00002000  // Interrupt Pending
@@ -6470,52 +6470,52 @@
 #define CAN_IF1MCTL_DLC_M       0x0000000F  // Data Length Code
 #define CAN_IF1MCTL_DLC_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1DA1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1DA1_DATA_M       0x0000FFFF  // Data
 #define CAN_IF1DA1_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1DA2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1DA2_DATA_M       0x0000FFFF  // Data
 #define CAN_IF1DA2_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1DB1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1DB1_DATA_M       0x0000FFFF  // Data
 #define CAN_IF1DB1_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF1DB2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF1DB2_DATA_M       0x0000FFFF  // Data
 #define CAN_IF1DB2_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2CRQ register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2CRQ_BUSY         0x00008000  // Busy Flag
 #define CAN_IF2CRQ_MNUM_M       0x0000003F  // Message Number
 #define CAN_IF2CRQ_MNUM_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2CMSK register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2CMSK_WRNRD       0x00000080  // Write, Not Read
 #define CAN_IF2CMSK_MASK        0x00000040  // Access Mask Bits
 #define CAN_IF2CMSK_ARB         0x00000020  // Access Arbitration Bits
@@ -6526,48 +6526,48 @@
 #define CAN_IF2CMSK_DATAA       0x00000002  // Access Data Byte 0 to 3
 #define CAN_IF2CMSK_DATAB       0x00000001  // Access Data Byte 4 to 7
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2MSK1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2MSK1_IDMSK_M     0x0000FFFF  // Identifier Mask
 #define CAN_IF2MSK1_IDMSK_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2MSK2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2MSK2_MXTD        0x00008000  // Mask Extended Identifier
 #define CAN_IF2MSK2_MDIR        0x00004000  // Mask Message Direction
 #define CAN_IF2MSK2_IDMSK_M     0x00001FFF  // Identifier Mask
 #define CAN_IF2MSK2_IDMSK_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2ARB1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2ARB1_ID_M        0x0000FFFF  // Message Identifier
 #define CAN_IF2ARB1_ID_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2ARB2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2ARB2_MSGVAL      0x00008000  // Message Valid
 #define CAN_IF2ARB2_XTD         0x00004000  // Extended Identifier
 #define CAN_IF2ARB2_DIR         0x00002000  // Message Direction
 #define CAN_IF2ARB2_ID_M        0x00001FFF  // Message Identifier
 #define CAN_IF2ARB2_ID_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2MCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2MCTL_NEWDAT      0x00008000  // New Data
 #define CAN_IF2MCTL_MSGLST      0x00004000  // Message Lost
 #define CAN_IF2MCTL_INTPND      0x00002000  // Interrupt Pending
@@ -6580,115 +6580,115 @@
 #define CAN_IF2MCTL_DLC_M       0x0000000F  // Data Length Code
 #define CAN_IF2MCTL_DLC_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2DA1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2DA1_DATA_M       0x0000FFFF  // Data
 #define CAN_IF2DA1_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2DA2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2DA2_DATA_M       0x0000FFFF  // Data
 #define CAN_IF2DA2_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2DB1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2DB1_DATA_M       0x0000FFFF  // Data
 #define CAN_IF2DB1_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_IF2DB2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_IF2DB2_DATA_M       0x0000FFFF  // Data
 #define CAN_IF2DB2_DATA_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_TXRQ1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_TXRQ1_TXRQST_M      0x0000FFFF  // Transmission Request Bits
 #define CAN_TXRQ1_TXRQST_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_TXRQ2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_TXRQ2_TXRQST_M      0x0000FFFF  // Transmission Request Bits
 #define CAN_TXRQ2_TXRQST_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_NWDA1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_NWDA1_NEWDAT_M      0x0000FFFF  // New Data Bits
 #define CAN_NWDA1_NEWDAT_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_NWDA2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_NWDA2_NEWDAT_M      0x0000FFFF  // New Data Bits
 #define CAN_NWDA2_NEWDAT_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_MSG1INT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_MSG1INT_INTPND_M    0x0000FFFF  // Interrupt Pending Bits
 #define CAN_MSG1INT_INTPND_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_MSG2INT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_MSG2INT_INTPND_M    0x0000FFFF  // Interrupt Pending Bits
 #define CAN_MSG2INT_INTPND_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_MSG1VAL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_MSG1VAL_MSGVAL_M    0x0000FFFF  // Message Valid Bits
 #define CAN_MSG1VAL_MSGVAL_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the CAN_O_MSG2VAL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define CAN_MSG2VAL_MSGVAL_M    0x0000FFFF  // Message Valid Bits
 #define CAN_MSG2VAL_MSGVAL_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FADDR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FADDR_M             0x0000007F  // Function Address
 #define USB_FADDR_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_POWER register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_POWER_ISOUP         0x00000080  // Isochronous Update
 #define USB_POWER_SOFTCONN      0x00000040  // Soft Connect/Disconnect
 #define USB_POWER_RESET         0x00000008  // RESET Signaling
@@ -6696,11 +6696,11 @@
 #define USB_POWER_SUSPEND       0x00000002  // SUSPEND Mode
 #define USB_POWER_PWRDNPHY      0x00000001  // Power Down PHY
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXIS_EP7            0x00000080  // TX Endpoint 7 Interrupt
 #define USB_TXIS_EP6            0x00000040  // TX Endpoint 6 Interrupt
 #define USB_TXIS_EP5            0x00000020  // TX Endpoint 5 Interrupt
@@ -6710,11 +6710,11 @@
 #define USB_TXIS_EP1            0x00000002  // TX Endpoint 1 Interrupt
 #define USB_TXIS_EP0            0x00000001  // TX and RX Endpoint 0 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXIS_EP7            0x00000080  // RX Endpoint 7 Interrupt
 #define USB_RXIS_EP6            0x00000040  // RX Endpoint 6 Interrupt
 #define USB_RXIS_EP5            0x00000020  // RX Endpoint 5 Interrupt
@@ -6723,11 +6723,11 @@
 #define USB_RXIS_EP2            0x00000004  // RX Endpoint 2 Interrupt
 #define USB_RXIS_EP1            0x00000002  // RX Endpoint 1 Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXIE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXIE_EP7            0x00000080  // TX Endpoint 7 Interrupt Enable
 #define USB_TXIE_EP6            0x00000040  // TX Endpoint 6 Interrupt Enable
 #define USB_TXIE_EP5            0x00000020  // TX Endpoint 5 Interrupt Enable
@@ -6738,11 +6738,11 @@
 #define USB_TXIE_EP0            0x00000001  // TX and RX Endpoint 0 Interrupt
                                             // Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXIE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXIE_EP7            0x00000080  // RX Endpoint 7 Interrupt Enable
 #define USB_RXIE_EP6            0x00000040  // RX Endpoint 6 Interrupt Enable
 #define USB_RXIE_EP5            0x00000020  // RX Endpoint 5 Interrupt Enable
@@ -6751,11 +6751,11 @@
 #define USB_RXIE_EP2            0x00000004  // RX Endpoint 2 Interrupt Enable
 #define USB_RXIE_EP1            0x00000002  // RX Endpoint 1 Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_IS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_IS_VBUSERR          0x00000080  // VBUS Error
 #define USB_IS_SESREQ           0x00000040  // SESSION REQUEST
 #define USB_IS_DISCON           0x00000020  // Session Disconnect
@@ -6766,11 +6766,11 @@
 #define USB_IS_RESUME           0x00000002  // RESUME Signaling Detected
 #define USB_IS_SUSPEND          0x00000001  // SUSPEND Signaling Detected
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_IE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_IE_VBUSERR          0x00000080  // Enable VBUS Error Interrupt
 #define USB_IE_SESREQ           0x00000040  // Enable Session Request
 #define USB_IE_DISCON           0x00000020  // Enable Disconnect Interrupt
@@ -6781,100 +6781,100 @@
 #define USB_IE_RESUME           0x00000002  // Enable RESUME Interrupt
 #define USB_IE_SUSPND           0x00000001  // Enable SUSPEND Interrupt
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FRAME register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FRAME_M             0x000007FF  // Frame Number
 #define USB_FRAME_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_EPIDX register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_EPIDX_EPIDX_M       0x0000000F  // Endpoint Index
 #define USB_EPIDX_EPIDX_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TEST register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TEST_FORCEH         0x00000080  // Force Host Mode
 #define USB_TEST_FIFOACC        0x00000040  // FIFO Access
 #define USB_TEST_FORCEFS        0x00000020  // Force Full-Speed Mode
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO0_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO0_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO1_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO1_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO2_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO2_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO3_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO3_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO4_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO4_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO5_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO5_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO6_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO6_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FIFO7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FIFO7_EPDATA_M      0xFFFFFFFF  // Endpoint Data
 #define USB_FIFO7_EPDATA_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_DEVCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_DEVCTL_DEV          0x00000080  // Device Mode
 #define USB_DEVCTL_FSDEV        0x00000040  // Full-Speed Device Detected
 #define USB_DEVCTL_LSDEV        0x00000020  // Low-Speed Device Detected
@@ -6887,11 +6887,11 @@
 #define USB_DEVCTL_HOSTREQ      0x00000002  // Host Request
 #define USB_DEVCTL_SESSION      0x00000001  // Session Start/End
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFIFOSZ register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFIFOSZ_DPB        0x00000010  // Double Packet Buffer Support
 #define USB_TXFIFOSZ_SIZE_M     0x0000000F  // Max Packet Size
 #define USB_TXFIFOSZ_SIZE_8     0x00000000  // 8
@@ -6904,11 +6904,11 @@
 #define USB_TXFIFOSZ_SIZE_1024  0x00000007  // 1024
 #define USB_TXFIFOSZ_SIZE_2048  0x00000008  // 2048
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFIFOSZ register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFIFOSZ_DPB        0x00000010  // Double Packet Buffer Support
 #define USB_RXFIFOSZ_SIZE_M     0x0000000F  // Max Packet Size
 #define USB_RXFIFOSZ_SIZE_8     0x00000000  // 8
@@ -6921,468 +6921,468 @@
 #define USB_RXFIFOSZ_SIZE_1024  0x00000007  // 1024
 #define USB_RXFIFOSZ_SIZE_2048  0x00000008  // 2048
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFIFOADD
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFIFOADD_ADDR_M    0x000001FF  // Transmit/Receive Start Address
 #define USB_TXFIFOADD_ADDR_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFIFOADD
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFIFOADD_ADDR_M    0x000001FF  // Transmit/Receive Start Address
 #define USB_RXFIFOADD_ADDR_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_CONTIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_CONTIM_WTCON_M      0x000000F0  // Connect Wait
 #define USB_CONTIM_WTID_M       0x0000000F  // Wait ID
 #define USB_CONTIM_WTCON_S      4
 #define USB_CONTIM_WTID_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_VPLEN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_VPLEN_VPLEN_M       0x000000FF  // VBUS Pulse Length
 #define USB_VPLEN_VPLEN_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_FSEOF register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_FSEOF_FSEOFG_M      0x000000FF  // Full-Speed End-of-Frame Gap
 #define USB_FSEOF_FSEOFG_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_LSEOF register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_LSEOF_LSEOFG_M      0x000000FF  // Low-Speed End-of-Frame Gap
 #define USB_LSEOF_LSEOFG_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR0_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR0_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR0_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR0_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT0_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT0_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR1_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR1_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR1_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR1_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT1_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT1_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR1_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR1_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR1_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR1_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT1_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT1_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR2_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR2_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR2_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR2_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT2_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT2_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR2_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR2_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR2_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR2_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT2_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT2_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR3_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR3_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR3_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR3_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT3_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT3_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR3_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR3_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR3_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR3_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT3_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT3_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR4_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR4_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR4_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR4_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT4_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT4_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR4_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR4_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR4_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR4_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT4_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT4_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR5_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR5_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR5_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR5_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT5_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT5_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR5_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR5_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR5_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR5_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT5_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT5_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR6_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR6_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR6_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR6_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT6_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT6_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR6_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR6_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR6_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR6_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT6_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT6_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXFUNCADDR7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXFUNCADDR7_ADDR_M  0x0000007F  // Device Address
 #define USB_TXFUNCADDR7_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBADDR7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBADDR7_ADDR_M   0x0000007F  // Hub Address
 #define USB_TXHUBADDR7_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXHUBPORT7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXHUBPORT7_PORT_M   0x0000007F  // Hub Port
 #define USB_TXHUBPORT7_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXFUNCADDR7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXFUNCADDR7_ADDR_M  0x0000007F  // Device Address
 #define USB_RXFUNCADDR7_ADDR_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBADDR7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBADDR7_ADDR_M   0x0000007F  // Hub Address
 #define USB_RXHUBADDR7_ADDR_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXHUBPORT7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXHUBPORT7_PORT_M   0x0000007F  // Hub Port
 #define USB_RXHUBPORT7_PORT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_CSRL0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_CSRL0_NAKTO         0x00000080  // NAK Timeout
 #define USB_CSRL0_SETENDC       0x00000080  // Setup End Clear
 #define USB_CSRL0_STATUS        0x00000040  // STATUS Packet
@@ -7397,53 +7397,53 @@
 #define USB_CSRL0_TXRDY         0x00000002  // Transmit Packet Ready
 #define USB_CSRL0_RXRDY         0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_CSRH0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_CSRH0_DTWE          0x00000004  // Data Toggle Write Enable
 #define USB_CSRH0_DT            0x00000002  // Data Toggle
 #define USB_CSRH0_FLUSH         0x00000001  // Flush FIFO
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_COUNT0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_COUNT0_COUNT_M      0x0000007F  // FIFO Count
 #define USB_COUNT0_COUNT_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TYPE0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TYPE0_SPEED_M       0x000000C0  // Operating Speed
 #define USB_TYPE0_SPEED_FULL    0x00000080  // Full
 #define USB_TYPE0_SPEED_LOW     0x000000C0  // Low
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_NAKLMT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_NAKLMT_NAKLMT_M     0x0000001F  // EP0 NAK Limit
 #define USB_NAKLMT_NAKLMT_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP1_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP1_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL1_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL1_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL1_STALLED     0x00000020  // Endpoint Stalled
@@ -7455,11 +7455,11 @@
 #define USB_TXCSRL1_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL1_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH1_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH1_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH1_MODE        0x00000020  // Mode
@@ -7469,19 +7469,19 @@
 #define USB_TXCSRH1_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH1_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP1_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP1_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL1_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL1_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL1_STALL       0x00000020  // Send STALL
@@ -7494,11 +7494,11 @@
 #define USB_RXCSRL1_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL1_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH1_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH1_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH1_ISO         0x00000040  // Isochronous Transfers
@@ -7509,19 +7509,19 @@
 #define USB_RXCSRH1_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH1_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT1_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT1_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE1_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE1_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE1_SPEED_FULL  0x00000080  // Full
@@ -7534,12 +7534,12 @@
 #define USB_TXTYPE1_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE1_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL1_NAKLMT_M                                              \
                                 0x000000FF  // NAK Limit
 #define USB_TXINTERVAL1_TXPOLL_M                                              \
@@ -7549,11 +7549,11 @@
 #define USB_TXINTERVAL1_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE1_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE1_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE1_SPEED_FULL  0x00000080  // Full
@@ -7566,12 +7566,12 @@
 #define USB_RXTYPE1_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE1_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL1_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL1_NAKLMT_M                                              \
@@ -7581,19 +7581,19 @@
 #define USB_RXINTERVAL1_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP2_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP2_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL2_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL2_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL2_STALLED     0x00000020  // Endpoint Stalled
@@ -7605,11 +7605,11 @@
 #define USB_TXCSRL2_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL2_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH2_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH2_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH2_MODE        0x00000020  // Mode
@@ -7619,19 +7619,19 @@
 #define USB_TXCSRH2_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH2_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP2_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP2_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL2_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL2_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL2_REQPKT      0x00000020  // Request Packet
@@ -7644,11 +7644,11 @@
 #define USB_RXCSRL2_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL2_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH2_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH2_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH2_ISO         0x00000040  // Isochronous Transfers
@@ -7659,19 +7659,19 @@
 #define USB_RXCSRH2_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH2_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT2_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT2_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE2_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE2_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE2_SPEED_FULL  0x00000080  // Full
@@ -7684,12 +7684,12 @@
 #define USB_TXTYPE2_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE2_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL2_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL2_NAKLMT_M                                              \
@@ -7699,11 +7699,11 @@
 #define USB_TXINTERVAL2_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE2_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE2_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE2_SPEED_FULL  0x00000080  // Full
@@ -7716,12 +7716,12 @@
 #define USB_RXTYPE2_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE2_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL2_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL2_NAKLMT_M                                              \
@@ -7731,19 +7731,19 @@
 #define USB_RXINTERVAL2_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP3_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP3_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL3_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL3_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL3_STALLED     0x00000020  // Endpoint Stalled
@@ -7755,11 +7755,11 @@
 #define USB_TXCSRL3_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL3_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH3_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH3_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH3_MODE        0x00000020  // Mode
@@ -7769,19 +7769,19 @@
 #define USB_TXCSRH3_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH3_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP3_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP3_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL3_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL3_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL3_STALL       0x00000020  // Send STALL
@@ -7794,11 +7794,11 @@
 #define USB_RXCSRL3_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL3_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH3_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH3_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH3_ISO         0x00000040  // Isochronous Transfers
@@ -7809,19 +7809,19 @@
 #define USB_RXCSRH3_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH3_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT3_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT3_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE3_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE3_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE3_SPEED_FULL  0x00000080  // Full
@@ -7834,12 +7834,12 @@
 #define USB_TXTYPE3_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE3_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL3_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL3_NAKLMT_M                                              \
@@ -7849,11 +7849,11 @@
 #define USB_TXINTERVAL3_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE3_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE3_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE3_SPEED_FULL  0x00000080  // Full
@@ -7866,12 +7866,12 @@
 #define USB_RXTYPE3_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE3_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL3_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL3_NAKLMT_M                                              \
@@ -7881,19 +7881,19 @@
 #define USB_RXINTERVAL3_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP4_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP4_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL4_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL4_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL4_STALLED     0x00000020  // Endpoint Stalled
@@ -7905,11 +7905,11 @@
 #define USB_TXCSRL4_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL4_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH4_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH4_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH4_MODE        0x00000020  // Mode
@@ -7919,19 +7919,19 @@
 #define USB_TXCSRH4_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH4_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP4_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP4_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL4_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL4_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL4_STALL       0x00000020  // Send STALL
@@ -7944,11 +7944,11 @@
 #define USB_RXCSRL4_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL4_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH4_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH4_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH4_ISO         0x00000040  // Isochronous Transfers
@@ -7959,19 +7959,19 @@
 #define USB_RXCSRH4_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH4_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT4_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT4_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE4_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE4_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE4_SPEED_FULL  0x00000080  // Full
@@ -7984,12 +7984,12 @@
 #define USB_TXTYPE4_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE4_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL4_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL4_NAKLMT_M                                              \
@@ -7999,11 +7999,11 @@
 #define USB_TXINTERVAL4_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE4_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE4_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE4_SPEED_FULL  0x00000080  // Full
@@ -8016,12 +8016,12 @@
 #define USB_RXTYPE4_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE4_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL4_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL4_NAKLMT_M                                              \
@@ -8031,19 +8031,19 @@
 #define USB_RXINTERVAL4_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP5_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP5_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL5_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL5_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL5_STALLED     0x00000020  // Endpoint Stalled
@@ -8055,11 +8055,11 @@
 #define USB_TXCSRL5_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL5_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH5_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH5_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH5_MODE        0x00000020  // Mode
@@ -8069,19 +8069,19 @@
 #define USB_TXCSRH5_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH5_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP5_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP5_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL5_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL5_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL5_STALL       0x00000020  // Send STALL
@@ -8094,11 +8094,11 @@
 #define USB_RXCSRL5_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL5_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH5_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH5_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH5_ISO         0x00000040  // Isochronous Transfers
@@ -8109,19 +8109,19 @@
 #define USB_RXCSRH5_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH5_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT5_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT5_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE5_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE5_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE5_SPEED_FULL  0x00000080  // Full
@@ -8134,12 +8134,12 @@
 #define USB_TXTYPE5_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE5_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL5_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL5_NAKLMT_M                                              \
@@ -8149,11 +8149,11 @@
 #define USB_TXINTERVAL5_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE5_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE5_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE5_SPEED_FULL  0x00000080  // Full
@@ -8166,12 +8166,12 @@
 #define USB_RXTYPE5_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE5_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL5_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL5_NAKLMT_M                                              \
@@ -8181,19 +8181,19 @@
 #define USB_RXINTERVAL5_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP6_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP6_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL6_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL6_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL6_STALLED     0x00000020  // Endpoint Stalled
@@ -8205,11 +8205,11 @@
 #define USB_TXCSRL6_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL6_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH6_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH6_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH6_MODE        0x00000020  // Mode
@@ -8219,19 +8219,19 @@
 #define USB_TXCSRH6_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH6_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP6_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP6_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL6_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL6_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL6_REQPKT      0x00000020  // Request Packet
@@ -8244,11 +8244,11 @@
 #define USB_RXCSRL6_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL6_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH6_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH6_AUTORQ      0x00000040  // Auto Request
 #define USB_RXCSRH6_ISO         0x00000040  // Isochronous Transfers
@@ -8259,19 +8259,19 @@
 #define USB_RXCSRH6_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH6_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT6_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT6_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE6_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE6_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE6_SPEED_FULL  0x00000080  // Full
@@ -8284,12 +8284,12 @@
 #define USB_TXTYPE6_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE6_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL6_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL6_NAKLMT_M                                              \
@@ -8299,11 +8299,11 @@
 #define USB_TXINTERVAL6_NAKLMT_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE6_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE6_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE6_SPEED_FULL  0x00000080  // Full
@@ -8316,12 +8316,12 @@
 #define USB_RXTYPE6_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE6_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL6_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL6_NAKLMT_M                                              \
@@ -8331,19 +8331,19 @@
 #define USB_RXINTERVAL6_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXMAXP7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXMAXP7_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_TXMAXP7_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRL7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRL7_NAKTO       0x00000080  // NAK Timeout
 #define USB_TXCSRL7_CLRDT       0x00000040  // Clear Data Toggle
 #define USB_TXCSRL7_STALLED     0x00000020  // Endpoint Stalled
@@ -8355,11 +8355,11 @@
 #define USB_TXCSRL7_FIFONE      0x00000002  // FIFO Not Empty
 #define USB_TXCSRL7_TXRDY       0x00000001  // Transmit Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXCSRH7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXCSRH7_AUTOSET     0x00000080  // Auto Set
 #define USB_TXCSRH7_ISO         0x00000040  // Isochronous Transfers
 #define USB_TXCSRH7_MODE        0x00000020  // Mode
@@ -8369,19 +8369,19 @@
 #define USB_TXCSRH7_DTWE        0x00000002  // Data Toggle Write Enable
 #define USB_TXCSRH7_DT          0x00000001  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXMAXP7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXMAXP7_MAXLOAD_M   0x000007FF  // Maximum Payload
 #define USB_RXMAXP7_MAXLOAD_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRL7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRL7_CLRDT       0x00000080  // Clear Data Toggle
 #define USB_RXCSRL7_STALLED     0x00000040  // Endpoint Stalled
 #define USB_RXCSRL7_REQPKT      0x00000020  // Request Packet
@@ -8394,11 +8394,11 @@
 #define USB_RXCSRL7_FULL        0x00000002  // FIFO Full
 #define USB_RXCSRL7_RXRDY       0x00000001  // Receive Packet Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCSRH7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCSRH7_AUTOCL      0x00000080  // Auto Clear
 #define USB_RXCSRH7_ISO         0x00000040  // Isochronous Transfers
 #define USB_RXCSRH7_AUTORQ      0x00000040  // Auto Request
@@ -8409,19 +8409,19 @@
 #define USB_RXCSRH7_DTWE        0x00000004  // Data Toggle Write Enable
 #define USB_RXCSRH7_DT          0x00000002  // Data Toggle
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXCOUNT7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXCOUNT7_COUNT_M    0x00001FFF  // Receive Packet Count
 #define USB_RXCOUNT7_COUNT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXTYPE7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXTYPE7_SPEED_M     0x000000C0  // Operating Speed
 #define USB_TXTYPE7_SPEED_DFLT  0x00000000  // Default
 #define USB_TXTYPE7_SPEED_FULL  0x00000080  // Full
@@ -8434,12 +8434,12 @@
 #define USB_TXTYPE7_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_TXTYPE7_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXINTERVAL7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXINTERVAL7_TXPOLL_M                                              \
                                 0x000000FF  // TX Polling
 #define USB_TXINTERVAL7_NAKLMT_M                                              \
@@ -8449,11 +8449,11 @@
 #define USB_TXINTERVAL7_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXTYPE7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXTYPE7_SPEED_M     0x000000C0  // Operating Speed
 #define USB_RXTYPE7_SPEED_DFLT  0x00000000  // Default
 #define USB_RXTYPE7_SPEED_FULL  0x00000080  // Full
@@ -8466,12 +8466,12 @@
 #define USB_RXTYPE7_TEP_M       0x0000000F  // Target Endpoint Number
 #define USB_RXTYPE7_TEP_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXINTERVAL7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXINTERVAL7_TXPOLL_M                                              \
                                 0x000000FF  // RX Polling
 #define USB_RXINTERVAL7_NAKLMT_M                                              \
@@ -8481,75 +8481,75 @@
 #define USB_RXINTERVAL7_TXPOLL_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT1_M       0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT1_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT2
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT2_M       0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT2_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT3
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT3_M       0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT3_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT4
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT4_COUNT_M 0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT4_COUNT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT5
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT5_COUNT_M 0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT5_COUNT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT6
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT6_COUNT_M 0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT6_COUNT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RQPKTCOUNT7
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RQPKTCOUNT7_COUNT_M 0x0000FFFF  // Block Transfer Packet Count
 #define USB_RQPKTCOUNT7_COUNT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_RXDPKTBUFDIS
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_RXDPKTBUFDIS_EP7    0x00000080  // EP7 RX Double-Packet Buffer
                                             // Disable
 #define USB_RXDPKTBUFDIS_EP6    0x00000040  // EP6 RX Double-Packet Buffer
@@ -8565,12 +8565,12 @@
 #define USB_RXDPKTBUFDIS_EP1    0x00000002  // EP1 RX Double-Packet Buffer
                                             // Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_TXDPKTBUFDIS
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_TXDPKTBUFDIS_EP7    0x00000080  // EP7 TX Double-Packet Buffer
                                             // Disable
 #define USB_TXDPKTBUFDIS_EP6    0x00000040  // EP6 TX Double-Packet Buffer
@@ -8586,11 +8586,11 @@
 #define USB_TXDPKTBUFDIS_EP1    0x00000002  // EP1 TX Double-Packet Buffer
                                             // Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_EPC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_EPC_PFLTACT_M       0x00000300  // Power Fault Action
 #define USB_EPC_PFLTACT_UNCHG   0x00000000  // Unchanged
 #define USB_EPC_PFLTACT_TRIS    0x00000100  // Tristate
@@ -8607,115 +8607,115 @@
 #define USB_EPC_EPEN_VBLOW      0x00000002  // Power Enable High if VBUS Low
 #define USB_EPC_EPEN_VBHIGH     0x00000003  // Power Enable High if VBUS High
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_EPCRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_EPCRIS_PF           0x00000001  // USB Power Fault Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_EPCIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_EPCIM_PF            0x00000001  // USB Power Fault Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_EPCISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_EPCISC_PF           0x00000001  // USB Power Fault Interrupt Status
                                             // and Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_DRRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_DRRIS_RESUME        0x00000001  // RESUME Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_DRIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_DRIM_RESUME         0x00000001  // RESUME Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_DRISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_DRISC_RESUME        0x00000001  // RESUME Interrupt Status and
                                             // Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_GPCS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_GPCS_DEVMODOTG      0x00000002  // Enable Device Mode
 #define USB_GPCS_DEVMOD         0x00000001  // Device Mode
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_VDC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_VDC_VBDEN           0x00000001  // VBUS Droop Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_VDCRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_VDCRIS_VD           0x00000001  // VBUS Droop Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_VDCIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_VDCIM_VD            0x00000001  // VBUS Droop Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_VDCISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_VDCISC_VD           0x00000001  // VBUS Droop Interrupt Status and
                                             // Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_IDVRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_IDVRIS_ID           0x00000001  // ID Valid Detect Raw Interrupt
                                             // Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_IDVIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_IDVIM_ID            0x00000001  // ID Valid Detect Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_IDVISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_IDVISC_ID           0x00000001  // ID Valid Detect Interrupt Status
                                             // and Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_DMASEL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_DMASEL_DMACTX_M     0x00F00000  // DMA C TX Select
 #define USB_DMASEL_DMACRX_M     0x000F0000  // DMA C RX Select
 #define USB_DMASEL_DMABTX_M     0x0000F000  // DMA B TX Select
@@ -8729,11 +8729,11 @@
 #define USB_DMASEL_DMAATX_S     4
 #define USB_DMASEL_DMAARX_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the USB_O_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define USB_PP_ECNT_M           0x0000FF00  // Endpoint Count
 #define USB_PP_USB_M            0x000000C0  // USB Capability
 #define USB_PP_USB_DEVICE       0x00000040  // DEVICE
@@ -8745,60 +8745,60 @@
                                             // controller
 #define USB_PP_ECNT_S           8
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EESIZE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EESIZE_BLKCNT_M  0x07FF0000  // Number of 16-Word Blocks
 #define EEPROM_EESIZE_WORDCNT_M 0x0000FFFF  // Number of 32-Bit Words
 #define EEPROM_EESIZE_BLKCNT_S  16
 #define EEPROM_EESIZE_WORDCNT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEBLOCK register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEBLOCK_BLOCK_M  0x0000FFFF  // Current Block
 #define EEPROM_EEBLOCK_BLOCK_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEOFFSET
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEOFFSET_OFFSET_M                                              \
                                 0x0000000F  // Current Address Offset
 #define EEPROM_EEOFFSET_OFFSET_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EERDWR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EERDWR_VALUE_M   0xFFFFFFFF  // EEPROM Read or Write Data
 #define EEPROM_EERDWR_VALUE_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EERDWRINC
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EERDWRINC_VALUE_M                                              \
                                 0xFFFFFFFF  // EEPROM Read or Write Data with
                                             // Increment
 #define EEPROM_EERDWRINC_VALUE_S                                              \
                                 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEDONE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEDONE_INVPL     0x00000100  // Invalid Program Voltage Level
 #define EEPROM_EEDONE_WRBUSY    0x00000020  // Write Busy
 #define EEPROM_EEDONE_NOPERM    0x00000010  // Write Without Permission
@@ -8806,30 +8806,30 @@
 #define EEPROM_EEDONE_WKERASE   0x00000004  // Working on an Erase
 #define EEPROM_EEDONE_WORKING   0x00000001  // EEPROM Working
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EESUPP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EESUPP_PRETRY    0x00000008  // Programming Must Be Retried
 #define EEPROM_EESUPP_ERETRY    0x00000004  // Erase Must Be Retried
 #define EEPROM_EESUPP_EREQ      0x00000002  // Erase Required
 #define EEPROM_EESUPP_START     0x00000001  // Start Erase
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEUNLOCK
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEUNLOCK_UNLOCK_M                                              \
                                 0xFFFFFFFF  // EEPROM Unlock
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEPROT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEPROT_ACC       0x00000008  // Access Control
 #define EEPROM_EEPROT_PROT_M    0x00000007  // Protection Control
 #define EEPROM_EEPROT_PROT_RWNPW                                              \
@@ -8844,66 +8844,66 @@
                                 0x00000002  // If there is no password, the
                                             // block is readable, not writable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEPASS0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEPASS0_PASS_M   0xFFFFFFFF  // Password
 #define EEPROM_EEPASS0_PASS_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEPASS1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEPASS1_PASS_M   0xFFFFFFFF  // Password
 #define EEPROM_EEPASS1_PASS_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEPASS2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEPASS2_PASS_M   0xFFFFFFFF  // Password
 #define EEPROM_EEPASS2_PASS_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEINT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEINT_INT        0x00000001  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEHIDE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEHIDE_HN_M      0xFFFFFFFE  // Hide Block
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_EEDBGME register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_EEDBGME_KEY_M    0xFFFF0000  // Erase Key
 #define EEPROM_EEDBGME_ME       0x00000001  // Mass Erase
 #define EEPROM_EEDBGME_KEY_S    16
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the EEPROM_PP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define EEPROM_PP_SIZE_M        0x0000001F  // EEPROM Size
 #define EEPROM_PP_SIZE_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSEXC_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSEXC_RIS_FPIXCRIS     0x00000020  // Floating-Point Inexact Exception
                                             // Raw Interrupt Status
 #define SYSEXC_RIS_FPOFCRIS     0x00000010  // Floating-Point Overflow
@@ -8917,11 +8917,11 @@
 #define SYSEXC_RIS_FPIDCRIS     0x00000001  // Floating-Point Input Denormal
                                             // Exception Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSEXC_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSEXC_IM_FPIXCIM       0x00000020  // Floating-Point Inexact Exception
                                             // Interrupt Mask
 #define SYSEXC_IM_FPOFCIM       0x00000010  // Floating-Point Overflow
@@ -8935,11 +8935,11 @@
 #define SYSEXC_IM_FPIDCIM       0x00000001  // Floating-Point Input Denormal
                                             // Exception Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSEXC_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSEXC_MIS_FPIXCMIS     0x00000020  // Floating-Point Inexact Exception
                                             // Masked Interrupt Status
 #define SYSEXC_MIS_FPOFCMIS     0x00000010  // Floating-Point Overflow
@@ -8957,11 +8957,11 @@
                                             // Exception Masked Interrupt
                                             // Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSEXC_IC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSEXC_IC_FPIXCIC       0x00000020  // Floating-Point Inexact Exception
                                             // Interrupt Clear
 #define SYSEXC_IC_FPOFCIC       0x00000010  // Floating-Point Overflow
@@ -8975,35 +8975,35 @@
 #define SYSEXC_IC_FPIDCIC       0x00000001  // Floating-Point Input Denormal
                                             // Exception Interrupt Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RTCC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCC_M              0xFFFFFFFF  // RTC Counter
 #define HIB_RTCC_S              0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RTCM0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCM0_M             0xFFFFFFFF  // RTC Match 0
 #define HIB_RTCM0_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RTCLD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCLD_M             0xFFFFFFFF  // RTC Load
 #define HIB_RTCLD_S             0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_CTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_CTL_WRC             0x80000000  // Write Complete/Capable
 #define HIB_CTL_OSCDRV          0x00020000  // Oscillator Drive Capability
 #define HIB_CTL_OSCBYP          0x00010000  // Oscillator Bypass
@@ -9023,11 +9023,11 @@
 #define HIB_CTL_HIBREQ          0x00000002  // Hibernation Request
 #define HIB_CTL_RTCEN           0x00000001  // RTC Timer Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_IM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_IM_WC               0x00000010  // External Write Complete/Capable
                                             // Interrupt Mask
 #define HIB_IM_EXTW             0x00000008  // External Wake-Up Interrupt Mask
@@ -9035,11 +9035,11 @@
                                             // Mask
 #define HIB_IM_RTCALT0          0x00000001  // RTC Alert 0 Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RIS_WC              0x00000010  // Write Complete/Capable Raw
                                             // Interrupt Status
 #define HIB_RIS_EXTW            0x00000008  // External Wake-Up Raw Interrupt
@@ -9048,11 +9048,11 @@
                                             // Interrupt Status
 #define HIB_RIS_RTCALT0         0x00000001  // RTC Alert 0 Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_MIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_MIS_WC              0x00000010  // Write Complete/Capable Masked
                                             // Interrupt Status
 #define HIB_MIS_EXTW            0x00000008  // External Wake-Up Masked
@@ -9062,11 +9062,11 @@
 #define HIB_MIS_RTCALT0         0x00000001  // RTC Alert 0 Masked Interrupt
                                             // Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_IC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_IC_WC               0x00000010  // Write Complete/Capable Masked
                                             // Interrupt Clear
 #define HIB_IC_EXTW             0x00000008  // External Wake-Up Masked
@@ -9076,64 +9076,64 @@
 #define HIB_IC_RTCALT0          0x00000001  // RTC Alert0 Masked Interrupt
                                             // Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RTCT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCT_TRIM_M         0x0000FFFF  // RTC Trim Value
 #define HIB_RTCT_TRIM_S         0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_RTCSS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_RTCSS_RTCSSM_M      0x7FFF0000  // RTC Sub Seconds Match
 #define HIB_RTCSS_RTCSSC_M      0x00007FFF  // RTC Sub Seconds Count
 #define HIB_RTCSS_RTCSSM_S      16
 #define HIB_RTCSS_RTCSSC_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the HIB_DATA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define HIB_DATA_RTD_M          0xFFFFFFFF  // Hibernation Module NV Data
 #define HIB_DATA_RTD_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FMA_OFFSET_M      0x0003FFFF  // Address Offset
 #define FLASH_FMA_OFFSET_S      0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FMD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FMD_DATA_M        0xFFFFFFFF  // Data Value
 #define FLASH_FMD_DATA_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FMC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FMC_WRKEY         0xA4420000  // FLASH write key
 #define FLASH_FMC_COMT          0x00000008  // Commit Register Value
 #define FLASH_FMC_MERASE        0x00000004  // Mass Erase Flash Memory
 #define FLASH_FMC_ERASE         0x00000002  // Erase a Page of Flash Memory
 #define FLASH_FMC_WRITE         0x00000001  // Write a Word into Flash Memory
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FCRIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FCRIS_PROGRIS     0x00002000  // PROGVER Raw Interrupt Status
 #define FLASH_FCRIS_ERRIS       0x00000800  // ERVER Raw Interrupt Status
 #define FLASH_FCRIS_INVDRIS     0x00000400  // Invalid Data Raw Interrupt
@@ -9143,11 +9143,11 @@
 #define FLASH_FCRIS_PRIS        0x00000002  // Programming Raw Interrupt Status
 #define FLASH_FCRIS_ARIS        0x00000001  // Access Raw Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FCIM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FCIM_PROGMASK     0x00002000  // PROGVER Interrupt Mask
 #define FLASH_FCIM_ERMASK       0x00000800  // ERVER Interrupt Mask
 #define FLASH_FCIM_INVDMASK     0x00000400  // Invalid Data Interrupt Mask
@@ -9156,11 +9156,11 @@
 #define FLASH_FCIM_PMASK        0x00000002  // Programming Interrupt Mask
 #define FLASH_FCIM_AMASK        0x00000001  // Access Interrupt Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FCMISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FCMISC_PROGMISC   0x00002000  // PROGVER Masked Interrupt Status
                                             // and Clear
 #define FLASH_FCMISC_ERMISC     0x00000800  // ERVER Masked Interrupt Status
@@ -9176,32 +9176,32 @@
 #define FLASH_FCMISC_AMISC      0x00000001  // Access Masked Interrupt Status
                                             // and Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FMC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FMC2_WRBUF        0x00000001  // Buffered Flash Memory Write
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FWBVAL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FWBVAL_FWB_M      0xFFFFFFFF  // Flash Memory Write Buffer
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FWBN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FWBN_DATA_M       0xFFFFFFFF  // Data
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_FSIZE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_FSIZE_SIZE_M      0x0000FFFF  // Flash Size
 #define FLASH_FSIZE_SIZE_8KB    0x00000003  // 8 KB of Flash
 #define FLASH_FSIZE_SIZE_16KB   0x00000007  // 16 KB of Flash
@@ -9212,11 +9212,11 @@
 #define FLASH_FSIZE_SIZE_192KB  0x0000005F  // 192 KB of Flash
 #define FLASH_FSIZE_SIZE_256KB  0x0000007F  // 256 KB of Flash
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_SSIZE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_SSIZE_SIZE_M      0x0000FFFF  // SRAM Size
 #define FLASH_SSIZE_SIZE_2KB    0x00000007  // 2 KB of SRAM
 #define FLASH_SSIZE_SIZE_4KB    0x0000000F  // 4 KB of SRAM
@@ -9228,25 +9228,25 @@
 #define FLASH_SSIZE_SIZE_24KB   0x0000005F  // 24 KB of SRAM
 #define FLASH_SSIZE_SIZE_32KB   0x0000007F  // 32 KB of SRAM
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_ROMSWMAP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_ROMSWMAP_SAFERTOS 0x00000001  // SafeRTOS Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_RMCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_RMCTL_BA          0x00000001  // Boot Alias
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_BOOTCFG register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_BOOTCFG_NW        0x80000000  // Not Written
 #define FLASH_BOOTCFG_PORT_M    0x0000E000  // Boot GPIO Port
 #define FLASH_BOOTCFG_PORT_A    0x00000000  // Port A
@@ -9272,43 +9272,43 @@
 #define FLASH_BOOTCFG_DBG1      0x00000002  // Debug Control 1
 #define FLASH_BOOTCFG_DBG0      0x00000001  // Debug Control 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_USERREG0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_USERREG0_DATA_M   0xFFFFFFFF  // User Data
 #define FLASH_USERREG0_DATA_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_USERREG1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_USERREG1_DATA_M   0xFFFFFFFF  // User Data
 #define FLASH_USERREG1_DATA_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_USERREG2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_USERREG2_DATA_M   0xFFFFFFFF  // User Data
 #define FLASH_USERREG2_DATA_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the FLASH_USERREG3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define FLASH_USERREG3_DATA_M   0xFFFFFFFF  // User Data
 #define FLASH_USERREG3_DATA_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DID0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DID0_VER_M       0x70000000  // DID0 Version
 #define SYSCTL_DID0_VER_1       0x10000000  // Second version of the DID0
                                             // register format
@@ -9328,11 +9328,11 @@
 #define SYSCTL_DID0_MIN_1       0x00000001  // First metal layer change
 #define SYSCTL_DID0_MIN_2       0x00000002  // Second metal layer change
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DID1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DID1_VER_M       0xF0000000  // DID1 Version
 #define SYSCTL_DID1_VER_1       0x10000000  // Second version of the DID1
                                             // register format
@@ -9365,11 +9365,11 @@
 #define SYSCTL_DID1_QUAL_PP     0x00000001  // Pilot Production (unqualified)
 #define SYSCTL_DID1_QUAL_FQ     0x00000002  // Fully Qualified
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC0_SRAMSZ_M     0xFFFF0000  // SRAM Size
 #define SYSCTL_DC0_SRAMSZ_2KB   0x00070000  // 2 KB of SRAM
 #define SYSCTL_DC0_SRAMSZ_4KB   0x000F0000  // 4 KB of SRAM
@@ -9390,11 +9390,11 @@
 #define SYSCTL_DC0_FLASHSZ_192K 0x0000005F  // 192 KB of Flash
 #define SYSCTL_DC0_FLASHSZ_256K 0x0000007F  // 256 KB of Flash
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC1_WDT1         0x10000000  // Watchdog Timer1 Present
 #define SYSCTL_DC1_CAN1         0x02000000  // CAN Module 1 Present
 #define SYSCTL_DC1_CAN0         0x01000000  // CAN Module 0 Present
@@ -9434,11 +9434,11 @@
 #define SYSCTL_DC1_SWD          0x00000002  // SWD Present
 #define SYSCTL_DC1_JTAG         0x00000001  // JTAG Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC2_EPI0         0x40000000  // EPI Module 0 Present
 #define SYSCTL_DC2_I2S0         0x10000000  // I2S Module 0 Present
 #define SYSCTL_DC2_COMP2        0x04000000  // Analog Comparator 2 Present
@@ -9460,11 +9460,11 @@
 #define SYSCTL_DC2_UART1        0x00000002  // UART Module 1 Present
 #define SYSCTL_DC2_UART0        0x00000001  // UART Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC3_32KHZ        0x80000000  // 32KHz Input Clock Available
 #define SYSCTL_DC3_CCP5         0x20000000  // CCP5 Pin Present
 #define SYSCTL_DC3_CCP4         0x10000000  // CCP4 Pin Present
@@ -9497,11 +9497,11 @@
 #define SYSCTL_DC3_PWM1         0x00000002  // PWM1 Pin Present
 #define SYSCTL_DC3_PWM0         0x00000001  // PWM0 Pin Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC4_EPHY0        0x40000000  // Ethernet PHY Layer 0 Present
 #define SYSCTL_DC4_EMAC0        0x10000000  // Ethernet MAC Layer 0 Present
 #define SYSCTL_DC4_E1588        0x01000000  // 1588 Capable
@@ -9520,11 +9520,11 @@
 #define SYSCTL_DC4_GPIOB        0x00000002  // GPIO Port B Present
 #define SYSCTL_DC4_GPIOA        0x00000001  // GPIO Port A Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC5_PWMFAULT3    0x08000000  // PWM Fault 3 Pin Present
 #define SYSCTL_DC5_PWMFAULT2    0x04000000  // PWM Fault 2 Pin Present
 #define SYSCTL_DC5_PWMFAULT1    0x02000000  // PWM Fault 1 Pin Present
@@ -9540,22 +9540,22 @@
 #define SYSCTL_DC5_PWM1         0x00000002  // PWM1 Pin Present
 #define SYSCTL_DC5_PWM0         0x00000001  // PWM0 Pin Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC6_USB0PHY      0x00000010  // USB Module 0 PHY Present
 #define SYSCTL_DC6_USB0_M       0x00000003  // USB Module 0 Present
 #define SYSCTL_DC6_USB0_DEV     0x00000001  // USB0 is Device Only
 #define SYSCTL_DC6_USB0_HOSTDEV 0x00000002  // USB is Device or Host
 #define SYSCTL_DC6_USB0_OTG     0x00000003  // USB0 is OTG
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC7_DMACH30      0x40000000  // SW
 #define SYSCTL_DC7_DMACH29      0x20000000  // I2S0_TX / CAN1_TX
 #define SYSCTL_DC7_DMACH28      0x10000000  // I2S0_RX / CAN1_RX
@@ -9588,11 +9588,11 @@
 #define SYSCTL_DC7_DMACH1       0x00000002  // USB_EP1_TX / UART2_TX
 #define SYSCTL_DC7_DMACH0       0x00000001  // USB_EP1_RX / UART2_RX
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC8 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC8_ADC1AIN15    0x80000000  // ADC Module 1 AIN15 Pin Present
 #define SYSCTL_DC8_ADC1AIN14    0x40000000  // ADC Module 1 AIN14 Pin Present
 #define SYSCTL_DC8_ADC1AIN13    0x20000000  // ADC Module 1 AIN13 Pin Present
@@ -9626,19 +9626,19 @@
 #define SYSCTL_DC8_ADC0AIN1     0x00000002  // ADC Module 0 AIN1 Pin Present
 #define SYSCTL_DC8_ADC0AIN0     0x00000001  // ADC Module 0 AIN0 Pin Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PBORCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PBORCTL_BOR0     0x00000004  // VDD under BOR0 Event Action
 #define SYSCTL_PBORCTL_BOR1     0x00000002  // VDD under BOR1 Event Action
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRCR0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRCR0_WDT1       0x10000000  // WDT1 Reset Control
 #define SYSCTL_SRCR0_CAN1       0x02000000  // CAN1 Reset Control
 #define SYSCTL_SRCR0_CAN0       0x01000000  // CAN0 Reset Control
@@ -9648,11 +9648,11 @@
 #define SYSCTL_SRCR0_HIB        0x00000040  // HIB Reset Control
 #define SYSCTL_SRCR0_WDT0       0x00000008  // WDT0 Reset Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRCR1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRCR1_COMP1      0x02000000  // Analog Comp 1 Reset Control
 #define SYSCTL_SRCR1_COMP0      0x01000000  // Analog Comp 0 Reset Control
 #define SYSCTL_SRCR1_TIMER3     0x00080000  // Timer 3 Reset Control
@@ -9669,11 +9669,11 @@
 #define SYSCTL_SRCR1_UART1      0x00000002  // UART1 Reset Control
 #define SYSCTL_SRCR1_UART0      0x00000001  // UART0 Reset Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRCR2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRCR2_USB0       0x00010000  // USB0 Reset Control
 #define SYSCTL_SRCR2_UDMA       0x00002000  // Micro-DMA Reset Control
 #define SYSCTL_SRCR2_GPIOF      0x00000020  // Port F Reset Control
@@ -9683,11 +9683,11 @@
 #define SYSCTL_SRCR2_GPIOB      0x00000002  // Port B Reset Control
 #define SYSCTL_SRCR2_GPIOA      0x00000001  // Port A Reset Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RIS_VDDARIS      0x00000400  // VDDA Power OK Event Raw
                                             // Interrupt Status
 #define SYSCTL_RIS_MOSCPUPRIS   0x00000100  // MOSC Power Up Raw Interrupt
@@ -9698,11 +9698,11 @@
 #define SYSCTL_RIS_MOFRIS       0x00000008  // Main Oscillator Fault Raw
                                             // Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_IMC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_IMC_VDDAIM       0x00000400  // VDDA Power OK Interrupt Mask
 #define SYSCTL_IMC_MOSCPUPIM    0x00000100  // MOSC Power Up Interrupt Mask
 #define SYSCTL_IMC_USBPLLLIM    0x00000080  // USB PLL Lock Interrupt Mask
@@ -9710,11 +9710,11 @@
 #define SYSCTL_IMC_MOFIM        0x00000008  // Main Oscillator Fault Interrupt
                                             // Mask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_MISC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_MISC_VDDAMIS     0x00000400  // VDDA Power OK Masked Interrupt
                                             // Status
 #define SYSCTL_MISC_MOSCPUPMIS  0x00000100  // MOSC Power Up Masked Interrupt
@@ -9725,11 +9725,11 @@
 #define SYSCTL_MISC_MOFMIS      0x00000008  // Main Oscillator Fault Masked
                                             // Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RESC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RESC_MOSCFAIL    0x00010000  // MOSC Failure Reset
 #define SYSCTL_RESC_WDT1        0x00000020  // Watchdog Timer 1 Reset
 #define SYSCTL_RESC_SW          0x00000010  // Software Reset
@@ -9738,11 +9738,11 @@
 #define SYSCTL_RESC_POR         0x00000002  // Power-On Reset
 #define SYSCTL_RESC_EXT         0x00000001  // External Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCC_ACG          0x08000000  // Auto Clock Gating
 #define SYSCTL_RCC_SYSDIV_M     0x07800000  // System Clock Divisor
 #define SYSCTL_RCC_USESYSDIV    0x00400000  // Enable System Clock Divider
@@ -9786,12 +9786,12 @@
 #define SYSCTL_RCC_MOSCDIS      0x00000001  // Main Oscillator Disable
 #define SYSCTL_RCC_SYSDIV_S     23
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_GPIOHBCTL
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_GPIOHBCTL_PORTF  0x00000020  // Port F Advanced High-Performance
                                             // Bus
 #define SYSCTL_GPIOHBCTL_PORTE  0x00000010  // Port E Advanced High-Performance
@@ -9805,11 +9805,11 @@
 #define SYSCTL_GPIOHBCTL_PORTA  0x00000001  // Port A Advanced High-Performance
                                             // Bus
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCC2_USERCC2     0x80000000  // Use RCC2
 #define SYSCTL_RCC2_DIV400      0x40000000  // Divide PLL as 400 MHz vs. 200
                                             // MHz
@@ -9826,20 +9826,20 @@
 #define SYSCTL_RCC2_OSCSRC2_32  0x00000070  // 32.768 kHz
 #define SYSCTL_RCC2_SYSDIV2_S   23
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_MOSCCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_MOSCCTL_NOXTAL   0x00000004  // No Crystal Connected
 #define SYSCTL_MOSCCTL_MOSCIM   0x00000002  // MOSC Failure Action
 #define SYSCTL_MOSCCTL_CVAL     0x00000001  // Clock Validation for MOSC
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGC0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGC0_WDT1       0x10000000  // WDT1 Clock Gating Control
 #define SYSCTL_RCGC0_CAN1       0x02000000  // CAN1 Clock Gating Control
 #define SYSCTL_RCGC0_CAN0       0x01000000  // CAN0 Clock Gating Control
@@ -9865,11 +9865,11 @@
 #define SYSCTL_RCGC0_HIB        0x00000040  // HIB Clock Gating Control
 #define SYSCTL_RCGC0_WDT0       0x00000008  // WDT0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGC1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGC1_COMP1      0x02000000  // Analog Comparator 1 Clock Gating
 #define SYSCTL_RCGC1_COMP0      0x01000000  // Analog Comparator 0 Clock Gating
 #define SYSCTL_RCGC1_TIMER3     0x00080000  // Timer 3 Clock Gating Control
@@ -9886,11 +9886,11 @@
 #define SYSCTL_RCGC1_UART1      0x00000002  // UART1 Clock Gating Control
 #define SYSCTL_RCGC1_UART0      0x00000001  // UART0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGC2_USB0       0x00010000  // USB0 Clock Gating Control
 #define SYSCTL_RCGC2_UDMA       0x00002000  // Micro-DMA Clock Gating Control
 #define SYSCTL_RCGC2_GPIOF      0x00000020  // Port F Clock Gating Control
@@ -9900,11 +9900,11 @@
 #define SYSCTL_RCGC2_GPIOB      0x00000002  // Port B Clock Gating Control
 #define SYSCTL_RCGC2_GPIOA      0x00000001  // Port A Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGC0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGC0_WDT1       0x10000000  // WDT1 Clock Gating Control
 #define SYSCTL_SCGC0_CAN1       0x02000000  // CAN1 Clock Gating Control
 #define SYSCTL_SCGC0_CAN0       0x01000000  // CAN0 Clock Gating Control
@@ -9914,11 +9914,11 @@
 #define SYSCTL_SCGC0_HIB        0x00000040  // HIB Clock Gating Control
 #define SYSCTL_SCGC0_WDT0       0x00000008  // WDT0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGC1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGC1_COMP1      0x02000000  // Analog Comparator 1 Clock Gating
 #define SYSCTL_SCGC1_COMP0      0x01000000  // Analog Comparator 0 Clock Gating
 #define SYSCTL_SCGC1_TIMER3     0x00080000  // Timer 3 Clock Gating Control
@@ -9935,11 +9935,11 @@
 #define SYSCTL_SCGC1_UART1      0x00000002  // UART1 Clock Gating Control
 #define SYSCTL_SCGC1_UART0      0x00000001  // UART0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGC2_USB0       0x00010000  // USB0 Clock Gating Control
 #define SYSCTL_SCGC2_UDMA       0x00002000  // Micro-DMA Clock Gating Control
 #define SYSCTL_SCGC2_GPIOF      0x00000020  // Port F Clock Gating Control
@@ -9949,11 +9949,11 @@
 #define SYSCTL_SCGC2_GPIOB      0x00000002  // Port B Clock Gating Control
 #define SYSCTL_SCGC2_GPIOA      0x00000001  // Port A Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGC0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGC0_WDT1       0x10000000  // WDT1 Clock Gating Control
 #define SYSCTL_DCGC0_CAN1       0x02000000  // CAN1 Clock Gating Control
 #define SYSCTL_DCGC0_CAN0       0x01000000  // CAN0 Clock Gating Control
@@ -9963,11 +9963,11 @@
 #define SYSCTL_DCGC0_HIB        0x00000040  // HIB Clock Gating Control
 #define SYSCTL_DCGC0_WDT0       0x00000008  // WDT0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGC1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGC1_COMP1      0x02000000  // Analog Comparator 1 Clock Gating
 #define SYSCTL_DCGC1_COMP0      0x01000000  // Analog Comparator 0 Clock Gating
 #define SYSCTL_DCGC1_TIMER3     0x00080000  // Timer 3 Clock Gating Control
@@ -9984,11 +9984,11 @@
 #define SYSCTL_DCGC1_UART1      0x00000002  // UART1 Clock Gating Control
 #define SYSCTL_DCGC1_UART0      0x00000001  // UART0 Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGC2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGC2_USB0       0x00010000  // USB0 Clock Gating Control
 #define SYSCTL_DCGC2_UDMA       0x00002000  // Micro-DMA Clock Gating Control
 #define SYSCTL_DCGC2_GPIOF      0x00000020  // Port F Clock Gating Control
@@ -9998,12 +9998,12 @@
 #define SYSCTL_DCGC2_GPIOB      0x00000002  // Port B Clock Gating Control
 #define SYSCTL_DCGC2_GPIOA      0x00000001  // Port A Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DSLPCLKCFG
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DSLPCLKCFG_D_M   0x1F800000  // Divider Field Override
 #define SYSCTL_DSLPCLKCFG_O_M   0x00000070  // Clock Source
 #define SYSCTL_DSLPCLKCFG_O_IGN 0x00000000  // MOSC
@@ -10012,31 +10012,31 @@
 #define SYSCTL_DSLPCLKCFG_O_32  0x00000070  // 32.768 kHz
 #define SYSCTL_DSLPCLKCFG_D_S   23
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SYSPROP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SYSPROP_FPU      0x00000001  // FPU Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PIOSCCAL
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PIOSCCAL_UTEN    0x80000000  // Use User Trim Value
 #define SYSCTL_PIOSCCAL_CAL     0x00000200  // Start Calibration
 #define SYSCTL_PIOSCCAL_UPDATE  0x00000100  // Update Trim
 #define SYSCTL_PIOSCCAL_UT_M    0x0000007F  // User Trim Value
 #define SYSCTL_PIOSCCAL_UT_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PIOSCSTAT
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PIOSCSTAT_DT_M   0x007F0000  // Default Trim Value
 #define SYSCTL_PIOSCSTAT_CR_M   0x00000300  // Calibration Result
 #define SYSCTL_PIOSCSTAT_CRNONE 0x00000000  // Calibration has not been
@@ -10049,40 +10049,40 @@
 #define SYSCTL_PIOSCSTAT_DT_S   16
 #define SYSCTL_PIOSCSTAT_CT_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PLLFREQ0
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PLLFREQ0_MFRAC_M 0x000FFC00  // PLL M Fractional Value
 #define SYSCTL_PLLFREQ0_MINT_M  0x000003FF  // PLL M Integer Value
 #define SYSCTL_PLLFREQ0_MFRAC_S 10
 #define SYSCTL_PLLFREQ0_MINT_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PLLFREQ1
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PLLFREQ1_Q_M     0x00001F00  // PLL Q Value
 #define SYSCTL_PLLFREQ1_N_M     0x0000001F  // PLL N Value
 #define SYSCTL_PLLFREQ1_Q_S     8
 #define SYSCTL_PLLFREQ1_N_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PLLSTAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PLLSTAT_LOCK     0x00000001  // PLL Lock
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DC9 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DC9_ADC1DC7      0x00800000  // ADC1 DC7 Present
 #define SYSCTL_DC9_ADC1DC6      0x00400000  // ADC1 DC6 Present
 #define SYSCTL_DC9_ADC1DC5      0x00200000  // ADC1 DC5 Present
@@ -10100,27 +10100,27 @@
 #define SYSCTL_DC9_ADC0DC1      0x00000002  // ADC0 DC1 Present
 #define SYSCTL_DC9_ADC0DC0      0x00000001  // ADC0 DC0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_NVMSTAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_NVMSTAT_FWB      0x00000001  // 32 Word Flash Write Buffer
                                             // Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPWD_P1          0x00000002  // Watchdog Timer 1 Present
 #define SYSCTL_PPWD_P0          0x00000001  // Watchdog Timer 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPTIMER register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPTIMER_P5       0x00000020  // Timer 5 Present
 #define SYSCTL_PPTIMER_P4       0x00000010  // Timer 4 Present
 #define SYSCTL_PPTIMER_P3       0x00000008  // Timer 3 Present
@@ -10128,11 +10128,11 @@
 #define SYSCTL_PPTIMER_P1       0x00000002  // Timer 1 Present
 #define SYSCTL_PPTIMER_P0       0x00000001  // Timer 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPGPIO register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPGPIO_P14       0x00004000  // GPIO Port Q Present
 #define SYSCTL_PPGPIO_P13       0x00002000  // GPIO Port P Present
 #define SYSCTL_PPGPIO_P12       0x00001000  // GPIO Port N Present
@@ -10149,25 +10149,25 @@
 #define SYSCTL_PPGPIO_P1        0x00000002  // GPIO Port B Present
 #define SYSCTL_PPGPIO_P0        0x00000001  // GPIO Port A Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPDMA_P0         0x00000001  // uDMA Module Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPHIB_P0         0x00000001  // Hibernation Module Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPUART register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPUART_P7        0x00000080  // UART Module 7 Present
 #define SYSCTL_PPUART_P6        0x00000040  // UART Module 6 Present
 #define SYSCTL_PPUART_P5        0x00000020  // UART Module 5 Present
@@ -10177,21 +10177,21 @@
 #define SYSCTL_PPUART_P1        0x00000002  // UART Module 1 Present
 #define SYSCTL_PPUART_P0        0x00000001  // UART Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPSSI_P3         0x00000008  // SSI Module 3 Present
 #define SYSCTL_PPSSI_P2         0x00000004  // SSI Module 2 Present
 #define SYSCTL_PPSSI_P1         0x00000002  // SSI Module 1 Present
 #define SYSCTL_PPSSI_P0         0x00000001  // SSI Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPI2C_P5         0x00000020  // I2C Module 5 Present
 #define SYSCTL_PPI2C_P4         0x00000010  // I2C Module 4 Present
 #define SYSCTL_PPI2C_P3         0x00000008  // I2C Module 3 Present
@@ -10199,66 +10199,66 @@
 #define SYSCTL_PPI2C_P1         0x00000002  // I2C Module 1 Present
 #define SYSCTL_PPI2C_P0         0x00000001  // I2C Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPUSB_P0         0x00000001  // USB Module Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPCAN_P1         0x00000002  // CAN Module 1 Present
 #define SYSCTL_PPCAN_P0         0x00000001  // CAN Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPADC_P1         0x00000002  // ADC Module 1 Present
 #define SYSCTL_PPADC_P0         0x00000001  // ADC Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPACMP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPACMP_P0        0x00000001  // Analog Comparator Module Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPPWM_P1         0x00000002  // PWM Module 1 Present
 #define SYSCTL_PPPWM_P0         0x00000001  // PWM Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPQEI_P1         0x00000002  // QEI Module 1 Present
 #define SYSCTL_PPQEI_P0         0x00000001  // QEI Module 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPEEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPEEPROM_P0      0x00000001  // EEPROM Module Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PPWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PPWTIMER_P5      0x00000020  // Wide Timer 5 Present
 #define SYSCTL_PPWTIMER_P4      0x00000010  // Wide Timer 4 Present
 #define SYSCTL_PPWTIMER_P3      0x00000008  // Wide Timer 3 Present
@@ -10266,19 +10266,19 @@
 #define SYSCTL_PPWTIMER_P1      0x00000002  // Wide Timer 1 Present
 #define SYSCTL_PPWTIMER_P0      0x00000001  // Wide Timer 0 Present
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRWD_R1          0x00000002  // Watchdog Timer 1 Software Reset
 #define SYSCTL_SRWD_R0          0x00000001  // Watchdog Timer 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRTIMER register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRTIMER_R5       0x00000020  // Timer 5 Software Reset
 #define SYSCTL_SRTIMER_R4       0x00000010  // Timer 4 Software Reset
 #define SYSCTL_SRTIMER_R3       0x00000008  // Timer 3 Software Reset
@@ -10286,11 +10286,11 @@
 #define SYSCTL_SRTIMER_R1       0x00000002  // Timer 1 Software Reset
 #define SYSCTL_SRTIMER_R0       0x00000001  // Timer 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRGPIO register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRGPIO_R5        0x00000020  // GPIO Port F Software Reset
 #define SYSCTL_SRGPIO_R4        0x00000010  // GPIO Port E Software Reset
 #define SYSCTL_SRGPIO_R3        0x00000008  // GPIO Port D Software Reset
@@ -10298,26 +10298,26 @@
 #define SYSCTL_SRGPIO_R1        0x00000002  // GPIO Port B Software Reset
 #define SYSCTL_SRGPIO_R0        0x00000001  // GPIO Port A Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRDMA_R0         0x00000001  // uDMA Module Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRHIB_R0         0x00000001  // Hibernation Module Software
                                             // Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRUART register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRUART_R7        0x00000080  // UART Module 7 Software Reset
 #define SYSCTL_SRUART_R6        0x00000040  // UART Module 6 Software Reset
 #define SYSCTL_SRUART_R5        0x00000020  // UART Module 5 Software Reset
@@ -10327,87 +10327,87 @@
 #define SYSCTL_SRUART_R1        0x00000002  // UART Module 1 Software Reset
 #define SYSCTL_SRUART_R0        0x00000001  // UART Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRSSI_R3         0x00000008  // SSI Module 3 Software Reset
 #define SYSCTL_SRSSI_R2         0x00000004  // SSI Module 2 Software Reset
 #define SYSCTL_SRSSI_R1         0x00000002  // SSI Module 1 Software Reset
 #define SYSCTL_SRSSI_R0         0x00000001  // SSI Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRI2C_R3         0x00000008  // I2C Module 3 Software Reset
 #define SYSCTL_SRI2C_R2         0x00000004  // I2C Module 2 Software Reset
 #define SYSCTL_SRI2C_R1         0x00000002  // I2C Module 1 Software Reset
 #define SYSCTL_SRI2C_R0         0x00000001  // I2C Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRUSB_R0         0x00000001  // USB Module Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRCAN_R1         0x00000002  // CAN Module 1 Software Reset
 #define SYSCTL_SRCAN_R0         0x00000001  // CAN Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRADC_R1         0x00000002  // ADC Module 1 Software Reset
 #define SYSCTL_SRADC_R0         0x00000001  // ADC Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRACMP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRACMP_R0        0x00000001  // Analog Comparator Module 0
                                             // Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRPWM_R1         0x00000002  // PWM Module 1 Software Reset
 #define SYSCTL_SRPWM_R0         0x00000001  // PWM Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRQEI_R1         0x00000002  // QEI Module 1 Software Reset
 #define SYSCTL_SRQEI_R0         0x00000001  // QEI Module 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SREEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SREEPROM_R0      0x00000001  // EEPROM Module Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SRWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SRWTIMER_R5      0x00000020  // Wide Timer 5 Software Reset
 #define SYSCTL_SRWTIMER_R4      0x00000010  // Wide Timer 4 Software Reset
 #define SYSCTL_SRWTIMER_R3      0x00000008  // Wide Timer 3 Software Reset
@@ -10415,22 +10415,22 @@
 #define SYSCTL_SRWTIMER_R1      0x00000002  // Wide Timer 1 Software Reset
 #define SYSCTL_SRWTIMER_R0      0x00000001  // Wide Timer 0 Software Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCWD_R1        0x00000002  // Watchdog Timer 1 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCWD_R0        0x00000001  // Watchdog Timer 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCTIMER_R5     0x00000020  // Timer 5 Run Mode Clock Gating
                                             // Control
 #define SYSCTL_RCGCTIMER_R4     0x00000010  // Timer 4 Run Mode Clock Gating
@@ -10444,12 +10444,12 @@
 #define SYSCTL_RCGCTIMER_R0     0x00000001  // Timer 0 Run Mode Clock Gating
                                             // Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCGPIO
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCGPIO_R5      0x00000020  // GPIO Port F Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCGPIO_R4      0x00000010  // GPIO Port E Run Mode Clock
@@ -10463,28 +10463,28 @@
 #define SYSCTL_RCGCGPIO_R0      0x00000001  // GPIO Port A Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCDMA_R0       0x00000001  // uDMA Module Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCHIB_R0       0x00000001  // Hibernation Module Run Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCUART
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCUART_R7      0x00000080  // UART Module 7 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCUART_R6      0x00000040  // UART Module 6 Run Mode Clock
@@ -10502,11 +10502,11 @@
 #define SYSCTL_RCGCUART_R0      0x00000001  // UART Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCSSI_R3       0x00000008  // SSI Module 3 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCSSI_R2       0x00000004  // SSI Module 2 Run Mode Clock
@@ -10516,11 +10516,11 @@
 #define SYSCTL_RCGCSSI_R0       0x00000001  // SSI Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCI2C_R3       0x00000008  // I2C Module 3 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCI2C_R2       0x00000004  // I2C Module 2 Run Mode Clock
@@ -10530,78 +10530,78 @@
 #define SYSCTL_RCGCI2C_R0       0x00000001  // I2C Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCUSB_R0       0x00000001  // USB Module Run Mode Clock Gating
                                             // Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCCAN_R1       0x00000002  // CAN Module 1 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCCAN_R0       0x00000001  // CAN Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCADC_R1       0x00000002  // ADC Module 1 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCADC_R0       0x00000001  // ADC Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCACMP
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCACMP_R0      0x00000001  // Analog Comparator Module 0 Run
                                             // Mode Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCPWM_R1       0x00000002  // PWM Module 1 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCPWM_R0       0x00000001  // PWM Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCQEI_R1       0x00000002  // QEI Module 1 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCQEI_R0       0x00000001  // QEI Module 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCEEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCEEPROM_R0    0x00000001  // EEPROM Module Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_RCGCWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_RCGCWTIMER_R5    0x00000020  // Wide Timer 5 Run Mode Clock
                                             // Gating Control
 #define SYSCTL_RCGCWTIMER_R4    0x00000010  // Wide Timer 4 Run Mode Clock
@@ -10615,22 +10615,22 @@
 #define SYSCTL_RCGCWTIMER_R0    0x00000001  // Wide Timer 0 Run Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCWD_S1        0x00000002  // Watchdog Timer 1 Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_SCGCWD_S0        0x00000001  // Watchdog Timer 0 Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCTIMER_S5     0x00000020  // Timer 5 Sleep Mode Clock Gating
                                             // Control
 #define SYSCTL_SCGCTIMER_S4     0x00000010  // Timer 4 Sleep Mode Clock Gating
@@ -10644,12 +10644,12 @@
 #define SYSCTL_SCGCTIMER_S0     0x00000001  // Timer 0 Sleep Mode Clock Gating
                                             // Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCGPIO
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCGPIO_S5      0x00000020  // GPIO Port F Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCGPIO_S4      0x00000010  // GPIO Port E Sleep Mode Clock
@@ -10663,28 +10663,28 @@
 #define SYSCTL_SCGCGPIO_S0      0x00000001  // GPIO Port A Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCDMA_S0       0x00000001  // uDMA Module Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCHIB_S0       0x00000001  // Hibernation Module Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCUART
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCUART_S7      0x00000080  // UART Module 7 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCUART_S6      0x00000040  // UART Module 6 Sleep Mode Clock
@@ -10702,11 +10702,11 @@
 #define SYSCTL_SCGCUART_S0      0x00000001  // UART Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCSSI_S3       0x00000008  // SSI Module 3 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCSSI_S2       0x00000004  // SSI Module 2 Sleep Mode Clock
@@ -10716,11 +10716,11 @@
 #define SYSCTL_SCGCSSI_S0       0x00000001  // SSI Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCI2C_S3       0x00000008  // I2C Module 3 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCI2C_S2       0x00000004  // I2C Module 2 Sleep Mode Clock
@@ -10730,78 +10730,78 @@
 #define SYSCTL_SCGCI2C_S0       0x00000001  // I2C Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCUSB_S0       0x00000001  // USB Module Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCCAN_S1       0x00000002  // CAN Module 1 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCCAN_S0       0x00000001  // CAN Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCADC_S1       0x00000002  // ADC Module 1 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCADC_S0       0x00000001  // ADC Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCACMP
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCACMP_S0      0x00000001  // Analog Comparator Module 0 Sleep
                                             // Mode Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCPWM_S1       0x00000002  // PWM Module 1 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCPWM_S0       0x00000001  // PWM Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCQEI_S1       0x00000002  // QEI Module 1 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCQEI_S0       0x00000001  // QEI Module 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCEEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCEEPROM_S0    0x00000001  // EEPROM Module Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_SCGCWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_SCGCWTIMER_S5    0x00000020  // Wide Timer 5 Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_SCGCWTIMER_S4    0x00000010  // Wide Timer 4 Sleep Mode Clock
@@ -10815,22 +10815,22 @@
 #define SYSCTL_SCGCWTIMER_S0    0x00000001  // Wide Timer 0 Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCWD_D1        0x00000002  // Watchdog Timer 1 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCWD_D0        0x00000001  // Watchdog Timer 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCTIMER_D5     0x00000020  // Timer 5 Deep-Sleep Mode Clock
                                             // Gating Control
 #define SYSCTL_DCGCTIMER_D4     0x00000010  // Timer 4 Deep-Sleep Mode Clock
@@ -10844,12 +10844,12 @@
 #define SYSCTL_DCGCTIMER_D0     0x00000001  // Timer 0 Deep-Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCGPIO
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCGPIO_D5      0x00000020  // GPIO Port F Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCGPIO_D4      0x00000010  // GPIO Port E Deep-Sleep Mode
@@ -10863,28 +10863,28 @@
 #define SYSCTL_DCGCGPIO_D0      0x00000001  // GPIO Port A Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCDMA_D0       0x00000001  // uDMA Module Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCHIB_D0       0x00000001  // Hibernation Module Deep-Sleep
                                             // Mode Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCUART
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCUART_D7      0x00000080  // UART Module 7 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCUART_D6      0x00000040  // UART Module 6 Deep-Sleep Mode
@@ -10902,11 +10902,11 @@
 #define SYSCTL_DCGCUART_D0      0x00000001  // UART Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCSSI_D3       0x00000008  // SSI Module 3 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCSSI_D2       0x00000004  // SSI Module 2 Deep-Sleep Mode
@@ -10916,11 +10916,11 @@
 #define SYSCTL_DCGCSSI_D0       0x00000001  // SSI Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCI2C_D3       0x00000008  // I2C Module 3 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCI2C_D2       0x00000004  // I2C Module 2 Deep-Sleep Mode
@@ -10930,79 +10930,79 @@
 #define SYSCTL_DCGCI2C_D0       0x00000001  // I2C Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCUSB_D0       0x00000001  // USB Module Deep-Sleep Mode Clock
                                             // Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCCAN_D1       0x00000002  // CAN Module 1 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCCAN_D0       0x00000001  // CAN Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCADC_D1       0x00000002  // ADC Module 1 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCADC_D0       0x00000001  // ADC Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCACMP
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCACMP_D0      0x00000001  // Analog Comparator Module 0
                                             // Deep-Sleep Mode Clock Gating
                                             // Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCPWM_D1       0x00000002  // PWM Module 1 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCPWM_D0       0x00000001  // PWM Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCQEI_D1       0x00000002  // QEI Module 1 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCQEI_D0       0x00000001  // QEI Module 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCEEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCEEPROM_D0    0x00000001  // EEPROM Module Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_DCGCWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_DCGCWTIMER_D5    0x00000020  // Wide Timer 5 Deep-Sleep Mode
                                             // Clock Gating Control
 #define SYSCTL_DCGCWTIMER_D4    0x00000010  // Wide Timer 4 Deep-Sleep Mode
@@ -11016,21 +11016,21 @@
 #define SYSCTL_DCGCWTIMER_D0    0x00000001  // Wide Timer 0 Deep-Sleep Mode
                                             // Clock Gating Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRWD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRWD_R1          0x00000002  // Watchdog Timer 1 Peripheral
                                             // Ready
 #define SYSCTL_PRWD_R0          0x00000001  // Watchdog Timer 0 Peripheral
                                             // Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRTIMER register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRTIMER_R5       0x00000020  // Timer 5 Peripheral Ready
 #define SYSCTL_PRTIMER_R4       0x00000010  // Timer 4 Peripheral Ready
 #define SYSCTL_PRTIMER_R3       0x00000008  // Timer 3 Peripheral Ready
@@ -11038,11 +11038,11 @@
 #define SYSCTL_PRTIMER_R1       0x00000002  // Timer 1 Peripheral Ready
 #define SYSCTL_PRTIMER_R0       0x00000001  // Timer 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRGPIO register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRGPIO_R5        0x00000020  // GPIO Port F Peripheral Ready
 #define SYSCTL_PRGPIO_R4        0x00000010  // GPIO Port E Peripheral Ready
 #define SYSCTL_PRGPIO_R3        0x00000008  // GPIO Port D Peripheral Ready
@@ -11050,26 +11050,26 @@
 #define SYSCTL_PRGPIO_R1        0x00000002  // GPIO Port B Peripheral Ready
 #define SYSCTL_PRGPIO_R0        0x00000001  // GPIO Port A Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRDMA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRDMA_R0         0x00000001  // uDMA Module Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRHIB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRHIB_R0         0x00000001  // Hibernation Module Peripheral
                                             // Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRUART register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRUART_R7        0x00000080  // UART Module 7 Peripheral Ready
 #define SYSCTL_PRUART_R6        0x00000040  // UART Module 6 Peripheral Ready
 #define SYSCTL_PRUART_R5        0x00000020  // UART Module 5 Peripheral Ready
@@ -11079,87 +11079,87 @@
 #define SYSCTL_PRUART_R1        0x00000002  // UART Module 1 Peripheral Ready
 #define SYSCTL_PRUART_R0        0x00000001  // UART Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRSSI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRSSI_R3         0x00000008  // SSI Module 3 Peripheral Ready
 #define SYSCTL_PRSSI_R2         0x00000004  // SSI Module 2 Peripheral Ready
 #define SYSCTL_PRSSI_R1         0x00000002  // SSI Module 1 Peripheral Ready
 #define SYSCTL_PRSSI_R0         0x00000001  // SSI Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRI2C register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRI2C_R3         0x00000008  // I2C Module 3 Peripheral Ready
 #define SYSCTL_PRI2C_R2         0x00000004  // I2C Module 2 Peripheral Ready
 #define SYSCTL_PRI2C_R1         0x00000002  // I2C Module 1 Peripheral Ready
 #define SYSCTL_PRI2C_R0         0x00000001  // I2C Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRUSB register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRUSB_R0         0x00000001  // USB Module Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRCAN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRCAN_R1         0x00000002  // CAN Module 1 Peripheral Ready
 #define SYSCTL_PRCAN_R0         0x00000001  // CAN Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRADC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRADC_R1         0x00000002  // ADC Module 1 Peripheral Ready
 #define SYSCTL_PRADC_R0         0x00000001  // ADC Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRACMP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRACMP_R0        0x00000001  // Analog Comparator Module 0
                                             // Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRPWM register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRPWM_R1         0x00000002  // PWM Module 1 Peripheral Ready
 #define SYSCTL_PRPWM_R0         0x00000001  // PWM Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRQEI register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRQEI_R1         0x00000002  // QEI Module 1 Peripheral Ready
 #define SYSCTL_PRQEI_R0         0x00000001  // QEI Module 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PREEPROM
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PREEPROM_R0      0x00000001  // EEPROM Module Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the SYSCTL_PRWTIMER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define SYSCTL_PRWTIMER_R5      0x00000020  // Wide Timer 5 Peripheral Ready
 #define SYSCTL_PRWTIMER_R4      0x00000010  // Wide Timer 4 Peripheral Ready
 #define SYSCTL_PRWTIMER_R3      0x00000008  // Wide Timer 3 Peripheral Ready
@@ -11167,11 +11167,11 @@
 #define SYSCTL_PRWTIMER_R1      0x00000002  // Wide Timer 1 Peripheral Ready
 #define SYSCTL_PRWTIMER_R0      0x00000001  // Wide Timer 0 Peripheral Ready
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_STAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_STAT_DMACHANS_M    0x001F0000  // Available uDMA Channels Minus 1
 #define UDMA_STAT_STATE_M       0x000000F0  // Control State Machine Status
 #define UDMA_STAT_STATE_IDLE    0x00000000  // Idle
@@ -11193,148 +11193,148 @@
 #define UDMA_STAT_MASTEN        0x00000001  // Master Enable Status
 #define UDMA_STAT_DMACHANS_S    16
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CFG register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CFG_MASTEN         0x00000001  // Controller Master Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CTLBASE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CTLBASE_ADDR_M     0xFFFFFC00  // Channel Control Base Address
 #define UDMA_CTLBASE_ADDR_S     10
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ALTBASE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ALTBASE_ADDR_M     0xFFFFFFFF  // Alternate Channel Address
                                             // Pointer
 #define UDMA_ALTBASE_ADDR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_WAITSTAT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_WAITSTAT_WAITREQ_M 0xFFFFFFFF  // Channel [n] Wait Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_SWREQ register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_SWREQ_M            0xFFFFFFFF  // Channel [n] Software Request
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_USEBURSTSET
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_USEBURSTSET_SET_M  0xFFFFFFFF  // Channel [n] Useburst Set
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_USEBURSTCLR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_USEBURSTCLR_CLR_M  0xFFFFFFFF  // Channel [n] Useburst Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_REQMASKSET
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_REQMASKSET_SET_M   0xFFFFFFFF  // Channel [n] Request Mask Set
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_REQMASKCLR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_REQMASKCLR_CLR_M   0xFFFFFFFF  // Channel [n] Request Mask Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ENASET register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ENASET_SET_M       0xFFFFFFFF  // Channel [n] Enable Set
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ENACLR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ENACLR_CLR_M       0xFFFFFFFF  // Clear Channel [n] Enable Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ALTSET register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ALTSET_SET_M       0xFFFFFFFF  // Channel [n] Alternate Set
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ALTCLR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ALTCLR_CLR_M       0xFFFFFFFF  // Channel [n] Alternate Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_PRIOSET register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_PRIOSET_SET_M      0xFFFFFFFF  // Channel [n] Priority Set
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_PRIOCLR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_PRIOCLR_CLR_M      0xFFFFFFFF  // Channel [n] Priority Clear
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_ERRCLR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_ERRCLR_ERRCLR      0x00000001  // uDMA Bus Error Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHASGN register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHASGN_M           0xFFFFFFFF  // Channel [n] Assignment Select
 #define UDMA_CHASGN_PRIMARY     0x00000000  // Use the primary channel
                                             // assignment
 #define UDMA_CHASGN_SECONDARY   0x00000001  // Use the secondary channel
                                             // assignment
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHIS register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHIS_M             0xFFFFFFFF  // Channel [n] Interrupt Status
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHMAP0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHMAP0_CH7SEL_M    0xF0000000  // uDMA Channel 7 Source Select
 #define UDMA_CHMAP0_CH6SEL_M    0x0F000000  // uDMA Channel 6 Source Select
 #define UDMA_CHMAP0_CH5SEL_M    0x00F00000  // uDMA Channel 5 Source Select
@@ -11352,11 +11352,11 @@
 #define UDMA_CHMAP0_CH1SEL_S    4
 #define UDMA_CHMAP0_CH0SEL_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHMAP1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHMAP1_CH15SEL_M   0xF0000000  // uDMA Channel 15 Source Select
 #define UDMA_CHMAP1_CH14SEL_M   0x0F000000  // uDMA Channel 14 Source Select
 #define UDMA_CHMAP1_CH13SEL_M   0x00F00000  // uDMA Channel 13 Source Select
@@ -11374,11 +11374,11 @@
 #define UDMA_CHMAP1_CH9SEL_S    4
 #define UDMA_CHMAP1_CH8SEL_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHMAP2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHMAP2_CH23SEL_M   0xF0000000  // uDMA Channel 23 Source Select
 #define UDMA_CHMAP2_CH22SEL_M   0x0F000000  // uDMA Channel 22 Source Select
 #define UDMA_CHMAP2_CH21SEL_M   0x00F00000  // uDMA Channel 21 Source Select
@@ -11396,11 +11396,11 @@
 #define UDMA_CHMAP2_CH17SEL_S   4
 #define UDMA_CHMAP2_CH16SEL_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_CHMAP3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHMAP3_CH31SEL_M   0xF0000000  // uDMA Channel 31 Source Select
 #define UDMA_CHMAP3_CH30SEL_M   0x0F000000  // uDMA Channel 30 Source Select
 #define UDMA_CHMAP3_CH29SEL_M   0x00F00000  // uDMA Channel 29 Source Select
@@ -11418,27 +11418,27 @@
 #define UDMA_CHMAP3_CH25SEL_S   4
 #define UDMA_CHMAP3_CH24SEL_S   0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_O_SRCENDP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_SRCENDP_ADDR_M     0xFFFFFFFF  // Source Address End Pointer
 #define UDMA_SRCENDP_ADDR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_O_DSTENDP register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_DSTENDP_ADDR_M     0xFFFFFFFF  // Destination Address End Pointer
 #define UDMA_DSTENDP_ADDR_S     0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the UDMA_O_CHCTL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define UDMA_CHCTL_DSTINC_M     0xC0000000  // Destination Address Increment
 #define UDMA_CHCTL_DSTINC_8     0x00000000  // Byte
 #define UDMA_CHCTL_DSTINC_16    0x40000000  // Half-word
@@ -11491,11 +11491,11 @@
                                             // Scatter-Gather
 #define UDMA_CHCTL_XFERSIZE_S   4
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTLR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTLR_DISOOFP      0x00000200  // Disable Out-Of-Order Floating
                                             // Point
 #define NVIC_ACTLR_DISFPCA      0x00000100  // Disable CONTROL
@@ -11504,213 +11504,213 @@
 #define NVIC_ACTLR_DISMCYC      0x00000001  // Disable Interrupts of Multiple
                                             // Cycle Instructions
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ST_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ST_CTRL_COUNT      0x00010000  // Count Flag
 #define NVIC_ST_CTRL_CLK_SRC    0x00000004  // Clock Source
 #define NVIC_ST_CTRL_INTEN      0x00000002  // Interrupt Enable
 #define NVIC_ST_CTRL_ENABLE     0x00000001  // Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ST_RELOAD register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ST_RELOAD_M        0x00FFFFFF  // Reload Value
 #define NVIC_ST_RELOAD_S        0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ST_CURRENT
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ST_CURRENT_M       0x00FFFFFF  // Current Value
 #define NVIC_ST_CURRENT_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_EN0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_EN0_INT_M          0xFFFFFFFF  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_EN1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_EN1_INT_M          0xFFFFFFFF  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_EN2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_EN2_INT_M          0xFFFFFFFF  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_EN3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_EN3_INT_M          0xFFFFFFFF  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_EN4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_EN4_INT_M          0x000007FF  // Interrupt Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DIS0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DIS0_INT_M         0xFFFFFFFF  // Interrupt Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DIS1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DIS1_INT_M         0xFFFFFFFF  // Interrupt Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DIS2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DIS2_INT_M         0xFFFFFFFF  // Interrupt Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DIS3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DIS3_INT_M         0xFFFFFFFF  // Interrupt Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DIS4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DIS4_INT_M         0x000007FF  // Interrupt Disable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PEND0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PEND0_INT_M        0xFFFFFFFF  // Interrupt Set Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PEND1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PEND1_INT_M        0xFFFFFFFF  // Interrupt Set Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PEND2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PEND2_INT_M        0xFFFFFFFF  // Interrupt Set Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PEND3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PEND3_INT_M        0xFFFFFFFF  // Interrupt Set Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PEND4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PEND4_INT_M        0x000007FF  // Interrupt Set Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_UNPEND0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_UNPEND0_INT_M      0xFFFFFFFF  // Interrupt Clear Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_UNPEND1 register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define NVIC_UNPEND1_INT_M      0xFFFFFFFF  // Interrupt Clear Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_UNPEND2 register.
 //
-//*****************************************************************************
+******************************************************************************/
 #define NVIC_UNPEND2_INT_M      0xFFFFFFFF  // Interrupt Clear Pending
 
-//*****************************************************************************
+/*****************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_UNPEND3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_UNPEND3_INT_M      0xFFFFFFFF  // Interrupt Clear Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_UNPEND4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_UNPEND4_INT_M      0x000007FF  // Interrupt Clear Pending
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTIVE0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTIVE0_INT_M      0xFFFFFFFF  // Interrupt Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTIVE1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTIVE1_INT_M      0xFFFFFFFF  // Interrupt Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTIVE2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTIVE2_INT_M      0xFFFFFFFF  // Interrupt Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTIVE3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTIVE3_INT_M      0xFFFFFFFF  // Interrupt Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_ACTIVE4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_ACTIVE4_INT_M      0x000007FF  // Interrupt Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI0 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI0_INT3_M        0xE0000000  // Interrupt 3 Priority Mask
 #define NVIC_PRI0_INT2_M        0x00E00000  // Interrupt 2 Priority Mask
 #define NVIC_PRI0_INT1_M        0x0000E000  // Interrupt 1 Priority Mask
@@ -11720,11 +11720,11 @@
 #define NVIC_PRI0_INT1_S        13
 #define NVIC_PRI0_INT0_S        5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI1_INT7_M        0xE0000000  // Interrupt 7 Priority Mask
 #define NVIC_PRI1_INT6_M        0x00E00000  // Interrupt 6 Priority Mask
 #define NVIC_PRI1_INT5_M        0x0000E000  // Interrupt 5 Priority Mask
@@ -11734,11 +11734,11 @@
 #define NVIC_PRI1_INT5_S        13
 #define NVIC_PRI1_INT4_S        5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI2_INT11_M       0xE0000000  // Interrupt 11 Priority Mask
 #define NVIC_PRI2_INT10_M       0x00E00000  // Interrupt 10 Priority Mask
 #define NVIC_PRI2_INT9_M        0x0000E000  // Interrupt 9 Priority Mask
@@ -11748,11 +11748,11 @@
 #define NVIC_PRI2_INT9_S        13
 #define NVIC_PRI2_INT8_S        5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI3_INT15_M       0xE0000000  // Interrupt 15 Priority Mask
 #define NVIC_PRI3_INT14_M       0x00E00000  // Interrupt 14 Priority Mask
 #define NVIC_PRI3_INT13_M       0x0000E000  // Interrupt 13 Priority Mask
@@ -11762,11 +11762,11 @@
 #define NVIC_PRI3_INT13_S       13
 #define NVIC_PRI3_INT12_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI4 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI4_INT19_M       0xE0000000  // Interrupt 19 Priority Mask
 #define NVIC_PRI4_INT18_M       0x00E00000  // Interrupt 18 Priority Mask
 #define NVIC_PRI4_INT17_M       0x0000E000  // Interrupt 17 Priority Mask
@@ -11776,11 +11776,11 @@
 #define NVIC_PRI4_INT17_S       13
 #define NVIC_PRI4_INT16_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI5 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI5_INT23_M       0xE0000000  // Interrupt 23 Priority Mask
 #define NVIC_PRI5_INT22_M       0x00E00000  // Interrupt 22 Priority Mask
 #define NVIC_PRI5_INT21_M       0x0000E000  // Interrupt 21 Priority Mask
@@ -11790,11 +11790,11 @@
 #define NVIC_PRI5_INT21_S       13
 #define NVIC_PRI5_INT20_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI6 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI6_INT27_M       0xE0000000  // Interrupt 27 Priority Mask
 #define NVIC_PRI6_INT26_M       0x00E00000  // Interrupt 26 Priority Mask
 #define NVIC_PRI6_INT25_M       0x0000E000  // Interrupt 25 Priority Mask
@@ -11804,11 +11804,11 @@
 #define NVIC_PRI6_INT25_S       13
 #define NVIC_PRI6_INT24_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI7 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI7_INT31_M       0xE0000000  // Interrupt 31 Priority Mask
 #define NVIC_PRI7_INT30_M       0x00E00000  // Interrupt 30 Priority Mask
 #define NVIC_PRI7_INT29_M       0x0000E000  // Interrupt 29 Priority Mask
@@ -11818,11 +11818,11 @@
 #define NVIC_PRI7_INT29_S       13
 #define NVIC_PRI7_INT28_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI8 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI8_INT35_M       0xE0000000  // Interrupt 35 Priority Mask
 #define NVIC_PRI8_INT34_M       0x00E00000  // Interrupt 34 Priority Mask
 #define NVIC_PRI8_INT33_M       0x0000E000  // Interrupt 33 Priority Mask
@@ -11832,11 +11832,11 @@
 #define NVIC_PRI8_INT33_S       13
 #define NVIC_PRI8_INT32_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI9 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI9_INT39_M       0xE0000000  // Interrupt 39 Priority Mask
 #define NVIC_PRI9_INT38_M       0x00E00000  // Interrupt 38 Priority Mask
 #define NVIC_PRI9_INT37_M       0x0000E000  // Interrupt 37 Priority Mask
@@ -11846,11 +11846,11 @@
 #define NVIC_PRI9_INT37_S       13
 #define NVIC_PRI9_INT36_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI10 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI10_INT43_M      0xE0000000  // Interrupt 43 Priority Mask
 #define NVIC_PRI10_INT42_M      0x00E00000  // Interrupt 42 Priority Mask
 #define NVIC_PRI10_INT41_M      0x0000E000  // Interrupt 41 Priority Mask
@@ -11860,11 +11860,11 @@
 #define NVIC_PRI10_INT41_S      13
 #define NVIC_PRI10_INT40_S      5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI11 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI11_INT47_M      0xE0000000  // Interrupt 47 Priority Mask
 #define NVIC_PRI11_INT46_M      0x00E00000  // Interrupt 46 Priority Mask
 #define NVIC_PRI11_INT45_M      0x0000E000  // Interrupt 45 Priority Mask
@@ -11874,11 +11874,11 @@
 #define NVIC_PRI11_INT45_S      13
 #define NVIC_PRI11_INT44_S      5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI12 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI12_INT51_M      0xE0000000  // Interrupt 51 Priority Mask
 #define NVIC_PRI12_INT50_M      0x00E00000  // Interrupt 50 Priority Mask
 #define NVIC_PRI12_INT49_M      0x0000E000  // Interrupt 49 Priority Mask
@@ -11888,11 +11888,11 @@
 #define NVIC_PRI12_INT49_S      13
 #define NVIC_PRI12_INT48_S      5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI13 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI13_INT55_M      0xE0000000  // Interrupt 55 Priority Mask
 #define NVIC_PRI13_INT54_M      0x00E00000  // Interrupt 54 Priority Mask
 #define NVIC_PRI13_INT53_M      0x0000E000  // Interrupt 53 Priority Mask
@@ -11902,11 +11902,11 @@
 #define NVIC_PRI13_INT53_S      13
 #define NVIC_PRI13_INT52_S      5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI14 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI14_INTD_M       0xE0000000  // Interrupt 59 Priority Mask
 #define NVIC_PRI14_INTC_M       0x00E00000  // Interrupt 58 Priority Mask
 #define NVIC_PRI14_INTB_M       0x0000E000  // Interrupt 57 Priority Mask
@@ -11916,11 +11916,11 @@
 #define NVIC_PRI14_INTB_S       13
 #define NVIC_PRI14_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI15 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI15_INTD_M       0xE0000000  // Interrupt 63 Priority Mask
 #define NVIC_PRI15_INTC_M       0x00E00000  // Interrupt 62 Priority Mask
 #define NVIC_PRI15_INTB_M       0x0000E000  // Interrupt 61 Priority Mask
@@ -11930,11 +11930,11 @@
 #define NVIC_PRI15_INTB_S       13
 #define NVIC_PRI15_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI16 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI16_INTD_M       0xE0000000  // Interrupt 67 Priority Mask
 #define NVIC_PRI16_INTC_M       0x00E00000  // Interrupt 66 Priority Mask
 #define NVIC_PRI16_INTB_M       0x0000E000  // Interrupt 65 Priority Mask
@@ -11944,11 +11944,11 @@
 #define NVIC_PRI16_INTB_S       13
 #define NVIC_PRI16_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI17 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI17_INTD_M       0xE0000000  // Interrupt 71 Priority Mask
 #define NVIC_PRI17_INTC_M       0x00E00000  // Interrupt 70 Priority Mask
 #define NVIC_PRI17_INTB_M       0x0000E000  // Interrupt 69 Priority Mask
@@ -11958,11 +11958,11 @@
 #define NVIC_PRI17_INTB_S       13
 #define NVIC_PRI17_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI18 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI18_INTD_M       0xE0000000  // Interrupt 75 Priority Mask
 #define NVIC_PRI18_INTC_M       0x00E00000  // Interrupt 74 Priority Mask
 #define NVIC_PRI18_INTB_M       0x0000E000  // Interrupt 73 Priority Mask
@@ -11972,11 +11972,11 @@
 #define NVIC_PRI18_INTB_S       13
 #define NVIC_PRI18_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI19 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI19_INTD_M       0xE0000000  // Interrupt 79 Priority Mask
 #define NVIC_PRI19_INTC_M       0x00E00000  // Interrupt 78 Priority Mask
 #define NVIC_PRI19_INTB_M       0x0000E000  // Interrupt 77 Priority Mask
@@ -11986,11 +11986,11 @@
 #define NVIC_PRI19_INTB_S       13
 #define NVIC_PRI19_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI20 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI20_INTD_M       0xE0000000  // Interrupt 83 Priority Mask
 #define NVIC_PRI20_INTC_M       0x00E00000  // Interrupt 82 Priority Mask
 #define NVIC_PRI20_INTB_M       0x0000E000  // Interrupt 81 Priority Mask
@@ -12000,11 +12000,11 @@
 #define NVIC_PRI20_INTB_S       13
 #define NVIC_PRI20_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI21 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI21_INTD_M       0xE0000000  // Interrupt 87 Priority Mask
 #define NVIC_PRI21_INTC_M       0x00E00000  // Interrupt 86 Priority Mask
 #define NVIC_PRI21_INTB_M       0x0000E000  // Interrupt 85 Priority Mask
@@ -12014,11 +12014,11 @@
 #define NVIC_PRI21_INTB_S       13
 #define NVIC_PRI21_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI22 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI22_INTD_M       0xE0000000  // Interrupt 91 Priority Mask
 #define NVIC_PRI22_INTC_M       0x00E00000  // Interrupt 90 Priority Mask
 #define NVIC_PRI22_INTB_M       0x0000E000  // Interrupt 89 Priority Mask
@@ -12028,11 +12028,11 @@
 #define NVIC_PRI22_INTB_S       13
 #define NVIC_PRI22_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI23 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI23_INTD_M       0xE0000000  // Interrupt 95 Priority Mask
 #define NVIC_PRI23_INTC_M       0x00E00000  // Interrupt 94 Priority Mask
 #define NVIC_PRI23_INTB_M       0x0000E000  // Interrupt 93 Priority Mask
@@ -12042,11 +12042,11 @@
 #define NVIC_PRI23_INTB_S       13
 #define NVIC_PRI23_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI24 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI24_INTD_M       0xE0000000  // Interrupt 99 Priority Mask
 #define NVIC_PRI24_INTC_M       0x00E00000  // Interrupt 98 Priority Mask
 #define NVIC_PRI24_INTB_M       0x0000E000  // Interrupt 97 Priority Mask
@@ -12056,11 +12056,11 @@
 #define NVIC_PRI24_INTB_S       13
 #define NVIC_PRI24_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI25 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI25_INTD_M       0xE0000000  // Interrupt 103 Priority Mask
 #define NVIC_PRI25_INTC_M       0x00E00000  // Interrupt 102 Priority Mask
 #define NVIC_PRI25_INTB_M       0x0000E000  // Interrupt 101 Priority Mask
@@ -12070,11 +12070,11 @@
 #define NVIC_PRI25_INTB_S       13
 #define NVIC_PRI25_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI26 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI26_INTD_M       0xE0000000  // Interrupt 107 Priority Mask
 #define NVIC_PRI26_INTC_M       0x00E00000  // Interrupt 106 Priority Mask
 #define NVIC_PRI26_INTB_M       0x0000E000  // Interrupt 105 Priority Mask
@@ -12084,11 +12084,11 @@
 #define NVIC_PRI26_INTB_S       13
 #define NVIC_PRI26_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI27 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI27_INTD_M       0xE0000000  // Interrupt 111 Priority Mask
 #define NVIC_PRI27_INTC_M       0x00E00000  // Interrupt 110 Priority Mask
 #define NVIC_PRI27_INTB_M       0x0000E000  // Interrupt 109 Priority Mask
@@ -12098,11 +12098,11 @@
 #define NVIC_PRI27_INTB_S       13
 #define NVIC_PRI27_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI28 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI28_INTD_M       0xE0000000  // Interrupt 115 Priority Mask
 #define NVIC_PRI28_INTC_M       0x00E00000  // Interrupt 114 Priority Mask
 #define NVIC_PRI28_INTB_M       0x0000E000  // Interrupt 113 Priority Mask
@@ -12112,11 +12112,11 @@
 #define NVIC_PRI28_INTB_S       13
 #define NVIC_PRI28_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI29 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI29_INTD_M       0xE0000000  // Interrupt 119 Priority Mask
 #define NVIC_PRI29_INTC_M       0x00E00000  // Interrupt 118 Priority Mask
 #define NVIC_PRI29_INTB_M       0x0000E000  // Interrupt 117 Priority Mask
@@ -12126,11 +12126,11 @@
 #define NVIC_PRI29_INTB_S       13
 #define NVIC_PRI29_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI30 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI30_INTD_M       0xE0000000  // Interrupt 123 Priority Mask
 #define NVIC_PRI30_INTC_M       0x00E00000  // Interrupt 122 Priority Mask
 #define NVIC_PRI30_INTB_M       0x0000E000  // Interrupt 121 Priority Mask
@@ -12140,11 +12140,11 @@
 #define NVIC_PRI30_INTB_S       13
 #define NVIC_PRI30_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI31 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI31_INTD_M       0xE0000000  // Interrupt 127 Priority Mask
 #define NVIC_PRI31_INTC_M       0x00E00000  // Interrupt 126 Priority Mask
 #define NVIC_PRI31_INTB_M       0x0000E000  // Interrupt 125 Priority Mask
@@ -12154,11 +12154,11 @@
 #define NVIC_PRI31_INTB_S       13
 #define NVIC_PRI31_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI32 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI32_INTD_M       0xE0000000  // Interrupt 131 Priority Mask
 #define NVIC_PRI32_INTC_M       0x00E00000  // Interrupt 130 Priority Mask
 #define NVIC_PRI32_INTB_M       0x0000E000  // Interrupt 129 Priority Mask
@@ -12168,11 +12168,11 @@
 #define NVIC_PRI32_INTB_S       13
 #define NVIC_PRI32_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI33 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI33_INTD_M       0xE0000000  // Interrupt Priority for Interrupt
                                             // [4n+3]
 #define NVIC_PRI33_INTC_M       0x00E00000  // Interrupt Priority for Interrupt
@@ -12186,11 +12186,11 @@
 #define NVIC_PRI33_INTB_S       13
 #define NVIC_PRI33_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_PRI34 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_PRI34_INTD_M       0xE0000000  // Interrupt Priority for Interrupt
                                             // [4n+3]
 #define NVIC_PRI34_INTC_M       0x00E00000  // Interrupt Priority for Interrupt
@@ -12204,11 +12204,11 @@
 #define NVIC_PRI34_INTB_S       13
 #define NVIC_PRI34_INTA_S       5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_CPUID register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_CPUID_IMP_M        0xFF000000  // Implementer Code
 #define NVIC_CPUID_IMP_ARM      0x41000000  // ARM
 #define NVIC_CPUID_VAR_M        0x00F00000  // Variant Number
@@ -12217,11 +12217,11 @@
 #define NVIC_CPUID_PARTNO_CM4   0x0000C240  // Cortex-M4 processor
 #define NVIC_CPUID_REV_M        0x0000000F  // Revision Number
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_INT_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_INT_CTRL_NMI_SET   0x80000000  // NMI Set Pending
 #define NVIC_INT_CTRL_PEND_SV   0x10000000  // PendSV Set Pending
 #define NVIC_INT_CTRL_UNPEND_SV 0x08000000  // PendSV Clear Pending
@@ -12250,20 +12250,20 @@
 #define NVIC_INT_CTRL_VEC_ACT_M 0x000000FF  // Interrupt Pending Vector Number
 #define NVIC_INT_CTRL_VEC_ACT_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_VTABLE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_VTABLE_BASE        0x20000000  // Vector Table Base
 #define NVIC_VTABLE_OFFSET_M    0x1FFFFC00  // Vector Table Offset
 #define NVIC_VTABLE_OFFSET_S    10
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_APINT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_APINT_VECTKEY_M    0xFFFF0000  // Register Key
 #define NVIC_APINT_VECTKEY      0x05FA0000  // Vector key
 #define NVIC_APINT_ENDIANESS    0x00008000  // Data Endianess
@@ -12280,20 +12280,20 @@
 #define NVIC_APINT_VECT_CLR_ACT 0x00000002  // Clear Active NMI / Fault
 #define NVIC_APINT_VECT_RESET   0x00000001  // System Reset
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SYS_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SYS_CTRL_SEVONPEND 0x00000010  // Wake Up on Pending
 #define NVIC_SYS_CTRL_SLEEPDEEP 0x00000004  // Deep Sleep Enable
 #define NVIC_SYS_CTRL_SLEEPEXIT 0x00000002  // Sleep on ISR Exit
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_CFG_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_CFG_CTRL_STKALIGN  0x00000200  // Stack Alignment on Exception
                                             // Entry
 #define NVIC_CFG_CTRL_BFHFNMIGN 0x00000100  // Ignore Bus Fault in NMI and
@@ -12303,11 +12303,11 @@
 #define NVIC_CFG_CTRL_MAIN_PEND 0x00000002  // Allow Main Interrupt Trigger
 #define NVIC_CFG_CTRL_BASE_THR  0x00000001  // Thread State Control
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SYS_PRI1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SYS_PRI1_USAGE_M   0x00E00000  // Usage Fault Priority
 #define NVIC_SYS_PRI1_BUS_M     0x0000E000  // Bus Fault Priority
 #define NVIC_SYS_PRI1_MEM_M     0x000000E0  // Memory Management Fault Priority
@@ -12315,19 +12315,19 @@
 #define NVIC_SYS_PRI1_BUS_S     13
 #define NVIC_SYS_PRI1_MEM_S     5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SYS_PRI2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SYS_PRI2_SVC_M     0xE0000000  // SVCall Priority
 #define NVIC_SYS_PRI2_SVC_S     29
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SYS_PRI3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SYS_PRI3_TICK_M    0xE0000000  // SysTick Exception Priority
 #define NVIC_SYS_PRI3_PENDSV_M  0x00E00000  // PendSV Priority
 #define NVIC_SYS_PRI3_DEBUG_M   0x000000E0  // Debug Priority
@@ -12335,12 +12335,12 @@
 #define NVIC_SYS_PRI3_PENDSV_S  21
 #define NVIC_SYS_PRI3_DEBUG_S   5
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SYS_HND_CTRL
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SYS_HND_CTRL_USAGE 0x00040000  // Usage Fault Enable
 #define NVIC_SYS_HND_CTRL_BUS   0x00020000  // Bus Fault Enable
 #define NVIC_SYS_HND_CTRL_MEM   0x00010000  // Memory Management Fault Enable
@@ -12357,12 +12357,12 @@
 #define NVIC_SYS_HND_CTRL_BUSA  0x00000002  // Bus Fault Active
 #define NVIC_SYS_HND_CTRL_MEMA  0x00000001  // Memory Management Fault Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_FAULT_STAT
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_FAULT_STAT_DIV0    0x02000000  // Divide-by-Zero Usage Fault
 #define NVIC_FAULT_STAT_UNALIGN 0x01000000  // Unaligned Access Usage Fault
 #define NVIC_FAULT_STAT_NOCP    0x00080000  // No Coprocessor Usage Fault
@@ -12388,50 +12388,50 @@
 #define NVIC_FAULT_STAT_DERR    0x00000002  // Data Access Violation
 #define NVIC_FAULT_STAT_IERR    0x00000001  // Instruction Access Violation
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_HFAULT_STAT
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_HFAULT_STAT_DBG    0x80000000  // Debug Event
 #define NVIC_HFAULT_STAT_FORCED 0x40000000  // Forced Hard Fault
 #define NVIC_HFAULT_STAT_VECT   0x00000002  // Vector Table Read Fault
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DEBUG_STAT
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DEBUG_STAT_EXTRNL  0x00000010  // EDBGRQ asserted
 #define NVIC_DEBUG_STAT_VCATCH  0x00000008  // Vector catch
 #define NVIC_DEBUG_STAT_DWTTRAP 0x00000004  // DWT match
 #define NVIC_DEBUG_STAT_BKPT    0x00000002  // Breakpoint instruction
 #define NVIC_DEBUG_STAT_HALTED  0x00000001  // Halt request
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MM_ADDR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MM_ADDR_M          0xFFFFFFFF  // Fault Address
 #define NVIC_MM_ADDR_S          0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_FAULT_ADDR
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_FAULT_ADDR_M       0xFFFFFFFF  // Fault Address
 #define NVIC_FAULT_ADDR_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_CPAC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_CPAC_CP11_M        0x00C00000  // CP11 Coprocessor Access
                                             // Privilege
 #define NVIC_CPAC_CP11_DIS      0x00000000  // Access Denied
@@ -12443,51 +12443,51 @@
 #define NVIC_CPAC_CP10_PRIV     0x00100000  // Privileged Access Only
 #define NVIC_CPAC_CP10_FULL     0x00300000  // Full Access
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_TYPE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_TYPE_IREGION_M 0x00FF0000  // Number of I Regions
 #define NVIC_MPU_TYPE_DREGION_M 0x0000FF00  // Number of D Regions
 #define NVIC_MPU_TYPE_SEPARATE  0x00000001  // Separate or Unified MPU
 #define NVIC_MPU_TYPE_IREGION_S 16
 #define NVIC_MPU_TYPE_DREGION_S 8
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_CTRL_PRIVDEFEN 0x00000004  // MPU Default Region
 #define NVIC_MPU_CTRL_HFNMIENA  0x00000002  // MPU Enabled During Faults
 #define NVIC_MPU_CTRL_ENABLE    0x00000001  // MPU Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_NUMBER
 // register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_NUMBER_M       0x00000007  // MPU Region to Access
 #define NVIC_MPU_NUMBER_S       0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_BASE register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_BASE_ADDR_M    0xFFFFFFE0  // Base Address Mask
 #define NVIC_MPU_BASE_VALID     0x00000010  // Region Number Valid
 #define NVIC_MPU_BASE_REGION_M  0x00000007  // Region Number
 #define NVIC_MPU_BASE_ADDR_S    5
 #define NVIC_MPU_BASE_REGION_S  0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_ATTR register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_ATTR_XN        0x10000000  // Instruction Access Disable
 #define NVIC_MPU_ATTR_AP_M      0x07000000  // Access Privilege
 #define NVIC_MPU_ATTR_TEX_M     0x00380000  // Type Extension Mask
@@ -12498,22 +12498,22 @@
 #define NVIC_MPU_ATTR_SIZE_M    0x0000003E  // Region Size Mask
 #define NVIC_MPU_ATTR_ENABLE    0x00000001  // Region Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_BASE1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_BASE1_ADDR_M   0xFFFFFFE0  // Base Address Mask
 #define NVIC_MPU_BASE1_VALID    0x00000010  // Region Number Valid
 #define NVIC_MPU_BASE1_REGION_M 0x00000007  // Region Number
 #define NVIC_MPU_BASE1_ADDR_S   5
 #define NVIC_MPU_BASE1_REGION_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_ATTR1 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_ATTR1_XN       0x10000000  // Instruction Access Disable
 #define NVIC_MPU_ATTR1_AP_M     0x07000000  // Access Privilege
 #define NVIC_MPU_ATTR1_TEX_M    0x00380000  // Type Extension Mask
@@ -12527,22 +12527,22 @@
 #define NVIC_MPU_ATTR1_SIZE_M   0x0000003E  // Region Size Mask
 #define NVIC_MPU_ATTR1_ENABLE   0x00000001  // Region Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_BASE2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_BASE2_ADDR_M   0xFFFFFFE0  // Base Address Mask
 #define NVIC_MPU_BASE2_VALID    0x00000010  // Region Number Valid
 #define NVIC_MPU_BASE2_REGION_M 0x00000007  // Region Number
 #define NVIC_MPU_BASE2_ADDR_S   5
 #define NVIC_MPU_BASE2_REGION_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_ATTR2 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_ATTR2_XN       0x10000000  // Instruction Access Disable
 #define NVIC_MPU_ATTR2_AP_M     0x07000000  // Access Privilege
 #define NVIC_MPU_ATTR2_TEX_M    0x00380000  // Type Extension Mask
@@ -12556,22 +12556,22 @@
 #define NVIC_MPU_ATTR2_SIZE_M   0x0000003E  // Region Size Mask
 #define NVIC_MPU_ATTR2_ENABLE   0x00000001  // Region Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_BASE3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_BASE3_ADDR_M   0xFFFFFFE0  // Base Address Mask
 #define NVIC_MPU_BASE3_VALID    0x00000010  // Region Number Valid
 #define NVIC_MPU_BASE3_REGION_M 0x00000007  // Region Number
 #define NVIC_MPU_BASE3_ADDR_S   5
 #define NVIC_MPU_BASE3_REGION_S 0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_MPU_ATTR3 register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_MPU_ATTR3_XN       0x10000000  // Instruction Access Disable
 #define NVIC_MPU_ATTR3_AP_M     0x07000000  // Access Privilege
 #define NVIC_MPU_ATTR3_TEX_M    0x00380000  // Type Extension Mask
@@ -12585,11 +12585,11 @@
 #define NVIC_MPU_ATTR3_SIZE_M   0x0000003E  // Region Size Mask
 #define NVIC_MPU_ATTR3_ENABLE   0x00000001  // Region Enable
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DBG_CTRL register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DBG_CTRL_DBGKEY_M  0xFFFF0000  // Debug key mask
 #define NVIC_DBG_CTRL_DBGKEY    0xA05F0000  // Debug key
 #define NVIC_DBG_CTRL_S_RESET_ST                                              \
@@ -12608,11 +12608,11 @@
 #define NVIC_DBG_CTRL_C_HALT    0x00000002  // Halt the core
 #define NVIC_DBG_CTRL_C_DEBUGEN 0x00000001  // Enable debug
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DBG_XFER register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DBG_XFER_REG_WNR   0x00010000  // Write or not read
 #define NVIC_DBG_XFER_REG_SEL_M 0x0000001F  // Register
 #define NVIC_DBG_XFER_REG_R0    0x00000000  // Register R0
@@ -12637,19 +12637,19 @@
 #define NVIC_DBG_XFER_REG_DSP   0x00000013  // Deep SP
 #define NVIC_DBG_XFER_REG_CFBP  0x00000014  // Control/Fault/BasePri/PriMask
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DBG_DATA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DBG_DATA_M         0xFFFFFFFF  // Data temporary cache
 #define NVIC_DBG_DATA_S         0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_DBG_INT register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_DBG_INT_HARDERR    0x00000400  // Debug trap on hard fault
 #define NVIC_DBG_INT_INTERR     0x00000200  // Debug trap on interrupt errors
 #define NVIC_DBG_INT_BUSERR     0x00000100  // Debug trap on bus error
@@ -12662,19 +12662,19 @@
 #define NVIC_DBG_INT_RSTPENDING 0x00000002  // Core reset is pending
 #define NVIC_DBG_INT_RSTVCATCH  0x00000001  // Reset vector catch
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_SW_TRIG register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_SW_TRIG_INTID_M    0x000000FF  // Interrupt ID
 #define NVIC_SW_TRIG_INTID_S    0
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_FPCC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_FPCC_ASPEN         0x80000000  // Automatic State Preservation
                                             // Enable
 #define NVIC_FPCC_LSPEN         0x40000000  // Lazy State Preservation Enable
@@ -12686,19 +12686,19 @@
 #define NVIC_FPCC_USER          0x00000002  // User Privilege Level
 #define NVIC_FPCC_LSPACT        0x00000001  // Lazy State Preservation Active
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_FPCA register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_FPCA_ADDRESS_M     0xFFFFFFF8  // Address
 #define NVIC_FPCA_ADDRESS_S     3
 
-//*****************************************************************************
+/******************************************************************************
 //
 // The following are defines for the bit fields in the NVIC_FPDSC register.
 //
-//*****************************************************************************
+*****************************************************************************/
 #define NVIC_FPDSC_AHP          0x04000000  // AHP Bit Default
 #define NVIC_FPDSC_DN           0x02000000  // DN Bit Default
 #define NVIC_FPDSC_FZ           0x01000000  // FZ Bit Default
